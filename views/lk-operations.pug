@@ -1,0 +1,83 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        h2.title ВАШИ ОПЕРАЦИИ
+        p.lk-text Список Ваших обменов, а так же информация по Вашей накопительной скидкой.
+        ul.flex-sb.your-operations
+            li
+                p.personal-discount 0.0001%
+                span ПЕРСОНАЛЬНАЯ СКИДКА
+            li
+                p.complete-exchanges 12
+                span ОБМЕНОВ
+            li
+                p.amount-of-exchanges 61680 USD
+                span СУММА ОБМЕНОВ
+        p.lk-text Подробнее о нашей накопительной системе скидок смотрите
+            a.text-b-un(href="/discounts.html") здесь
+            | .
+        table.lk-table.fc-border
+            tr
+                th ID
+                th ДАТА
+                th КУРС
+                th ОТДАЕТЕ
+                th ПОЛУЧАЕТЕ
+                th СТАТУС
+            tr
+                td 1
+                td 12.01.18, 12:30
+                td
+                    .flex
+                        p 1.30
+                            span USD
+                        .i-next.text-green
+                        p 24.25
+                            span UAN
+                td
+                    .flex
+                        .pm_icon.pm
+                        p 1 USD
+                td
+                    .flex
+                        .pm_icon.bc
+                        p 24.25 UAN
+                td.deal-ok
+            tr
+                td 1
+                td 12.01.18, 12:30
+                td
+                    .flex
+                        p 1.30
+                            span USD
+                        .i-next.text-green
+                        p 24.25
+                            span UAN
+                td
+                    .flex
+                        .pm_icon.pr
+                        p 1 USD
+                td
+                    .flex
+                        .pm_icon.ac
+                        p 24.25 UAN
+                td.deal-del

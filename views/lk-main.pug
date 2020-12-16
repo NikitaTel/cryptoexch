@@ -1,0 +1,86 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        h2.title ЛИЧНЫЕ ДАННЫЕ
+        p.lk-text Здесь Вы можете внести свои данные , которые будут автомачески подставляться при оформлении заявки на обмен.
+            br
+            | Для обмена по некоторым направления необходимо пройти
+            a.text-b-un(href="/lk-verification.html") верификацию личности
+            | .
+        ul.personal_data.flex-sb
+            li
+                ul
+                    li
+                        p.i-list
+                        p Ваши данные
+                    li
+                        input.input-form(id="pd-login" type="text" onchange="checkFields('.personal_data')" required)
+                        label.label-star-red(for="pd-login")
+                            p Логин
+                                span.red-star *
+                    li
+                        input.input-form(id="pd-sename" type="text" onchange="checkFields('.personal_data')" required)
+                        label.label-star-red(for="pd-sename")
+                            p Фамилия
+                                span.red-star *
+                    li
+                        input.input-form(id="pd-name" type="text" onchange="checkFields('.personal_data')" required)
+                        label.label-star-red(for="pd-name")
+                            p Имя
+                                span.red-star *
+                    li
+                        input.input-form( placeholder="Отчество")
+                    li
+                        input.input-form( placeholder="Номер паспорта")
+            li
+                ul
+                    li
+                        p.i-email
+                        p Контакты
+                    li
+                        input.input-form( required type="email" onchange="checkFields('.personal_data')" placeholder="E-mail")
+                    li
+                        input.input-form( placeholder="Номер телефона")
+                    li
+                        input.input-form( placeholder="Skype")
+                    li
+                        input.input-form( placeholder="Сайт")
+                    li
+                        input.input-form( placeholder="Сайт 2")
+            li
+                ul
+                    li
+                        p.i-protection
+                        p Сменить пароль
+                    li
+                        input.input-form( placeholder="Новый пароль")
+                    li
+                        input.input-form( placeholder="Новый пароль повторно")
+                    li.flex-grow
+                        p Используйте только сложные пароли длинной более более 12 символов
+                        p Сгенерировать надежный пароль можно
+                            a.text-b-un тут
+                    li
+                        input(type="submit" value="Сохранить" onclick="checkFields('.personal_data')").button.b-blue
+        p.lk-text
+            strong Внимание!&nbsp;
+            | Данные отмеченные звездочкой после внесения невозможно изменить.

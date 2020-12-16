@@ -1,0 +1,24 @@
+
+h2.title.underline АВТОРИЗАЦИЯ
+ul.autoriz.border-r#auth-aside
+   li
+      input.input-form(maxlength="25" required size="40" name="login" placeholder="Логин или E-mail" onchange="checkFields('#auth-aside')")
+   li
+      input.input-form(id="pass" required placeholder="Пароль" type="password" maxlength="25" size="40" name="password" onchange="checkFields('#auth-aside')")
+      label.autoriz_label(for="pass")
+         a.text-b-un(href="/pass-recovery.html" target="_blank") Забыли пароль?
+   li   
+      form(action="?" method="POST")
+         div(class="g-recaptcha" data-sitekey="6LfX2eEZAAAAALpteI7Fqfm1fqpQG24RCn8S4ruL" )
+   li.flex-sb
+      label.button.b-white.border-r(for='invest7') Регистрация
+      a.button.b-blue.border-r(onclick="checkFields('#auth-aside')") Войти
+//- h2.title.underline ПРОВЕРКА СТАТУСА ЗАЯВКИ
+//- ul.autoriz.border-r
+//-    li
+//-       input.input-form( placeholder="ID обмена" type="text")
+//-    li
+//-       input.input-form(placeholder="E-mail" type="text")
+//-    li
+//-       input(type="submit" value="Проверить").button.b-blue.border-r
+script(type='text/javascript' src="https://www.google.com/recaptcha/api.js" async defer)

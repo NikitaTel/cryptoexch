@@ -1,0 +1,150 @@
+extends layouts/layout-aside
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Обмен электронных валют – Инвесторам",
+      desc: "Заработок для партнеров электронного обменника валют.",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   .lk_main
+      h2.title.exchange-title
+         p ОБМЕН
+         .exchange-title_money
+            .pm_icon.pm
+            p PERFECT MONEY USD
+         p НА
+         .exchange-title_money
+            .pm_icon.ac
+            p PAYER RUB
+      .exchange-steps.flex-sa
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 1
+            p Впишите сумму и заполните данные
+         .exchange-steps_space
+         .exchange-steps_step.flex.active
+            .circle.flex.flex-shrink
+               p 2
+            p Проверьте данные и получите инструкции
+         .exchange-steps_space
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 3
+            p Оплатите заявку
+      h2.title.uppercase.text-margin.ex2-fat-ordNumber Заявка №661122
+      .exchange-triple.flex.border-r
+         .exchange-triple_left.flex-col.flex-sb.flex
+            .exchange-triple_right_text
+               p.ex2-fat-span Статус операции:
+                  span.ex2-fat-span Новая заявка
+               p Режим обработки:
+                  span Автоматический
+               p Время создания заявки:
+                  span 10:00 12.12.87
+               p Условия обмена:
+                  span 100 USD PerfectMoney на 100 USD AdvCash
+               p Счет получателя:
+                  span U123123123123
+           
+         .exchange-triple_right.as_strech
+            .flex-sa.border_bot.flex-shrink.flex-grow
+               .exchange-triple_right_text.text-center(style="text-align:center")
+                  a.countdown 20:00
+            .flex-sb.flex-grow.exchange-triple_right_step2.as_strech
+               .ex2-tt1
+                  P У вас есть #[span.ex-fat-bottomText 20 минут] для совершения #[br] оплаты.
+               .ex2-tt2
+                  p По истечению этого времени #[br] #[span.ex-fat-bottomText заявка будет удалена.]
+      .flex-sb.text-margin
+         a
+         h2.title.t-sum-ex2 СУММА ПЛАТЕЖА:
+            span.text-blue.ff_wsb 100 USD
+      h2.title.uppercase.text-margin ИНСТРУКЦИЯ ПО ОПЛАТЕ
+      ul.document-list
+         li
+            .counter 1
+            p.uppercase Войдите в систему приват24
+         li
+            .counter 2
+            p.uppercase в разделе “все услуги” выберите пункт “платежи” - “Перевод на карту приватбанка”
+         li
+            .counter 3
+            p.uppercase Выберите карту с которой хотите оплатить заявку
+         li
+            .counter 4
+            p.uppercase Укажите номер карты получателя
+         li
+            .counter 5
+            p.uppercase В назначении платежа укажите точную сумму платежа с точностью до копейки: 508 грн
+         li
+            .counter 6
+            p.uppercase Нажмите “продолжить” и подтвердите платеж
+         li
+            .counter 7
+            p.uppercase После оплаты нажмите кнопку “Я оплатил заявку”
+         li
+            .counter 8
+            p.uppercase Ожидайте исполнения заявки
+      .lk-text
+         span Пожалуйста, будьте внимательны!
+         |Все поля должны быть заполнены в точном соответствии с инструкцией. В противном случае, платеж может не пройти.
+      .flex-sb
+         .flex.exchange-input
+            div.flex-sb.flex-grow.flex-shrink.exchange-input_item(style="width: fit-content")
+               input.button.b-red.exchange-input_label.border-r.ex2-cancel-btn(type='submit' style="height:50px;margin-top:-50px;" value='Отменить заявку')
+            //- div.flex-sb.flex-grow.flex-shrink.exchange-input_item
+            //-    input(type='submit' id='exchange-step')
+            //-    label.button.b-white.exchange-input_label.border-r(for='exchange-step')
+            //-       div
+            //-          span Проверить оплату
+            //-          .question-box
+            //-             .i-question
+            //-             p.question_help
+            //-                span.ff_wsb Внимание!
+            //-                | Нажмите “Проверить оплату” если вы оплатили заявку.
+            //-                |Далее проверка будет проходить автоматически каждые 30 секунд.
+            .div
+               .flex.exchange-input
+                  div.flex-sb.flex-grow.flex-shrink.exchange-input_item
+                     input.input-form(type='text' required placeholder='Введите код из SMS' style="padding-right: 0px;")
+                  div.flex-sb.flex-grow.flex-shrink.exchange-input_item(style="margin-left: -83px;")
+                     input.button.b-blue.border-r_rght(type='submit' onclick="checkFields('.exchange-input')" id='exchange-step2' value='Подтвердить')
+               p.text-margin.lk-text(style="margin-top: 10px;margin-left: 23px;")
+                  a.text-b-un Отправить еще
+                  span (50сек)
+block aside
+   //- h2.title.underline НОВОСТИ
+   //- ul.aside-news.news_colum.border-r
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       a.news-more2("/news.html") Все новости

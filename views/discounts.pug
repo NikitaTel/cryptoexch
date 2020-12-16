@@ -1,0 +1,93 @@
+extends layouts/layout-aside
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Скидки",
+        desc: "Заработок для партнеров электронного обменника валют.",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com/partneram/",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block title
+    .main-bg
+        .lk-main-title
+            h1.title.text-center.discounts-title СКИДКИ
+            p.lk-text.lktdisc1
+                span
+                | Хотите обменивать электронные валюты по выгодному курсу и гарантированно получать больше?
+            p.lk-text.lktdisc2
+                a.text-b-un(onclick="$('#registr').prop('checked', true)") Зарегистрируйтесь
+                | и получите скидку при первом же обмене!
+block content
+    include ./partials/popups
+    .lk_main
+        .partners-banner.flex-sa.background-mod-dark.border-r
+            .partners-banner_discount-girl.flex-shrink
+            .partners-banner_text
+                h6 БОЛЬШИЕ БОНУСЫ
+                    p
+                        span до
+                        | 25%
+                    |ДЛЯ ЛЮБИМЫХ КЛИЕНТОВ
+
+        h2.title.partners_title ПРЕИМУЩЕСТВА БОНУСНОЙ ПРОГРАММЫ:
+        ul.document-list.discounts-list 
+            li
+                .counter 1
+                p Накопительная система. Делайте больше обменов и получайте большую #[br]скидку в последующих транзакциях.
+            li
+                .counter 2
+                p Скидка при регистрации. Принимайте участие в программе скидок сразу #[br]после регистрации.
+            li
+                .counter 3
+                p Прозрачность начислений. Никаких сложных систем подсчетов баллов. #[br]Вся статистика обменов доступна в “Личном кабинете”.
+            li
+                .counter 4
+                p Моментальная выгода. Забудьте о дополнительных условиях вывода #[br]и необходимости накопления минимальных сумм.
+        //- .disc-table.partners-banner.border-r.background-mod-dark
+        //-     table
+        //-         tr
+        //-             th
+        //-                 p СУММА ОБМЕНА
+
+        //-             th
+        //-                 p СКИДКА В % ОТ СУММЫ ОБМЕНА
+        //-         tr
+        //-             td
+        //-                 p до 1 000 $
+        //-             td
+        //-                 p 0,05%
+        //-         tr
+        //-             td
+        //-                 p до 10 000 $
+        //-             td
+        //-                 p 0,8%
+        //-         tr
+        //-             td
+        //-                 p до 20 000 $
+        //-             td
+        //-                 p 0,10%
+        //-         tr
+        //-             td
+        //-                 p до 40 000 $
+        //-             td
+        //-                 p 0,12%
+        //-         tr
+        //-             td
+        //-                 p до 60 000 $
+        //-             td
+        //-                 p 0,15%
+        //-         tr
+        //-             td
+        //-                 p до 100 000 $
+        //-             td
+        //-                 p 0,25%

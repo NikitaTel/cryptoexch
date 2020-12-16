@@ -1,0 +1,75 @@
+extends layouts/layout-aside
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Список страниц",
+      desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   ul
+      li
+         a(href="/index.html") Главная
+      li
+         a(href="/contact.html") Контакты
+      li
+         a(href="/feedback.html") Отзывы
+      li
+         a(href="/news.html") Новости
+      li
+         a(href="/opennews.html") Развёрнутая новость
+      li
+         a(href="/partners.html") Партнёрам
+      li
+         a(href="/rates.html") Тарифы
+      li
+         a(href="/investors.html") Инвесторам
+      li
+         a(href="/exchange1.html") Обмен 1
+      li
+         a(href="/exchange2.html") Обмен 2
+      li
+         a(href="/exchange3.html") Обмен 3 NEW
+      li
+         a(href="/knowledgebase.html") База знаний NEW
+      li
+         a(href="/pass-recovery.html") Восстановление пароля NEW
+      li
+         a(href="/rules.html") Страница под регламент NEW
+      li
+         a(href="/faq.html") FAQ NEW
+      li
+         a(href="/404.html") 404
+      li
+         a(href="/discounts.html") Скидки
+
+      br
+      br
+      h1.title Личный кабинет
+      ul
+         li
+            a(href="/lk-main.html") Личные данные
+         li
+            a(href="/lk-cabinet.html") Партнёрский кабинет
+         li
+            a(href="/lk-inside-pay.html") Внутренний счёт
+         li
+            a(href="/lk-operations.html") Ваши операции
+         li
+            a(href="/lk-payments.html") Ваши счета
+         li
+            a(href="/lk-security.html") Настройка безопасности
+         li
+            a(href="/lk-verification.html") Верификация личности

@@ -1,0 +1,616 @@
+body
+    min-width 1200px
+
+main
+    padding 50px 0 0
+
+// .cookie
+//     position fixed
+//     bottom 0
+//     z-index 101
+//     width 100%
+//     background #f4f4f4
+//     border-top 1px solid #dee2e7;
+// .cookie-content
+//     width 1180px
+//     vertical-align center
+//     margin auto
+//     padding 15px 0
+// .cookie-button
+//     width 250px
+//     margin-left 20px
+.cert-title
+    margin-bottom: 47px;
+    padding-top: 13px;
+    margin-bottom: 29px;
+.cert-mc
+    padding: 25px 0!important
+.cookie
+    position fixed
+    bottom 0
+    z-index 101
+    width 100%
+    background: rgb(126 157 188);
+    color white
+    font-size 14px
+    height: 50px;
+    padding-top: 16px;
+
+.cookie-content
+    width 80%
+    display flex
+    justify-content center
+    margin auto
+    padding 0
+.cookie-button
+    position: absolute;
+    margin-left: 176px;
+    width: 20px;
+    top: 15px;
+    height: 20px;
+    color: #fff;
+    z-index: 9999;
+    left: 71%;
+    .i-close
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+.cookie-text
+    font-size: 12px
+    text-align: left
+    margin-left: -126px
+
+#xpay:checked
+    ~.x-pay
+        display flex
+.x-pay
+    display none
+    justify-content center
+    &_body
+        z-index 15
+        position relative
+        vertical-align center
+        background white
+        justify-content center
+        width 720px
+        padding 40px
+        display flex
+    &_img
+        background-size 100%
+        flex-shrink 0
+        background-repeat no-repeat
+        background-image url("../img/x-pay.png")
+        height 160px
+        width 160px
+        margin-right 20px
+    &_text
+        h1
+            font-size 24px
+            letter-spacing -1px
+            font-family WhitneySemiBold
+        p
+            font-size 12px
+            padding 16px 0
+            span
+                display inline-block
+                padding 3px 5px
+                margin 0 3px
+                background gold
+            &.italic
+                font-style italic
+.main-bg
+    width 100%
+    background-position top
+    background-size cover
+    background-repeat no-repeat
+    letter-spacing 0.35px
+
+.exchange
+    background-image url("../img/team.png")
+    background-color $dark-blue
+    .slide2
+        border-radius 5px
+    .i-star
+        color #599abf
+    h2.title
+        color $white
+        margin-bottom 28px
+    &_list
+        width 580px
+        .i-next
+            color white
+            font-size: 12px
+        ul
+            align-items center
+            padding 4px 10px
+            margin-bottom 5px
+            &:nth-child(even)
+                background rgba(255, 255, 255, 0.05)
+            &:nth-last-child(6)
+                opacity 1
+            &:nth-last-child(5)
+                opacity 0.9
+            &:nth-last-child(4)
+                opacity 0.6
+            &:nth-last-child(3)
+                opacity 0.6
+            &:nth-last-child(2)
+                opacity 0.4
+            &:nth-last-child(1)
+                opacity 0.4
+            li
+                display flex
+                justify-content space-between
+                align-items center
+                font-family WhitneySemiBold
+                font-weight 400
+                line-height 26px
+                color $text-grey
+                &:nth-child(3)
+                    padding 0 14px
+                &.flag
+                    width 100%
+                    p
+                        font-size 14px
+                        &:nth-child(2)
+                            padding 0 20px
+                            color: #ffffffd6;
+                            font-size: 13px;
+                            font-family: 'Whitney';
+                        &:nth-child(4)
+                            font-family WhitneyLight
+                            letter-spacing 0.8px
+                        &:nth-child(3)
+                            flex-grow 1
+                            text-align right
+                            color $white
+                            letter-spacing 0.45px
+                            font-size 16px
+                            padding-right 10px
+                            width: 125px!important
+                    img
+                        width 22px
+                        height 22px
+                &.iz
+                    background rgba(255, 255, 255, 0.1)
+                    span
+                        color $white
+
+.cipher
+    flex-grow 1!important
+    text-align left!important
+    color $white!important
+    letter-spacing 0.45px!important
+    font-size 16px!important
+    padding-right 10px!important
+    font-weight: 600!important
+    width: 80px!important
+    margin-left: 10px!important
+    text-align: right!important;
+.reserve1
+    width: 96%
+    margin: auto
+.reserve2
+    width: 96%
+    margin: auto
+    margin-top: 17px
+    margin-bottom: 10px
+.reserve_all
+    .main-content
+        padding 50px 0
+        width 1180px
+        margin auto
+        .title
+            margin-bottom: 40px
+            margin-left: -16px
+    ul
+        li
+                display: flex!important;
+                justify-content: flex-start!important
+                background: rgba(235,241,247,.9)!important
+                width: 270px!important
+                padding: 7px 15px 5px 10px!important
+                margin-top: -3px!important
+
+.main-content
+    padding 50px 0
+    width 1180px
+    margin auto
+    .title
+        margin-bottom 45px
+.give-title
+    background rgba(235, 241, 247, 0.45)
+    border 1px solid #ebf1f7
+    border-radius 5px 5px 0 0
+.change
+    padding 9px 0 89px
+    width 1180px
+    margin auto
+    h2
+        margin 0 0 37px
+    &_give
+        h2
+            font-size 18px
+            line-height 18px
+            font-family Whitney
+            color #0a263e
+            position relative
+            display inline-block
+            margin: 13px -31px 13px 11px
+            padding-left: 10px
+
+            &:after
+                content ''
+                height 30px
+                position absolute
+                top -8px
+                left -48px
+                width 30px
+                background: rgba(0, 0, 0, 0) url("../img/shape_1.png") no-repeat scroll center center;
+    &_get
+        h2
+            font-size 18px
+            line-height 18px
+            font-family Whitney
+            color #0a263e
+            position relative
+            display inline-block
+            margin 15px 0 12px
+            &:after
+                content ''
+                height 30px
+                position absolute
+                top -8px
+                left -40px
+                width 30px
+                background: rgba(0, 0, 0, 0) url("../img/shape_2.png") no-repeat scroll center center;
+.exchange-bg
+    padding-top 50px
+    position relative
+    background-position top
+    letter-spacing 0.35px
+    // margin-top -50px
+    &:before
+        background-size cover
+        position absolute
+        top 0
+        display block
+        content ''
+        height 100%
+        width 100%
+        opacity 0.1
+        background-repeat no-repeat
+        background-image url("../img/404.png")
+.reserve
+    background-image url("../img/reserv.png")
+    &_all
+        h2
+            color $white
+        ul
+            &:nth-child(2)
+                margin-bottom 20px
+            li
+                width 261px
+                display flex
+                justify-content flex-start
+                padding 5px 15px
+                align-items center
+                border-radius 5px
+                background rgba(235, 241, 247, 0.9)
+                .pm_icon
+                    margin-right 20px
+
+.news
+    background-image url("../img/news.png")
+    &_block1
+        background $white
+        border-radius 5px
+        width 580px
+        align-items center
+        position relative
+        overflow hidden
+        padding 35px 0 20px 10px
+        &_colum
+            padding 0 0 20px 20px
+            h3
+                font-size 23px
+                line-height 30px
+                color: #0a263e;
+                padding: 15px 0 24px 1px;
+            .news_text
+                padding 0 0 15px
+    &_block2
+        width 280px
+        overflow hidden
+        background $white
+        border-radius 5px
+        display flex
+        flex-direction column
+        &_colum
+            padding 15px 19px
+            flex-grow 1
+            display flex
+            flex-direction column
+            .news_text
+                flex-grow 1
+                margin: 15px 0 0;
+            h4
+                color: #0a263e;
+                font-size: 16px;
+                :hover
+                    color $green
+    &_block3
+        width 280px
+        background $white
+        border-radius 5px
+        font-size 14px
+        li
+            padding: 17px 20px 10px;
+            border-bottom 1px solid #e4eaee
+            &:last-child
+                padding-top 13px
+            p
+                a
+                    &:hover
+                        color $green
+            &:last-child
+                border none
+                text-align center
+.elsebutton
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    text-decoration: underline;
+    margin-bottom: -29px;
+    color: #00abec
+.elsebutton:hover
+        color $green
+
+.advantages
+    background-image url("../img/pref.png")
+    background-color: #ebf1f7
+    &_list
+        max-width 260px
+        text-align center
+        h6
+            color: #0a263e;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.4px
+            padding-top 30px
+        p
+            color: $dark-blue
+            padding-top 5px
+            font-size 12px
+            font-weight: 400;
+            line-height 16px
+    &_img
+        margin auto
+        height 50px
+        width 50px
+        background-position center
+        background-repeat no-repeat
+        &.predst
+            background-image url("../img/preds.png")
+        &.tarifi
+            background-image url("../img/tarifi.png")
+        &.prefi_comodo
+            background-image url("../img/pref_comodo.png")
+        &.rabotn
+            background-image url("../img/rabotn.png")
+
+.news-img-b
+    background-image url("../img/news2.png")
+    background-position left
+    flex-shrink 0
+    width 310px
+    height 280px
+.news-img-s
+    background-position center
+    background-size cover
+    width 280px
+    height 150px
+    &.news2_1
+        background-image url("../img/news2_1.png")
+        background-position: right
+        background-size: 125%
+    &.news2_2
+        background-image url("../img/news2_2.png")
+    &.news2_3
+        background-image url("../img/news2_3.png")
+    &.news2_4
+        background-image url("../img/news2_4.png")
+.news_text
+    color: #4b555f;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+.ic1
+    margin-top: -32px
+.reserve1
+    .second-val:first-child
+        margin-left: 0px!important
+    .second-val
+        margin-top: .1em!important
+
+        font-weight: 100!important
+        font-family: Whitney!important
+        margin-left: 21px!important
+        font-size: 11px!important
+
+.pm-text
+    p
+        margin-top: 0.6em!important
+.reserve2
+    .second-val
+        margin-top: .1em!important
+        margin-left: 21px!important
+        font-weight: 100!important
+        font-size: 11px!important
+        font-family: Whitney!important
+    .second-val:first-child
+        margin-left: 0px!important
+
+.reserve1, .reserve2
+    li
+        background: white!important
+        border-radius: 3px!important
+    .main-content
+        padding: 55px 0!important
+.reserve_all
+    .next, .prev
+        position: absolute
+        top: 57%
+        font-size: 17px
+        color white
+    .next
+        left: 99%
+    .prev
+        left: -1%
+.recent-exchanges
+    position: fixed;
+    height: 187px;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+.logo-russia
+    background: url('../img/country/russia.svg')
+.logo-australia
+    background: url('../img/country/australia.svg')
+.logo-czech
+    background: url('../img/country/czech-republic.svg')
+.logo-s-africa
+    background: url('../img/country/south-africa.svg')
+.logo-ukraine
+    background: url('../img/country/ukraine.svg')
+.logo-ac
+    background: url('../img/ac.png')
+.logo-btc
+    background: url('../img/bc.png')
+.rec-changes-line.inline
+    width 300px
+    height 38px
+    padding-top: 7px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px
+    .country-logo
+        width: 25px;
+        height: 20px;
+        background-size: cover;
+        margin-left: 10px;
+        margin-top: -2px;
+    .rc-summ1, .rc-summ2
+        font-family: WhitneyMedium;
+        font-weight: 400;
+        line-height: 26px;
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: -.1px;
+        mix-blend-mode: difference;
+    .rc-summ1
+        margin-left: 14px;
+        margin-top: -3px;
+    .rc-summ2
+        margin-left: 5px;
+        margin-top: -3px;
+    .next
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: WhitneyMedium;
+        font-weight: 400;
+        line-height: 26px;
+        mix-blend-mode: difference;
+        color white
+        .i-next
+            font-size 16px
+            color white!important
+            margin-top: -13px!important
+    .rc-logo1, .rc-logo2
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+    .rc-logo1
+        margin-left: 7px;
+        margin-top: -2px;
+    .rc-logo2
+        margin-left: 8px;
+        margin-top: -3px;
+    .rc-time
+        font-family: 'Whitney';
+        line-height: 26px;
+        /* text-shadow: 1px 2px 1px rgba(0,0,0,.941); */
+        font-size: 12px;
+        margin-left: 8px;
+        margin-top: -2px;
+        color:white
+        mix-blend-mode: difference;
+    .rc-divider
+        margin-left: 8px;
+        margin-right: -8px;
+        padding: 10px 0px;
+        width: 1px;
+        height: 38px;
+        background: #599bbec4;
+        margin-top: -8px
+
+.line-iter
+    margin-top: 4px
+.rc-title
+    font-size: 15.5px;
+    margin-left: 14px
+    color: white
+    mix-blend-mode: difference;
+.rc-close
+    position: absolute;
+    left: 276px;
+    top: 7px;
+    font-size: 11px;
+    color: white
+    mix-blend-mode: difference;
+    z-index: 9999
+    &:hover
+        cursor pointer
+.rc-grid
+    display: grid
+.recent-exchanges
+
+    .i-next
+        font-size: 11px!important;
+        margin-left: 5px;
+        margin-top: -6px;
+.iz
+    .i-next
+        font-size: 12px!important;
+        color: white!important;
+
+.rc-grid
+    .new-exchange
+        transform: translateY(-100px)
+        animation:
+            add-exchange-animation 2s ease 0s forwards
+    .remove-exchange
+        animation: remove-exchange-animation 2s ease 0s forwards
+
+@keyframes add-exchange-animation {
+    from{
+        height: 0;
+    }
+    to {
+        height: auto;
+        transform: translateY(0);
+    }
+}
+
+@keyframes remove-exchange-animation {
+    to {
+        height: 0;
+        transform: translateY(100px);
+    }
+}
+
+@media screen and (max-device-width: 1024px)
+    .recent-exchanges
+        display none;
+

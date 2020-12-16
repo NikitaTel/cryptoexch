@@ -1,0 +1,31 @@
+doctype html
+
+//- Global variables
+block vars
+
+//- Template
+html(lang="" + page.language)
+   include ../partials/head
+
+   body.lk(id='body')
+
+      //- Content
+      include ../partials/header-lk
+
+      main(role='main')
+         block title
+         .main.flex-sb
+            block content
+            aside
+               include ../partials/aside
+               block aside
+
+      include ../partials/footer
+
+      //- Inline JS
+      script
+         include ../../js/accounts.js
+
+      //- Scripts
+      script(type='text/javascript', src='/js/jquery-3.5.1.min.js')
+      script(type='text/javascript', src='/js/script.js')

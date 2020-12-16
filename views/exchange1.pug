@@ -1,0 +1,279 @@
+extends layouts/layout-aside
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Обмен электронных валют – Инвесторам",
+      desc: "Заработок для партнеров электронного обменника валют.",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   .lk_main
+      h2.title.exchange-title
+         p ОБМЕН
+         .exchange-title_money
+            .pm_icon.pm
+            p PERFECT MONEY USD
+         p НА
+         .exchange-title_money
+            .pm_icon.ac
+            p PAYER RUB
+      .exchange-steps.flex-sa
+         .exchange-steps_step.flex.active
+            .circle.flex.flex-shrink
+               p 1
+            p Впишите сумму и заполните данные
+         .exchange-steps_space
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 2
+            p Проверьте данные и получите инструкции
+         .exchange-steps_space
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 3
+            p Оплатите заявку
+      .exchange-triple.flex.border-r.text-margin
+         .exchange-triple_left
+             h2.title.lk-title.tbigAtt #[img.attImg(src="../img/attention.svg")]ОБРАТИТЕ ВНИМАНИЕ
+             .lk-text.tTextFor Для обмена SolidTrustPay вам нужно выполнить #[br] следующие требования:
+             ul.document-list.ex-dlist
+                 li.tStepFor
+                     .counter 1
+                     p Если сумма обмена превышает 150$, нужно пройти регистрацию #[br] и верификацию личности на нашем сайте
+                 li.tStepFor
+                     .counter 2
+                     p Ваш счет в SolidTrustPay должен быть уровня #[br] STANDART VERIFIED или выше
+                 li.tStepFor
+                     .counter 3
+                     p Для успешной оплаты у вас в аккаунте SolidTrustPay длжна быть #[br] активирована двухфакторная аутентификация
+         .exchange-triple_right.as_strech
+            .flex.border_bot.flex-shrink
+               .exchange-triple_right_text
+                  .auto-ex 
+                  //- .manual-ex ruchnoi
+                  .ex-mode-text
+                     p АВТОМАТИЧЕСКИЙ #[br] ОБМЕН
+            .flex-center.flex-grow.exchange-triple_right_step2
+               .ex-bottom-text
+                  p Автоматический обмен проводится #[br] круглосуточно в течении 2 минут #[br] #[a(href="#").ex-read-reg Читать весь регламент]
+      .inline-text-course
+         .part1.inline
+            p.big Курс обмена: 
+            p.lit 1 USD = 66,0714 RUB
+         .part2.inline
+            p.big Резерв: 
+            p.lit 1908567,47 RUB
+            a.less(href="#") Мало?
+
+
+      input(type='checkbox' onclick="chan" id='exchange')
+      .flex-sb.doble-exchange
+         label.i-circlearrows.border(for='exchange')
+         div.doble-exchange_left
+            .change_give.text-margin
+               h2 ОТДАЕТЕ
+            ul.border-r.border
+               li
+                  input(type='radio' id='df_l2-switch1' name='df_left2' checked)
+                  input(type='radio' id='df_l2-switch2' name='df_left2')
+                  input(type='radio' id='df_l2-switch3' name='df_left2')
+                  input(type='radio' id='df_r2-switch1' name='df_right2' checked)
+                  input(type='radio' id='df_r2-switch2' name='df_right2')
+                  input(type='radio' id='df_r2-switch3' name='df_right2')
+                  .doble-form
+                     .help-message#helpMsgLeft
+                        p Выберите валюту
+                     .doble-form_left(id='df_left2')
+                        label.doble-form_label(for='df_l2-switch1' id='df_l2-label1' onclick='menuToggle6()')
+                           .flex.flex-grow
+                              .test.okpay
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                        label.doble-form_label(for='df_l2-switch2' id='df_l2-label2' onclick='menuToggle6()')
+                           .flex.flex-grow
+                              .test.privat24
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                        label.doble-form_label(for='df_l2-switch3' id='df_l2-label3' onclick='menuToggle6()')
+                           .flex.flex-grow
+                              .test.skrill
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                     .doble-form_right(id='df_right2')
+                        label.doble-form_label(for='df_r2-switch1' id='df_r2-label1' onclick='menuToggle7()')
+                           .flex
+                              p USD
+                        label.doble-form_label(for='df_r2-switch2' id='df_r2-label2' onclick='menuToggle7()')
+                           .flex
+                              p EUR
+                        label.doble-form_label(for='df_r2-switch3' id='df_r2-label3' onclick='menuToggle7()')
+                           .flex
+                              p RUB
+               li
+                  input.input-form( type='text' id="pd-loginghost" )
+                  label.label-star-red(for="pd-loginghost")
+                     p Имя
+               .lk-text min:
+                  span 5
+                  |USD; max:
+                  span 100
+                  |USD
+               li
+                  input.input-form( type='text' id="pd-login7" required)
+                  label.label-star-red(for="pd-login7")
+                     p Сумма
+                        span.red-star *
+               .lk-text
+                  span 102
+                  | USD с учетом комисии OKpay
+               li
+                  input.input-form(type='text' id="pd-login8" required)
+                  label.label-star-red(for="pd-login8")
+                     p Со счета
+                        span.red-star *
+               .user-license.flex-shrink
+                  input(type="checkbox" id="license-agree4" name="license-agree2")
+                  label.flex(for='license-agree4')
+                     .agree-ok
+                        p.i-check
+                     p Мой счет верифицирован
+         div.doble-exchange_right
+            .change_get.text-margin
+               h2 ПОЛУЧАЕТЕ
+            ul.border-r.border
+               li
+                  input(type='radio' id='df_l3-switch1' name='df_left3' checked)
+                  input(type='radio' id='df_l3-switch2' name='df_left3')
+                  input(type='radio' id='df_l3-switch3' name='df_left3')
+                  input(type='radio' id='df_r3-switch1' name='df_right3' checked)
+                  input(type='radio' id='df_r3-switch2' name='df_right3')
+                  input(type='radio' id='df_r3-switch3' name='df_right3')
+                  .doble-form
+                     .help-message#helpMsgRight
+                        p Выберите валюту
+                     .doble-form_left(id='df_left3')
+                    
+                        label.doble-form_label(for='df_l3-switch1' id='df_l3-label1' onclick='menuToggle8()')
+                           .flex.flex-grow
+                              .test.okpay
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                        label.doble-form_label(for='df_l3-switch2' id='df_l3-label2' onclick='menuToggle8()')
+                           .flex.flex-grow
+                              .test.privat24
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                        label.doble-form_label(for='df_l3-switch3' id='df_l3-label3' onclick='menuToggle8()')
+                           .flex.flex-grow
+                              .test.skrill
+                              p.flex-grow.text-left OKPay
+                              .i-next
+                     .doble-form_right(id='df_right3')
+                        label.doble-form_label(for='df_r3-switch1' id='df_r3-label1' onclick='menuToggle9()')
+                           .flex
+                              p USD
+                        label.doble-form_label(for='df_r3-switch2' id='df_r3-label2' onclick='menuToggle9()')
+                           .flex
+                              p EUR
+                        label.doble-form_label(for='df_r3-switch3' id='df_r3-label3' onclick='menuToggle9()')
+                           .flex
+                              p RUB
+               li
+                  input.input-form( type='text' id="pd-loginghost2")
+                  label.label-star-red(for="pd-loginghost")
+                     p Имя
+               .lk-text min:
+                  span 5
+                  | USD; max:
+                  span 100
+                  | USD
+               li
+                  input.input-form( type='text' id="pd-login9" required)
+                  label.label-star-red(for="pd-login9")
+                     p Сумма
+                        span.red-star *
+               .lk-text
+                  span 102
+                  | USD с учетом комисии OKpay
+               li
+                  input.input-form(type='text' id="pd-login10" required)
+                  label.label-star-red(for="pd-login10")
+                     p Со счета
+                        span.red-star *
+      p.exchange-cashback-text За этот перевод получите #[b 30грн] кэшбэка.
+         
+      h2.title.uppercase.text-margin Личные данные
+      .exchange-personal.flex-sb.border-r.border
+         ul
+            li
+               input.input-form(id="pd-login2" required)
+               label.label-star-red(for="pd-login2")
+                  p Имя
+                     span.red-star *
+            li
+               input.input-form(id="pd-login3" required)
+               label.label-star-red(for="pd-login3")
+                  p Фамилия
+                     span.red-star *
+         ul
+            li
+               input.input-form(id="pd-login4" required)
+               label.label-star-red(for="pd-login4")
+                  p Телефон
+                     span.red-star *
+            li
+               input.input-form(id="pd-login5" required)
+               label.label-star-red(for="pd-login5")
+                  p E-mail
+                     span.red-star *
+      .flex-sb.exchange-agree.text-margin
+         .user-license.flex-shrink
+            input(type="checkbox" id="license-agree2" name="license-agree2")
+            label.flex(for='license-agree2')
+               .agree-ok
+                  p.i-check
+               p Запомнить мои данные
+         .user-license.flex-shrink
+            input(type="checkbox" id="license-agree3" required name="license-agree3")
+            label.flex(for='license-agree3')
+               .agree-ok
+                  p.i-check
+               p Я согласен с условиями и правилами сервиса
+         input.button.b-blue.border-r(type='submit' onclick="checkFields('.lk_main')" value='Обменять')
+
+
+block aside
+   //- h2.title.underline НОВОСТИ
+   //- ul.aside-news.news_colum.border-r
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       a.news-more2("/news.html") Все новости

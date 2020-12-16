@@ -1,0 +1,28 @@
+header.header.lk-header(id='header' role='banner')
+   .header_all#hlk
+
+      .header_all_mid.flex-sb
+         a.header-logo.mini1.big(href="index.html")
+            img(src="../img/header-logo.svg" alt="Smart Pays")
+         nav.header-nav.flex-sb.mini
+            a(href="/") ГЛАВНАЯ
+            a(href="/rates.html") ТАРИФЫ
+            a(href="/partners.html") ПАРТНЕРАМ
+            a(href="/news.html") БЛОГ
+            a(href="/contact.html") ПОДДЕРЖКА
+            a(href="/investors.html") ОБМЕН
+            .language-select#full-header-lang(style="top:38px")
+               input(type='radio' name='language-select' id="language-select1" onclick="menuToggle()" checked)
+               label(for='language-select1')
+                  .span UA
+               input(type='radio' name='language-select' id="language-select2" onclick="menuToggle()")
+               label(for='language-select2')
+                  .span EN
+               input(type='radio' name='language-select' id="language-select3" onclick="menuToggle()")
+               label(for='language-select3')
+                  .span RU
+            .header-log
+            a.flex.user-h
+               span.header-log_user-name
+               .avatar
+                  img(src='../img/man.png')

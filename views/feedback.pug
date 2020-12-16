@@ -1,0 +1,159 @@
+extends layouts/layout-aside
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют - Обратная связь",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+    
+    
+
+block title
+    .main-bg
+        .lk-main-title
+            h1.title.text-center.fbtitle ОТЗЫВЫ
+            p.lk-text Уважаемые клиенты! Если Вы воспользовались нашими услугами или у Вас есть предложения и пожелания по работе
+                |сервиса пожалуйста оставьте свой отзыв. Для нас важно Ваше мнение.
+block content
+
+    //- спасибо за отзыв
+
+    include ./partials/popups
+    //- спасибо за отзыв
+    .lk_main.fbmain
+        .feedback-logos.flex-sa
+            a.best-change
+            a.mmg
+        //- ul.contact-form.add-comment
+        //-     li
+        //-         h2.title НАПИШИТЕ ВАШ ОТЗЫВ
+        //-     li
+        //-         div.stPar
+        //-             span.star-mark Оценка:  
+        //-             a(onclick="star(1,'.stPar')").i-star.current
+        //-             a(onclick="star(2,'.stPar')").i-star.current
+        //-             a(onclick="star(3,'.stPar')").i-star.current
+        //-             a(onclick="star(4,'.stPar')").i-star.current
+        //-             a(onclick="star(5,'.stPar')").i-star.current
+        //-     li
+        //-         ul.flex-sb
+        //-             li
+        //-                 input.input-form(id="verif-name3" required)
+        //-                 label.label-star-red(for="verif-name3")
+        //-                     p Ваше имя
+        //-                         span.red-star *
+        //-             li
+        //-                 input.input-form(id="verif-email" required)
+        //-                 label.label-star-red(for="verif-email")
+        //-                     p Ваш e-mail
+        //-                         span.red-star *
+        //-     li
+        //-         textarea(rows="5" cols="10" name="text" id='write-comment' required)
+        //-         label.label-star-red(for="write-comment")
+        //-             p Текст отзыва
+        //-                 span.red-star *
+        //-     li
+        //-         .user-license
+        //-             input(type="checkbox" id="license-agree" name="license-agree")
+        //-             label.flex(for='license-agree')
+        //-                 .agree-ok
+        //-                     p.i-check
+        //-                 p Даю согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ "О персональных данных" и принимаю условия
+        //-                     a.text-b-un Пользовательского соглашения
+        //-     li
+        //-         input(type="submit" value="Оставить отзыв").button.b-blue.feedLeave
+        ul.lk-comment
+            li
+                
+                    
+                .inline(style="display: inline=flex")
+                    .cauntri
+                        .cauntri_name Валерий Петрович
+                    img.fdb-logo(src="../img/bestchange.png")
+                .aside-message This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit of Lorem Ipsum. Proin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh nibh vel velitof Lorem Ipsum. Proin gravida nibhvel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velit
+                .client-info.dark.flex-sb
+                
+                    .comment-date
+                        p 07.06.2017,
+                            span 14:55
+            li
+               
+                    
+                .inline(style="display: inline=flex")
+                    .cauntri
+                        .cauntri_name Сергей Андреевич
+                    img.fdb-logo(src="../img/trustpilot.png")
+                .aside-message This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit of Lorem Ipsum. Proin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravidavel velitProin gravida nibh vel velitofvel velitProin gravida nibh vel velitof nibh vel velit
+                .client-info.dark.flex-sb
+                    div
+                       .trustpilot-5stars
+                            img(src='../img/tp-5stars.png' alt='')
+                    .comment-date
+                        p 07.06.2017,
+                            span 14:55
+            li
+                
+                    
+                .inline(style="display: inline=flex")
+                    .cauntri
+                        .cauntri_name Валерий Петрович
+                    img.fdb-logo(src="../img/bestchange.png")
+                .aside-message This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit of Lorem Ipsum. Proin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh nibh vel velitof Lorem Ipsum. Proin gravida nibhvel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velit
+                .client-info.dark.flex-sb
+                    
+                    .comment-date
+                        p 07.06.2017,
+                            span 14:55
+            li
+               
+                    
+                .inline(style="display: inline=flex")
+                    .cauntri
+                        .cauntri_name Сергей Андреевич
+                    img.fdb-logo(src="../img/trustpilot.png")
+                .aside-message This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit of Lorem Ipsum. Proin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravidavel velitProin gravida nibh vel velitofvel velitProin gravida nibh vel velitof nibh vel velit
+                .client-info.dark.flex-sb
+                    div
+                       .trustpilot-5stars
+                            img(src='../img/tp-5stars.png' alt='')
+                    .comment-date
+                        p 07.06.2017,
+                            span 14:55
+            li
+                
+                    
+                .inline(style="display: inline=flex")
+                    .cauntri
+                        .cauntri_name Валерий Петрович
+                    img.fdb-logo(src="../img/bestchange.png")
+                .aside-message This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit of Lorem Ipsum. Proin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh nibh vel velitof Lorem Ipsum. Proin gravida nibhvel velitProin gravida nibh vel velitof Lorem Ipsum. Proin gravida nibh vel velit
+                .client-info.dark.flex-sb
+                  
+                    .comment-date
+                        p 07.06.2017,
+                            span 14:55
+
+        .navig.cont
+            .inner-inline
+                a.link(href="#") #[img.pages-handle(src="../img/back-end.png" alt="")]
+                a.link(href="#") #[img.pages-handle(src="../img/back-one.png" alt="")]
+                span.link2 .. 
+                a.link(href="#") 3
+                a.link(href="#") 4
+                a.link.active-link(href="#") 5
+                a.link(href="#") 6
+                a.link(href="#") 7
+                span.link2 ..
+                a.link(href="#") #[img.pages-handle(src="../img/next-one.png" alt="")]
+                a.link(href="#") #[img.pages-handle(src="../img/next-end.png" alt="")]

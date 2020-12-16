@@ -1,0 +1,1013 @@
+.slides ,.slides2 ,.slides3 ,.slides5 ,.slides6,.slides7
+    display: block;
+    margin: auto;
+    position: relative;
+
+.slides
+    width: 580px;
+    height: 224px;
+    overflow hidden
+    position relative
+    &_wrapper
+        width 3480px
+        position relative
+        transition transform .5s
+        .slide-container
+            width 580px
+    .i-next, .i-back
+        display none
+        position absolute
+        color #000
+        opacity .7
+        z-index 15
+        top 50%
+        transform translateY(-50%)
+        font-size 30px
+        &:hover
+            opacity 1
+    .i-next
+        right 15px
+    .i-back
+        left 15px
+
+input
+    &#img-1
+        &:checked
+            ~.slides_wrapper
+                transform translateX(0px)
+            ~.nav-dots #img-dot-1
+                background $blue
+                opacity 1
+            ~#nav-next-2, ~#nav-prev-6
+                display block
+    &#img-2
+        &:checked
+            ~.slides_wrapper
+                transform translateX(-580px)
+            ~.nav-dots #img-dot-2
+                background $blue
+                opacity 1
+            ~#nav-next-3, ~#nav-prev-1
+                display block
+    &#img-3
+        &:checked
+            ~.slides_wrapper
+                transform translateX(-1160px)
+            ~.nav-dots #img-dot-3
+                background $blue
+                opacity 1
+            ~#nav-next-4, ~#nav-prev-2
+                display block
+    &#img-4
+        &:checked
+            ~.slides_wrapper
+                transform translateX(-1740px)
+            ~.nav-dots #img-dot-4
+                background $blue
+                opacity 1
+            ~#nav-next-5, ~#nav-prev-3
+                display block
+    &#img-5
+        &:checked
+            ~.slides_wrapper
+                transform translateX(-2320px)
+            ~.nav-dots #img-dot-5
+                background $blue
+                opacity 1
+            ~#nav-next-6, ~#nav-prev-4
+                display block
+    &#img-6
+        &:checked
+            ~.slides_wrapper
+                transform translateX(-2900px)
+            ~.nav-dots #img-dot-6
+                background $blue
+                opacity 1
+            ~#nav-next-1, ~#nav-prev-5
+                display block
+
+/*SLIDER 2*/
+
+.slides2
+    width: 580px;
+    height: 290px;
+    overflow hidden
+    &_wrapper
+        width 3480px
+        position relative
+        transition transform .5s
+        .slide2
+            width 580px
+    .news-more
+        position absolute
+        bottom 30px
+        left 50%
+        transform translateX(-50%)
+        z-index 10
+    .i-next, .i-back
+        position absolute
+        color white
+        display none
+        opacity .7
+        z-index 15
+        top 50%
+        transform translateY(-50%)
+        font-size 19px
+        background rgba(0, 0, 0, 0.35)
+        border-radius 100%
+        padding 30px
+        &:hover
+            opacity 1
+    .i-next
+        right -30px
+        &:before
+            left 22px
+    .i-back
+        left -30px
+        &:before
+            left 42px
+
+input
+    &#img-7
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(0px)
+            ~#nav-next-8, ~#nav-prev-12
+                display block
+    &#img-8
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(-580px)
+            ~#nav-next-9, ~#nav-prev-7
+                display block
+    &#img-9
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(-1160px)
+            ~#nav-next-10, ~#nav-prev-8
+                display block
+    &#img-10
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(-1740px)
+            ~#nav-next-11, ~#nav-prev-9
+                display block
+    &#img-11
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(-2320px)
+            ~#nav-next-12, ~#nav-prev-10
+                display block
+    &#img-12
+        &:checked
+            ~.slides2_wrapper
+                transform translateX(-2900px)
+            ~#nav-next-7, ~#nav-prev-11
+                display block
+
+.slides3, .slides5
+    display flex
+    flex-direction column
+.slides3
+    width: 400px;
+.slides5
+    width: 730px;
+.slides6
+    width 1180px
+    margin: -7px auto;
+    height: 95px;
+    overflow hidden
+    padding 0 50px
+    &_wrapper
+        width 2160px
+        position relative
+        transition transform .5s
+    a
+        height: 95px;
+        width 270px
+        margin 0 40px
+        justify-content center
+        align-items center
+        display block
+        background no-repeat 50%/contain
+        &.logos1
+            background-image url("../img/sertif_logos1.png")
+        &.logos2
+            background-image url("../img/sertif_logos2.png")
+        &.logos3
+            background-image url("../img/sertif_logos3.png")
+        &.logos4
+            background-image url("../img/sertif_logos4.png")
+    .i-next, .i-back
+        position absolute
+        color rgba(0, 0, 0, 0.7)
+        display none
+        height: 113%;
+        width: 18px;
+        z-index 15
+        top 0
+        font-size 30px
+        &:hover
+            color #000
+    .i-next:before, .i-back:before
+        font-size: 19px
+    .i-next
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%);
+        right -1px
+    .i-back
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        left -1px
+input
+    &#img-20
+        &:checked
+            ~.slides6_wrapper
+                transform translateX(0px)
+            ~#nav-next-21, ~#nav-prev-24
+                display block
+    &#img-21
+        &:checked
+            ~.slides6_wrapper
+                transform translateX(-270px)
+            ~#nav-next-22, ~#nav-prev-20
+                display block
+    &#img-22
+        &:checked
+            ~.slides6_wrapper
+                transform translateX(-540px)
+            ~#nav-next-23, ~#nav-prev-21
+                display block
+    &#img-23
+        &:checked
+            ~.slides6_wrapper
+                transform translateX(-810px)
+            ~#nav-next-24, ~#nav-prev-22
+                display block
+    &#img-24
+        &:checked
+            ~.slides6_wrapper
+                transform translateX(-1080px)
+            ~#nav-next-20, ~#nav-prev-23
+                display block
+
+.slides7
+    display flex
+    flex-direction column
+    background $grey
+.slides8
+    overflow hidden
+.slides ,.slides2 ,.slides6, .slides7, .slides8
+    *
+        user-select: none;
+/**/
+
+.slide-container3,.slide-container7
+    order 2
+.slide-container8
+    flex-grow 1
+.slide2
+    height: 290px;
+    padding 35px 50px 30px 50px
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    background-color: #384151;
+    background-image: linear-gradient(to right, rgba(21, 98, 151, 0.95) 0%, rgba(0, 171, 236, 0.95) 100%);
+.slide4
+    width 100%
+    display: block
+    font-size 14px
+    line-height 12px
+    color $text-dark
+
+.slide3,.slide5
+    width 100%
+    display: block
+    font-size 14px
+    line-height 12px
+    color $text-dark
+
+.slide-container4
+    display none
+    order 2
+.dinero-mas
+    .slide4
+        li
+            .money
+                span
+                    width 100%
+                    text-align left
+#dinero-mas
+    &+.slide4
+        display none
+    &:checked
+        &+.slide4
+            display block
+#dinero-mas2
+    &+.slide5
+        display none
+    &:checked
+        &+.slide5
+            display block
+#dinero-mas3
+    &+.slide5
+        display none
+    &:checked
+        &+.slide5
+            display block
+.slide4
+    .valuta_firma
+        background $white
+.slide7
+    display none
+    li
+        border-top 1px solid rgba(205, 208, 211, 0.3)
+        padding 10px
+        display flex
+        justify-content flex-start
+        align-items center
+        .pm-text
+            padding-left 10px
+            p
+                margin 2px 0
+
+/**/
+input:checked + .slide-container4
+    display block
+
+
+input:checked + .slide-container7 .slide7 {display: block; }
+input:checked + .slide-container8 .slide8 {display: block; }
+
+/**/
+.nav-dots
+    width: 25%
+    left 50%
+    transform translateX(-50%)
+    bottom: 9px;
+    height: 11px;
+    display: flex
+    justify-content space-between
+    align-items center
+    position: absolute;
+    text-align: center;
+    background rgba(255, 255, 255, 0.5)
+    padding 10px
+.nav-dots3,.nav-dots4
+    width: 100%;
+    display: flex;
+    border-bottom 1px solid rgba(205, 208, 211, 0.5)
+
+/**/
+.nav-dot
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: $dark-blue
+    opacity .2
+    &:hover
+        cursor: pointer;
+        background-color: $blue
+        opacity 1
+
+
+.nav-dots4 .nav-dot4
+    flex-grow 1
+    background-color: #ebf1f7
+    padding 0 16px
+    color #137296
+    border 1px solid #ebf1f7
+    display flex
+    justify-content space-between
+    align-items center
+    &:hover
+        cursor: pointer
+        color $green
+    p
+        padding 9px 0
+        font-family WhitneySemiBold
+        font-weight 400
+        line-height 12px
+        font-size 14px
+        letter-spacing 0
+        transition transform 0.5s
+    .i-next
+        transition transform 0.5s
+        transform: rotate(-90deg);
+
+.nav-dots7
+    padding 10px 10px
+    .nav-dot7
+        opacity .7
+        border 1px solid rgba(205, 208, 211, 0.7)
+        font-size 11px
+        padding 7px 11px
+        border-radius 5px
+        &:hover
+            opacity .9
+            color $green
+            border 1px solid $green
+
+.slide8
+    display none
+    background $dark-blue
+    color $white
+    h2
+        color $white
+        font-family WhitneyLight
+        text-align center
+        padding-top 45px
+        padding-bottom 10px
+        line-height 12px
+    li
+        font-size 12px
+        padding 11px 30px
+        &:nth-child(3), &:nth-child(5)
+            font-size 16px
+        &:nth-child(6)
+            align-items center
+            a
+                width 120px
+                height 56px
+                display block
+                border-radius 5px
+                background #fff no-repeat 50%/80%
+                &:nth-child(1)
+                    background-image url("../img/logo/perfect_money.png")
+                &:nth-child(2)
+                    background-image url("../img/logo/advcash.png")
+                &:nth-child(3)
+                    background-image url("../img/logo/payeer.png")
+        &:nth-child(7)
+            text-align center
+            padding 16px 30px
+            margin 20px 0 0
+            border-top 1px solid rgba(255, 255, 255, 0.1)
+            .button
+                font-size 13px
+
+.nav-dots8
+    flex 1 0 50%
+    color $white
+    flex-direction column
+    .nav-dot8
+        flex-grow 1
+        display flex
+        height 165px
+    .tarif-plan
+        flex-grow 1
+        position relative
+        letter-spacing 0.45px
+        &:hover
+            background-image linear-gradient(to right, #334566, rgba(0, 171, 236, 0.3))
+        &_bg
+            position absolute
+            top 0
+            height 100%
+            width 100%
+            z-index -1
+            background-position center
+            background-size cover
+            background-color $dark-blue
+            &.tarif5
+                background-image url("../img/rate/rate1.png")
+            &.tarif12
+                background-image url("../img/rate/rate2.png")
+            &.tarif26
+                background-image url("../img/rate/rate3.png")
+                background-position: 0 -10px;
+        h5
+            text-align center
+            padding-top 25px
+            letter-spacing 0.6px
+            font-size 16px
+            font-family WhitneySemiBold
+        &_srok
+            justify-content center
+            align-items center
+            padding 25px 0
+            p
+                padding 0 18px
+                font-size 18px
+                font-family WhitneyLight
+                font-weight 300
+                span
+                    display block
+                    letter-spacing 0.75px
+                    font-size 28px
+                    font-family WhitneySemiBold
+                &:nth-child(1)
+                    border-right 2px solid $white
+                    text-align right
+
+/**/
+
+input#all:checked ~ .nav-dots3 label#img-dot-all,
+input#btc:checked ~ .nav-dots3 label#img-dot-btc,
+input#usd:checked ~ .nav-dots3 label#img-dot-usd,
+input#eur:checked ~ .nav-dots3 label#img-dot-eur,
+input#uan:checked ~ .nav-dots3 label#img-dot-uan,
+input#otdal1:checked ~ .nav-dots5 label#img-otdal1,
+input#otdal2:checked ~ .nav-dots5 label#img-otdal2,
+input#otdal3:checked ~ .nav-dots5 label#img-otdal3,
+input#otdal4:checked ~ .nav-dots5 label#img-otdal4,
+input#otdal5:checked ~ .nav-dots5 label#img-otdal5{
+    background: #137296
+    color $white
+}
+input#rall:checked ~ .nav-dots7 label#img-dot-rall ,
+input#rbtc:checked ~ .nav-dots7 label#img-dot-rbtc ,
+input#rusd:checked ~ .nav-dots7 label#img-dot-rusd ,
+input#reur:checked ~ .nav-dots7 label#img-dot-reur ,
+input#ruan:checked ~ .nav-dots7 label#img-dot-ruan  {
+    color $green
+    opacity 1
+    border 1px solid $green
+}
+input#tarif5:checked ~ .nav-dots8 label#img-dot-tarif5 .tarif-plan
+    background-image linear-gradient(to right, $dark-blue 10%, rgba(0, 171, 236, 0.5))
+input#tarif12:checked ~ .nav-dots8 label#img-dot-tarif12 .tarif-plan
+    background-image linear-gradient(to right, $dark-blue 10%, rgba(0, 171, 236, 0.5))
+input#tarif26:checked ~ .nav-dots8 label#img-dot-tarif26 .tarif-plan
+    background-image linear-gradient(to right, $dark-blue 10%, rgba(0, 171, 236, 0.5))
+
+input#banc:checked,input#banc2:checked,input#dinero:checked, input#dinero5:checked, input#dinero6:checked
+    ~.nav-dots4
+        .nav-dot4
+            color $green
+            .i-next
+                transform: rotate(90deg);
+
+/**/
+
+.header_slide_content
+    width 100%
+    height 224px
+    display flex
+    justify-content center
+    align-items center
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2)
+    background-color $white
+    padding 40px 30px
+    border 1px solid $blue
+    border-bottom none
+    border-radius 5px 5px 0 0
+    &_img
+        background-image url("../img/header_slider.png")
+        background-repeat no-repeat
+        background-position center
+        width 140px
+        height 120px
+        margin 25px
+    &_text
+        text-align center
+        font-size 18px
+        line-height 24px
+        color rgba(10, 38, 62, 0.7)
+        p
+            &:nth-child(2)
+                font-size 70px
+                font-weight 700
+                color $blue
+                padding 26px 0
+                font-family WhitneySemiBold
+//SLIDER 2
+
+.comment
+    width: 100%;
+    height: 100%;
+    color #ebf1f7
+    display flex
+    flex-direction column
+    position relative
+    padding 15px 0 0
+    &:after, &:before
+        position absolute
+        font 14px 'icon-font'
+        font-size 28px
+        text-rendering optimizeLegibility
+        speak none
+    &:after
+        //@extend .i-quotes-up:before
+        top -10px
+        color #73a2c1
+    &:before
+        //@extend .i-quotes-up:before
+        transform rotate(180deg)
+        bottom 10px
+        right 0
+        color #69c7ec
+    li
+        &:first-child
+            font-size 20px
+            line-height 26px
+            font-family WhitneySemiBold
+            text-align center
+            font-weight: 600;
+            letter-spacing: 1px
+.client-info
+    display flex
+    justify-content space-between
+    align-items center
+    color $white
+
+.i-star
+    margin-right 5px
+    font-size 14px
+    &.active
+        color gold
+    &:hover
+        color gold
+.comment-date
+    p
+        font-size 12px
+        margin-top .7em
+        margin-bottom .7em
+        line-height 12px
+        letter-spacing .5px
+        span
+            margin-left 3px
+            font-family WhitneySemiBold
+.messege
+    font-size 12px
+    line-height 18px
+    letter-spacing 0.4px
+    color rgba(255, 255, 255, 0.6)
+    height 105px
+    overflow hidden
+    p
+        margin 16px 0
+
+/*SLIDER 3*/
+.change_give
+    // margin-top: -12px!important
+    // margin-bottom: -31px!important
+.slide3,.slide4,.slide5
+    >li
+        width 100%
+        display flex
+        justify-content space-between
+        align-items center
+        background #f5f5f5
+        border-bottom 1px solid rgba(205, 208, 211, 0.3)
+        a   
+            display: block
+        .less
+            display: none
+        &:hover
+            border-left 3px solid $green
+            .money_change
+                a
+                    display block
+                    color $green
+            span
+                font-weight 700
+                opacity 1
+.money
+    display flex
+    justify-content space-between
+    align-items center
+    background $white
+    padding 0 20px
+    width 100%
+    border-right 1px solid #ebf1f7
+    border-left  1px solid #ebf1f7
+    &.dinero-mas
+        height 50px
+    .money_name_item
+        opacity 1!important
+    .money_name
+        span
+            color black!important
+            opacity 1!important
+    &:hover
+        .money_name_item
+           
+            border 1px solid rgba(205, 208, 211, 0.7)
+            &:hover
+                opacity 1
+                border 1px solid $green
+                color $green
+    .money_name_item.ch
+        opacity 1
+        border 1px solid $green
+        color $green
+        span
+            opacity 1
+    .changeBtn
+        color: #b5b5b5
+        border-radius: 5px
+        border: 1px solid
+    .pm_icon
+        margin 10px 15px 10px 0
+    .price
+        padding 0 10px
+        text-align right
+        display flex
+        justify-content center
+        vertical-align center
+        color: black
+        opacity: 1
+    &_name
+        display flex
+        justify-content space-between
+        align-items center
+        flex-grow 1
+        flex-shrink 0
+        span
+            opacity: .7;
+            flex-grow 1
+            text-align left
+            color: #555;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing 0.5px
+        &_item
+            opacity 0
+            font-size 11px
+            padding 7px 11px
+            margin 0 2px
+            border-radius 5px
+            text-transform uppercase
+            font-family WhitneySemiBold
+            font-weight 400
+    &_change
+        width 100px
+        flex-shrink 0
+        flex-grow 0
+        text-align center
+        position relative
+        display flex
+        justify-content center
+        padding 0 20px
+        a
+            font-size 12px
+            display none
+            width 100%
+            position absolute
+            bottom -15px
+
+/*SLIDER 5*/
+
+
+.slides5
+    margin-top: 0px!important
+    .money
+        border-right 1px solid #e2e7ec
+    .nav-dots3
+        .nav-dot3
+            &:last-child
+                width 150px
+                flex-grow 0
+                color $text-dark
+                background-color: #f5f5f5
+                &:hover
+                    background-color: #f5f5f5
+                    color $text-dark
+
+/*NEWS SLIDER*/
+
+.news-slider
+    background $grey
+    &_window
+        position relative
+        margin-top: -22px
+        &:hover
+            .next
+                right -36px
+            .prew
+                left -36px
+            .slider-box
+                &:before
+                    right -25%
+        label
+            padding 18px
+            background #677B93
+            color $white
+            border-radius 100%
+            z-index 5
+            display none
+            justify-content center
+            font-size 18px
+            transition transform .5s
+            &:hover
+                font-size 24px
+                padding 15px
+            &.next, &.prew
+                position absolute
+                top 50%
+                transform translateY(-50%)
+            &.next
+                right -27px
+            &.prew
+                left -27px
+        .slider-box
+            overflow hidden
+            width 100%
+            position relative
+            &:before
+                position absolute
+                right 0
+                z-index 2
+                height 100%
+                width 25%
+                content ''
+                display block
+                transition all .5s
+                background-image linear-gradient(to left , rgba(244, 244, 244, 0.9) 10% , rgba(244, 244, 244, 0))
+            &_wrapper
+                width 2980px
+                transition all .5s
+                .news_block2
+                    border 1px solid rgba(169, 183, 197, 0.3);
+
+input
+    &#news-slider-input1
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(0px)
+            ~#news-slider-ln2
+                display flex
+    &#news-slider-input2
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(-300px)
+            ~#news-slider-ln3
+                display flex
+            ~#news-slider-lp1
+                display flex
+    &#news-slider-input3
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(-600px)
+            ~#news-slider-ln4
+                display flex
+            ~#news-slider-lp2
+                display flex
+    &#news-slider-input4
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(-900px)
+            ~#news-slider-ln5
+                display flex
+            ~#news-slider-lp3
+                display flex
+    &#news-slider-input5
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(-1200px)
+            ~#news-slider-ln6
+                display flex
+            ~#news-slider-lp4
+                display flex
+    &#news-slider-input6
+        &:checked
+            ~.slider-box .slider-box_wrapper
+                transform translateX(-1500px)
+            ~#news-slider-lp5
+                display flex
+
+    &#baza-slider1
+        &:checked
+            ~.baza-slider_box .baza-slider_wrapper
+                transform translateX(0px)
+            ~.baza-slider_dots
+                #baza-slider-lp1
+                    display flex
+                    opacity 0.5
+                #baza-slider-ln2
+                    display flex
+    &#baza-slider2
+        &:checked
+            ~.baza-slider_box .baza-slider_wrapper
+                transform translateX(-300px)
+            ~.baza-slider_dots
+                #baza-slider-ln3
+                    display flex
+                #baza-slider-lp1
+                    display flex
+    &#baza-slider3
+        &:checked
+            ~.baza-slider_box .baza-slider_wrapper
+                transform translateX(-600px)
+            ~.baza-slider_dots
+                #baza-slider-ln4
+                    display flex
+                #baza-slider-lp2
+                    display flex
+    &#baza-slider4
+        &:checked
+            ~.baza-slider_box .baza-slider_wrapper
+                transform translateX(-900px)
+            ~.baza-slider_dots
+                #baza-slider-ln5
+                    display flex
+                #baza-slider-lp3
+                    display flex
+    &#baza-slider5
+        &:checked
+            ~.baza-slider_box .baza-slider_wrapper
+                transform translateX(-1200px)
+            ~.baza-slider_dots
+                #baza-slider-lp4
+                    display flex
+                #baza-slider-ln5
+                    display flex
+                    opacity 0.5
+
+.baza-slider_dots
+    width: 48%;
+    margin-left: -26px;
+/*SLIDER advertising*/
+.advertising
+    display flex
+    flex-direction column
+    margin 25px 0
+    font-size 12px
+    &_container
+        order 2
+        display none
+    &_dots
+        order 1
+        &_dot
+            width 23%
+            border-radius 5px
+            line-height 24px
+            padding 13px 0
+            color $text-dark
+            text-align center
+            border 1px solid rgba(169,183,197,0.3);
+    input
+        &:checked
+            +.advertising_container
+                display block
+
+input#advertising-input1:checked ~ .advertising_dots #advertising-label1,
+input#advertising-input2:checked ~ .advertising_dots #advertising-label2,
+input#advertising-input3:checked ~ .advertising_dots #advertising-label3,
+input#advertising-input4:checked ~ .advertising_dots #advertising-label4
+    background $blue
+    color white
+    border 1px solid $blue;
+
+.banner
+    display flex
+    flex-direction column
+    &_container
+        order 2
+        display none
+        label
+            p
+                color $text-grey
+                text-decoration underline
+                &:hover
+                    color $green
+                &:before
+                    display block
+                    content 'Показать код'
+            +span
+                display none
+        input
+            &:checked
+                +label
+                    p
+                        &:before
+                            display block
+                            content 'Скрыть код'
+                    +span
+                        display block
+                        border-radius 5px
+                        margin 10px 0
+                        background-color #ebf1f7
+                        padding 13px 20px
+    &_dots
+        order 1
+        &_dot
+            color $text-grey
+            margin 20px 40px 20px 0
+            &:hover
+                color $green
+    input
+        &:checked
+            +.banner_container
+                display block
+
+.banner-img
+    background-position left
+    background-repeat no-repeat
+    background-size contain
+    margin 25px 0
+    &.banner1
+        width 468px
+        height 60px
+        background-image url("../img/banner1.png")
+    &.banner2
+        width 468px
+        height 60px
+        background-image url("../img/banner2.png")
+
+input#banner-input1:checked ~ .banner_dots #banner-label1,
+input#banner-input2:checked ~ .banner_dots #banner-label2,
+input#banner-input3:checked ~ .banner_dots #banner-label3,
+input#banner-input4:checked ~ .banner_dots #banner-label4,
+input#banner-input5:checked ~ .banner_dots #banner-label5,
+input#banner-input6:checked ~ .banner_dots #banner-label6
+    color $blue

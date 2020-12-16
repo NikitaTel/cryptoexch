@@ -1,0 +1,69 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        h2.title НАСТРОЙКИ БЕЗОПАСНОСТИ
+        p.lk-text В этом разделе Вы можете настроить безопасность Вашего личного кабинета.
+            br
+            | Особенно рекомендуем Вам это сделать, если Вы участвуете в нашей партнерской программе.
+        .security-config.flex-sb.border-r
+            ul.security
+                li
+                    .security_help Восстановление пароля:
+                        .question-box.question-box-ex
+                            .i-question
+                            p.question_help Отключите восстановление пароля для повышения уровня безопасноти
+                    input(type='radio' name='conf-pass' id='conf-pass1' checked='checked')
+                    label.input-form(for="conf-pass1") Да
+                    input(type='radio' name='conf-pass' id='conf-pass2')
+                    label.input-form(for="conf-pass2") Нет
+                li
+                    .security_help Уведомление на E-mail при авторизации:
+                        .question-box.question-box-ex
+                            .i-question
+                            p.question_help Включите уведомление на E-mail при авторизации для повышения уровня безопасноти
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz1')
+                    label.input-form(for="conf-autoriz1") Да
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz2' checked='checked')
+                    label.input-form(for="conf-autoriz2") Нет
+                li
+                    .security_help Авторизация по одноразовой ссылке:
+                        .question-box.question-box-ex
+                            .i-question
+                            p.question_help Включите авторизацию по одноразовой ссылке для повышения уровня безопасноти
+                    input(type='radio' name='conf-singluse' id='conf-singluse1' checked='checked')
+                    label.input-form(for="conf-singluse1") Да
+                    input(type='radio' name='conf-singluse' id='conf-singluse2')
+                    label.input-form(for="conf-singluse2") Нет
+            ul.white-list
+                li
+                    p Белый список IP:
+                li
+                    textarea(rows="10" cols="10" name="text" placeholder='Разрешенные IP-адреса(с новой строки):')
+                li
+                    p.lk-text
+                        strong Внимание!&nbsp;&nbsp;
+                        | Если вы не знаете для чего нужны вносить "Разрешенные IP-адреса", пожалуйста не пользуйтесь этой функцией. В ы можете потерять доступ в личный кабинет.
+                li
+                    input(type="submit" value="Сохранить").button.b-blue
+        p.lk-text
+            strong Внимание!&nbsp;
+            | Если Вы не знаете для чего нужно вносить «Разрешенные IP-адреса», пожалуйста не пользуйтесь этой функцией. Вы можете потерять доступ в личный кабинет.

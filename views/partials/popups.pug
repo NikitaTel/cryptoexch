@@ -1,0 +1,382 @@
+.money-out-popup-fixed#moneyOut
+    .money-out-popup-absolute
+        .money-out-popup-content
+            label(onclick="document.getElementById('moneyOut').style.display='none'").i-close
+            .money-out-form
+
+                .big-text
+                    p(style="text-transform: uppercase") Вывод средств с внутреннего счета
+                .little-text
+                    p Минимальная сумма для вывода 100 USD. Все выплаты производятся после проверки администратором учетной #[br] записи клиента. Как правило, это занимает не более 72 часов с момента подачи заявки на снятие средств.
+                .inline
+                    .select.el
+                        input(type='radio' id='df_l2-switch1' name='df_left2' checked)
+                        input(type='radio' id='df_l2-switch2' name='df_left2')
+                        input(type='radio' id='df_l2-switch3' name='df_left2')
+                        input(type='radio' id='df_r2-switch1' name='df_right2' checked)
+                        input(type='radio' id='df_r2-switch2' name='df_right2')
+                        input(type='radio' id='df_r2-switch3' name='df_right2')
+                        .doble-form
+                            .doble-form_left(id='df_left2')
+                                label.doble-form_label(for='df_l2-switch1' id='df_l2-label1' onclick='menuToggle6()')
+                                    .flex.flex-grow
+                                        .test.okpay
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                                label.doble-form_label(for='df_l2-switch2' id='df_l2-label2' onclick='menuToggle6()')
+                                    .flex.flex-grow
+                                        .test.privat24
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                                label.doble-form_label(for='df_l2-switch3' id='df_l2-label3' onclick='menuToggle6()')
+                                    .flex.flex-grow
+                                        .test.skrill
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                            .doble-form_right(id='df_right2')
+                                label.doble-form_label(for='df_r2-switch1' id='df_r2-label1' onclick='menuToggle7()')
+                                    .flex
+                                        p USD
+                                label.doble-form_label(for='df_r2-switch2' id='df_r2-label2' onclick='menuToggle7()')
+                                    .flex
+                                        p EUR
+                                label.doble-form_label(for='df_r2-switch3' id='df_r2-label3' onclick='menuToggle7()')
+                                    .flex
+                                        p RUB
+                    .input.el
+                        input.input-form(id="wallet" required)
+                        label.label-star-red(for="wallet")
+                            p Кошелек
+                    .input.el
+                        input.input-form(id="sum" required)
+                        label.label-star-red(for="sum")
+                            p Сумма
+                .order
+                    .btn
+                        input(type="submit" onclick="$('#succesOperation').show(); $('#moneyOut').hide()" value="Заказать").button.b-blue
+                    .little-text
+                        p Комиссия 1% к получению #[span(style="font-weight: 700") 100 USD]
+.thanks-fixed#thanksFeed
+    .thanks-absolute
+        .thanks-content
+            .thanks-form
+                .i-close(onclick="document.getElementById('thanksFeed').style.display='none'")
+                .inline
+                    .arrow
+                        img(src="../img/auth/arrow.png" alt="")
+                    .big-text
+                        p Благодарим за отзыв!
+.thanks-fixed#thanksSubs
+    .thanks-absolute
+        .thanks-content
+            .thanks-form
+                .i-close(onclick="document.getElementById('thanksSubs').style.display='none'")
+                .inline
+                    .arrow
+                        img(src="../img/auth/arrow.png" alt="")
+                    .big-text
+                        p Благодарим за подписку!
+.succ-fixed#succesOperation
+    .succ-absolute
+        .succ-content
+            .succ-form
+                .i-close(onclick="document.getElementById('succesOperation').style.display='none'")
+                .inline
+                    .arrow
+                        img(src="../img/auth/arrow.png" alt="")
+                    .text
+                        .big-text
+                            p ваша операция #[br] успешно проведена!
+                        .little-text
+                            p Ожидайте Ваши средства в течение 72 часов. #[br] Благодарим Вас за выбор Smart-Pays.
+//- РЕГИСТРАЦИЯ
+input.popup-input(type='checkbox' id='registr')
+.popup.flex.registration-new
+    label(for='registr').popup_bg
+    .registration-new-open.border-r
+        label(for='registr').i-cancel
+        .registration-new-top
+            h5.registration-new-big-text РЕГИСТРАЦИЯ
+        ul.tarif-open_bot-bg.flex-sa
+            li
+                p.registration-new-note-text Зарегистрируйтесь, используя E-mail #[br] или авторизуйтесь через соцсети.
+                ul
+                    li
+                        div.registration-new-logos-inline
+                            div.registration-new-logo
+                                a(href="#") #[.i-fb]
+                            div.registration-new-logo
+                                a(href="#") #[.i-googleplus]
+                            div.registration-new-logo
+                                a(href="#") #[.i-tw]
+                            div.registration-new-logo
+                                a(href="#") #[.i-vk]
+                            div.registration-new-logo
+                                a(href="#") #[.i-inst]
+                            div.registration-new-logo
+                                a(href="#") #[.i-at]
+
+                    ul.inputs 
+                        li
+                            input.input-form(id="registr-email" type="email" onchange="checkFields('.registration-new')" required)
+                            label.label-star-red(for="registr-email")
+                                p E-mail
+                                    //- span.red-star *                 
+                        li
+                            form(action="?" method="POST" style="margin-left: 2.5%")
+                                div(class="g-recaptcha" data-sitekey="6LfX2eEZAAAAALpteI7Fqfm1fqpQG24RCn8S4ruL")
+                                br
+                            //input(type="submit" value="Submit")
+                        li
+                            input(type="submit" onclick="handleReg()" value="Регистрация").button.b-blue.border-r 
+
+                        //- здесь переход по клику чисто для демонстрации сейчас
+                        li.registration-new-no-acc-text
+                            p Зарегистрированы? #[label(for='auth' onclick="document.getElementById('registr').checked=false;") Войдите на сайт]
+                        p.error(style="color:red;font-size: 12px;")
+    //- РЕГИСТРАЦИЯ      
+    //- РЕГИСТРАЦИЯ ШАГ 2
+input.popup-input(type='checkbox' id='registr-step2')
+.popup.flex.registration-s2
+    label(for='registr-step2').popup_bg
+    .registration-s2-open.border-r
+        label(for='registr-step2').i-cancel
+        .registration-s2-top
+        ul.tarif-open_bot-bg.flex-sa
+            .inline
+                .arrow-img
+                    img(src="../img/auth/arrow.png" alt="arrow")
+                .message
+                    .big-text
+                        p БЛАГОДАРИМ  #[br] ЗА РЕГИСТРАЦИЮ!
+                    .little-text
+                        p На Ваш Email отправлена ссылка #[br] для подтверждения.
+    //- РЕГИСТРАЦИЯ ШАГ 2
+    //- РЕГИСТРАЦИЯ ШАГ 3
+input.popup-input(type='checkbox' id='registr-step3')
+.popup.flex.registration-s3
+    label(for='registr-step3').popup_bg
+    .registration-s3-open.border-r
+        label(for='registr-step3').i-cancel
+        .registration-s3-top
+            h5.registration-s3-big-text ПЗДРАВЛЯЕМ #[br] С УСПЕШНОЙ РЕГИСТРАЦИЕЙ
+        ul.tarif-open_bot-bg.flex-sa
+            li
+                p.registration-s3-note-text Придумайте пароль, который больше #[br] нигде не используется. #[br] Пароль должен содержать не меньше #[br] 8-ми знаков, среди которых могут #[br] быть буквы, символы и цифры.
+                    ul.inputs 
+                        li
+                            input.input-form(id="registr-password" type="password" onchange="checkFields('.registration-s3')" required)
+                            label.label-star-red(for="registr-password")
+                                p Пароль
+                                    span.red-star *                 
+                        li
+                            input.input-form(id="registr-password2" type="password" onchange="checkpass('#registr-password', '#registr-password2')" required)
+                            label.label-star-red(for="registr-password2")
+                                p Пароль
+                                    span.red-star *
+                        li
+                            input(type="submit" onclick="handleRegPass()" value="Сохранить").button.b-blue.border-r
+                        p.error(style="color:red;font-size: 12px;")
+                        //- здесь переход по клику чисто для демонстрации сейчас
+                        //- РЕГИСТРАЦИЯ ШАГ 3
+                        //- АВТОРИЗАЦИЯ
+input.popup-input(type='checkbox' id='auth')
+.popup.flex.authorization
+    label(for='auth').popup_bg
+    .authorization-open.border-r
+        label(for='auth').i-cancel
+        .auth-top
+            h5.auth-big-text АВТОРИЗАЦИЯ
+        ul.tarif-open_bot-bg.flex-sa
+            li
+                p.auth-note-text Войдите на сайт или авторизуйтесь #[br] через соцсети
+                ul
+                    li
+                        div.auth-logos-inline
+                            div.auth-logo
+                                a(href="#") #[.i-fb]
+                            div.auth-logo
+                                a(href="#") #[.i-googleplus]
+                            div.auth-logo
+                                a(href="#") #[.i-tw]
+                            div.auth-logo
+                                a(href="#") #[.i-vk]
+                            div.auth-logo
+                                a(href="#") #[.i-inst]
+                            div.auth-logo
+                                a(href="#") #[.i-at]
+
+                    ul.inputs 
+                        li
+                            input.input-form(id="auth-login" onchange="checkFields('.authorization')" required)
+                            label.label-star-red(for="auth-login")
+                                p Логин или Email
+                                    span.red-star *                 
+                        li
+                            input.input-form(id="auth-login" onchange="checkFields('.authorization')" required)
+                            label.label-star-red(for="auth-pasport")
+                                p Пароль
+                                    span.red-star *
+                                .passforgot
+                                    a(href="/pass-recovery.html") Забыли пароль?
+                        li
+                            form(action="?" method="POST" style="margin-left:0.8%")
+                                div(class="g-recaptcha" data-sitekey="6LfX2eEZAAAAALpteI7Fqfm1fqpQG24RCn8S4ruL")
+                                br
+                            //input(type="submit" value="Submit")
+                        li
+                            input(type="submit" onclick="checkFields('.authorization')" value="Войти").button.b-blue.border-r
+                        li.auth-no-acc-text
+                            p Нет аккаунта? #[label(for='registr' onclick="document.getElementById('auth').checked=false;") Зарегистрируйтесь]
+//- АВТОРИЗАЦИЯ      //- было for="invest7"   
+
+    //- ЗАПРОС РЕЗЕРВА
+input.popup-input(type='checkbox' id='reserve-request')
+.popup.flex.reserve-request
+    label(for='reserve-request').popup_bg
+    .reserve-request-open.border-r
+        label(for='reserve-request').i-close
+        .reserve-request-top
+            h5.reserve-request-big-text ЗАПРОС РЕЗЕРВА ДЛЯ ОБМЕНА #[br] PERFECT MONEY НА USD
+        ul.tarif-open_bot-bg.flex-sa
+            li
+                p.reserve-request-note-text Выберите удобный тип связи #[br] и введите необходимую сумму
+                ul
+
+                    ul.inputs 
+                        li
+                            input.input-form(id="request-mail" required)
+                            label.label-star-red(for="request-mail")
+                                p Telegram/E-mail?
+                                    span.red-star *                 
+                        li
+                            input.input-form(id="request-summ" required)
+                            label.label-star-red(for="request-summ")
+                                p Сумма
+                                    span.red-star *
+
+                        li
+                            input(type="submit" value="Отправить запрос").button.b-blue.border-r
+
+            //- ЗАПРОС РЕЗЕРВА
+.recent-exchanges#recExch(style="display: none")
+    .inline
+        h2.title.titleRe.text-center НЕДАВНИЕ ОБМЕНЫ
+        .close
+            .i-close(onclick="$('#recExch').hide()")
+        
+    .exchange_listPP
+        
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.russia
+                    p 08:12
+
+
+                    p 530.00
+                li.iz
+                    .pm_icon.ac
+
+
+                li
+                    .i-next
+                    p.cipher 530.00
+
+                li.iz
+                    .pm_icon.bc
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.ukraine
+                    p 08:12
+
+                    p 1750.00
+                li.iz
+                    .pm_icon.pm
+
+                li
+                    .i-next
+                    p.cipher 1750.00
+
+                li.iz
+                    .pm_icon.pr
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.south-africa
+                    p 08:12
+
+                    p 880.00
+                li.iz
+                    .pm_icon.ac
+
+                li
+                    .i-next
+                    p.cipher 880.0
+
+                li.iz
+                    .pm_icon.bc
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.czech-republic
+                    p 08:12
+
+                    p 1750.00
+                li.iz
+                    .pm_icon.pr
+
+                li
+                    .i-next
+                    p.cipher 1750.00
+
+                li.iz
+                    .pm_icon.pm
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.australia
+                    p 08:12
+
+                    p 530.00
+                li.iz
+                    .pm_icon.ac
+
+                li
+                    .i-next
+                    p.cipher 530.00
+
+                li.iz
+                    .pm_icon.bc
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.ukraine
+                    p 08:12
+
+                    p 695.00
+                li.iz
+                    .pm_icon.pr
+
+                li
+                    .i-next
+                    p.cipher 695.00
+
+                li.iz
+                    .pm_icon.pm
+
+            ul.flex-sb.inflex
+                li.flag
+                    .flag_img.russia
+                    p 08:12
+
+                    p 530.00
+                li.iz
+                    .pm_icon.ac
+
+                li
+                    .i-next
+                    p.cipher 530.00
+
+                li.iz
+                    .pm_icon.pr

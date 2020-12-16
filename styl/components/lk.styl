@@ -1,0 +1,1152 @@
+.lk
+    &_main
+        flex-grow 1
+        width 880px
+    .main
+        width 1180px
+        margin auto
+        padding-bottom 25px
+    aside
+        flex-shrink 0
+    footer
+        border-top 2px solid $blue
+
+.lk-main-title
+    width 1180px
+    margin auto
+    padding 0 0 25px 0
+    .lk-text
+        text-align center
+        max-width 880px
+        margin 15px auto
+
+.lk-table
+    border-radius 5px
+    background #e8f0f6
+    margin 10px 0
+    font-size 12px
+    text-align center
+    width 100%
+    &.my-deposits
+        td
+            padding 0 10px
+    &.fc-border
+        th,td
+            border-right 1px solid rgba(169, 183, 197, 0.3)
+            &:last-child
+                border-right none
+            &:first-child
+                padding 10px 15px
+    th
+        font-size 14px
+        padding 17px 20px
+        //color $text-grey
+    td
+        padding 0 20px
+        height 50px
+        color #0a263e
+        align-items center
+        font-family WhitneySemiBold
+        border-top 1px solid rgba(169, 183, 197, 0.3)
+        .flex
+            justify-content center
+        p
+            padding 0 5px 2px
+            span
+                font-family Whitney
+                padding 0 3px
+        &.long
+            width 60%
+    .red
+        font-size 20px
+        cursor pointer
+    .button-bg-g
+        margin-top 0
+        margin-bottom 0
+    .pay-system
+        text-align left
+        padding 0 0 0 12px
+    .flex-start
+        align-items center
+   
+/*PERSONAL DATA*/
+
+.personal_data
+    background $grey
+    padding 10px
+    >li
+        flex 1 0 33.3%
+        ul
+            height 100%
+            display flex
+            flex-direction column
+            padding 0 15px
+            .flex-grow
+                p
+                    font-size 12px
+                    a
+                        margin-left 3px
+            li
+                position relative
+                padding 10px 0
+                &:first-child
+                    text-align center
+                    padding 20px 0 0 0
+                    font-size 16px
+                    p
+                        &:first-child
+                            color $blue
+                            font-size 30px
+                .button
+                    border-radius 5px
+.exchange-cashback-text
+    text-align center
+    font-size 17px
+    font-family: Whitney 
+    
+/*SECURITY CONFIGURATION*/
+
+.security-config
+    background $grey
+    color $text-dark
+    align-items center
+    .security
+        flex 1 1 50%
+        li
+            padding-left 10px
+            &:nth-child(2)
+                border-bottom 1px solid #dee2e7
+                border-top 1px solid #dee2e7
+        p
+            a
+                margin-left 3px
+                color $text-grey
+                position relative
+                bottom -4px
+        input
+            &:checked
+                +.input-form
+                    background $white
+                    color $green
+                    border 1px solid $green
+        .input-form
+            margin 20px 10px
+            color $text-grey
+            padding 12px 38px
+            border 1px solid rgba(169, 183, 197, 0.3);
+            display inline-block
+
+.white-list
+    flex 1 1 50%
+    padding 20px 20px 20px 0
+    display flex
+    flex-direction column
+    textarea
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #dee2e7;
+        padding: 15px 20px;
+        margin-bottom: -5px;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 17px;
+        color: #999999;
+    li
+        &:nth-child(3)
+            background $white
+            padding 10px
+            border 1px solid #dee2e7
+        .button
+            border-radius 0 0 5px 5px
+
+/*VERIFICATION PERSONA*/
+
+.lk-normes
+    margin 20px 0
+    a
+        margin 0 3px
+    p
+        &:first-child
+            background #e8f0f6
+            border-radius 4px 4px 0 0
+            margin 0
+            padding 25px 30px 15px
+        &:last-child
+            background $grey
+            border-radius 0 0 4px 4px
+            margin 0
+            padding 14px 30px 25px
+            span
+                margin-right 3px
+
+.verification
+    background $grey
+    &_data
+        flex-wrap wrap
+        padding 24px 30px
+        border-bottom 1px solid #dee2e7
+        li
+            position relative
+            width 32%
+            padding 10px 0
+    &_foto
+        padding 10px 30px 30px
+        margin 0 0 28px
+        .flex-sb
+            p
+                margin 18px 0 6px
+
+/*VERIFICATION POPUP*/
+.i-cancel.lkvr  
+    position: absolute;
+    font-size: 12px;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    color: black;
+.i-cancel.lkvr:hover
+    color #999999
+.verification-id
+    position: relative;
+    z-index: 15;
+    padding: 50px;
+    padding-top: 40px;
+    margin: auto;
+    background: #fff;
+    height: 600px;
+    width: 980px;
+    background-image: url(../img/verification-id2.png);
+    background-position: 56%;
+    background-size: 444px 558px;
+    background-repeat: no-repeat;
+.verification-id2
+    position: relative;
+    z-index: 15;
+    padding: 50px;
+    padding-top: 40px;
+    margin: auto;
+    background: #fff;
+    height: 600px;
+    width: 980px;
+    background-image: url(../img/verification-id2.png);
+    background-position: 56%;
+    background-size: 444px 558px;
+    background-repeat: no-repeat;
+
+/*PARTNER CABINET*/
+
+.partner-info
+    background #e8f0f6
+    flex-grow 1
+    border-radius 5px
+    margin-bottom 25px
+    &:last-child
+        margin-left 20px
+    li
+        display flex
+        color #585858
+        padding 0 20px
+        font-size 14px
+        height 49px
+        font-weight 600
+        justify-content space-between
+        align-items center
+        border-bottom 1px solid #dee2e7
+        &:last-child
+            border-bottom none
+        p
+            margin-top .7em
+            margin-bottom .7em
+
+/* CONTACT */
+.contact-form
+    display flex
+    background $grey
+    border-radius 5px
+    flex-direction column
+    padding: 30px 40px 20px
+    margin 25px auto
+    >li
+        padding 10px
+        position relative
+        .flex-sb
+            li
+                position relative
+                width 100%
+                margin 0 10px
+                &:first-child
+                    margin-left 0
+                &:last-child
+                    margin-right 0
+        h2
+            text-align center
+            padding 0 0 10px
+        >.label-star-red
+            top 41px
+            left 30px
+        textarea
+            background $white
+            border 1px solid #dee2e7
+            padding 20px
+            height 160px
+            &:valid
+                +label
+                    display: none;
+            &:focus
+                +label
+                    display: none;
+        &:last-child
+            text-align center
+            .button
+                border-radius 5px
+                display inline-block
+                width 220px
+
+/*ACCOUNTS*/
+input#accounts_switcher1:checked
+    ~.flex-grow
+        .open
+            #accounts_label1
+                border-left 3px solid $blue
+        #accounts_label1
+            display flex
+            order 1
+            position relative
+            border none
+            .i-next
+                display block
+    ~.ac-ok
+        display block
+input#accounts_switcher2:checked
+    ~.flex-grow
+        .open
+            #accounts_label2
+                border-left 3px solid $blue
+        #accounts_label2
+            display flex
+            order 1
+            position relative
+            border none
+            .i-next
+                display block
+    ~.ac-privat
+        display block
+input#accounts_switcher3:checked
+    ~.flex-grow
+        .open
+            #accounts_label3
+                border-left 3px solid $blue
+        #accounts_label3
+            display flex
+            order 1
+            position relative
+            border none
+            .i-next
+                display block
+    ~.ac-skrill
+        display block
+
+
+.your-accounts
+    background $grey
+    border-radius 5px
+    padding 30px 25px
+    margin 0 0 30px
+    letter-spacing .35px
+    input
+        &:checked
+            ~.flex-grow
+                .open
+                    label
+                        border-top none
+                        border-left 3px solid rgba(255, 255, 255, 0)
+                        &:hover
+                            border-left 3px solid $green
+    >.flex-grow
+        width 100%
+        padding 5px
+        p
+            margin 0 0 17px
+        .lk-text
+            margin 7px 0 0
+    &_submit
+        display none
+    &_switcher
+        position relative
+        &_label
+            position absolute
+            left 0
+            width 100%
+            display flex
+            flex-direction column
+            border-radius 5px
+            overflow hidden
+            border 1px solid rgba(169, 183, 197, 0.3);
+            label
+                display none
+                order 2
+                cursor pointer
+                height 100%
+                padding 12px 28px 12px 8px
+                background $white
+                color #545454
+                line-height 24px
+                overflow hidden
+                align-items center
+                border-top 1px solid rgba(169, 183, 197, 0.3);
+                font-size 16px
+                font-family Whitney
+                &:hover
+                    border-left 3px solid $green
+                    color $green
+                .i-next
+                    font-size 9px
+                    display none
+                    transition all .3s
+                    transform rotate(90deg)
+            &.open
+                transition all .2s
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+                label
+                    display flex
+    input.input-form
+        border-radius 5px 0 0 5px
+        border-right none
+    .button
+        border-radius 0 5px 5px 0
+        width 150px
+
+
+.doble-form
+    position relative
+    z-index 2
+    margin-bottom 80px
+    &_left
+        position absolute
+        margin 15px 0
+        top 0
+        left 0
+        width 75%
+        display flex
+        background $white
+        overflow hidden
+        flex-direction column
+        border-radius 5px 0 0 5px
+        border 1px solid rgba(169, 183, 197, 0.3);
+        &.open
+            .doble-form_label
+                display flex
+    &_label
+        cursor pointer
+        padding 12px 8px
+        color #545454
+        line-height 24px
+        order 2
+        overflow hidden
+        align-items center
+        border-top 1px solid rgba(169, 183, 197, 0.3);
+        font-size 14px
+        font-family Whitney
+        display none
+        &:hover
+            border-left 3px solid $green
+            color $green
+        .i-next
+            font-size 9px
+            display none
+            transition all .3s
+            transform rotate(90deg)
+    &_right
+        position absolute
+        border-radius 0 5px 5px 0
+        margin 15px 0
+        background $white
+        border 1px solid rgba(169, 183, 197, 0.3);
+        top 0
+        right 0
+        font-size 12px
+        width 25%
+        display flex
+        overflow hidden
+        flex-direction column
+        &.open
+            .doble-form_label
+                display flex
+
+input#accounts_switcher11:checked
+    ~.doble-form
+        #accounts_label11
+            display flex
+            order 1
+            position relative
+            border-top none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#accounts_switcher22:checked
+    ~.doble-form
+        #accounts_label22
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#accounts_switcher33:checked
+    ~.doble-form
+        #accounts_label33
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+
+input#accounts_switcher111:checked
+    ~.doble-form
+        #accounts_label111
+            display flex
+            order 1
+            border-top none
+            position relative
+input#accounts_switcher222:checked
+    ~.doble-form
+        #accounts_label222
+            display flex
+            order 1
+            border-top none
+            position relative
+
+input#accounts_switcher333:checked
+    ~.doble-form
+        #accounts_label333
+            display flex
+            order 1
+            border-top none
+            position relative
+
+/*ACCOUNTS POPUP*/
+.verification-skrill
+    padding 20px
+    background-color $grey
+    position relative
+    z-index 16
+    margin auto
+    width 880px
+    .lk-text
+        margin 20px 0
+    .button
+        width 280px
+        margin-left 20px
+    >p
+        margin-top .7em
+        margin-bottom .7em
+
+/*MONEY OPERATIONS*/
+.your-operations
+    li
+        border-radius 5px
+        border 1px solid rgba(169, 183, 197, 0.3);
+        width 32%
+        padding 10px 0 25px
+        text-align center
+        p
+            margin 10px 0 20px
+            color $blue
+            font-size 32px
+            letter-spacing 0.9px
+            font-family WhitneySemiBold
+        span
+            font-size 16px
+            color $blue
+/* DISCOUNTS */
+.exchange-comision
+    margin auto
+    text-align center
+    width 60%
+    font-size 12px
+    span
+        font-size 14px
+        font-family WhitneySemiBold
+        margin 0 3px
+.disc-table
+    padding 15px 0
+    color $white
+    table
+        width 100%
+        tr
+            font-family WhitneyLight
+            border-top 1px solid rgba(255, 255, 255, 0.2)
+            text-align center
+            &:first-child
+                border-top none
+                font-family WhitneySemiBold
+                font-size 14px
+            p
+                padding 12px 0
+
+.exchange-title
+    font-size: 22px;
+    letter-spacing: 2.5px!important;
+    color: #0a263e;
+    font-family: WhitneyLight;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 25px;
+    display: flex;
+    margin-left: 9px;
+    &_money
+        display flex
+        justify-content center
+        vertical-align center
+        margin 0 5px
+        .pm_icon
+            margin 0 5px
+.exchange-steps
+    margin 25px auto
+    align-items center
+    &_step
+        font-family WhitneyMedium
+        font-size 14px
+        color $text-grey
+        &.active
+            .circle
+                border 2px solid $blue
+                p
+                    color $blue
+            p
+                font-family WhitneySemiBold
+                color $text-dark
+
+        .circle
+            width 60px
+            height 60px
+            border-radius 100%
+            justify-content center
+            border 2px solid rgba(169, 183, 197, 0.3);
+            p
+                font-size 22px
+                font-family WhitneySemiBold
+        p
+            margin 0 15px
+            max-width 160px
+    &_space
+        width 50px
+        height 2px
+        border-bottom 2px dashed rgba(169, 183, 197, 0.3);
+
+.exchange-triple
+    border 1px solid rgba(169, 183, 197, 0.3);
+    &_left
+        background $grey
+        padding 10px
+        border-radius 5px 0 0 5px
+        align-self stretch
+        width 66%
+        border-right 1px solid rgba(169, 183, 197, 0.3);
+        .lk-title
+            padding: 20px 18px!important
+        .lk-text
+            margin 0
+            font-size 14px
+            padding-left: 18px
+        .document-list
+            margin: 1px -7px 39px;
+        .exchange-triple_right_text
+            p
+                font-size 16px
+                line-height 24px
+                letter-spacing 0.45px
+                span
+                    font-size 16px
+                    margin-left 3px
+                a
+                    font-size 12px
+    &_right
+        display flex
+        justify-content space-between
+        flex-direction column
+        vertical-align center
+        width 34%
+        &_step2
+            flex-direction column
+            text-align center
+            padding 15px 20px
+            position relative
+            .lk-text
+                margin 0
+            .button-bg-b
+                position absolute
+                top 0
+                right 0
+        &_text
+            padding 15px 20px
+            color #0a263e
+            width 100%
+            align-self center
+            .countdown
+                color $blue
+                letter-spacing 1px
+                font-family WhitneySemiBold
+                font-size 58px
+                font-weight 700
+            p
+                font-size 16px
+                line-height 24px
+                letter-spacing 0.45px
+                span
+                    font-size 18px
+                    margin-left 3px
+
+#exchange-step
+    display none
+.exchange-input
+    width 430px
+    align-self flex-start
+    &_label
+        width 205px
+        span
+            margin-left 5px
+    .input-form
+        border-radius 5px 0 0 5px
+.exchange-agree
+    .button
+        width 280px
+.exchange-personal
+    background $grey
+    padding 10px
+    ul
+        width 100%
+        li
+            padding 10px
+            position relative
+.exchange-img
+    width 66px
+    height 64px
+    background url("../img/forma_6.png") 100%
+    background-repeat no-repeat
+    background-position center
+    color $green
+    align-items center
+    font-size 24px
+.doble-exchange
+    margin 25px 0
+    position relative
+    .i-circlearrows
+        position absolute
+        top 50%
+        left 50%
+        width 50px
+        color $white
+        z-index 3
+        height 50px
+        background $blue
+        border-radius 100%
+        font-size 30px
+        transform translate(-50%, -50%)
+        border: 1px solid #cccccc;
+        &:hover
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    ul
+        background $grey
+        padding 10px 20px
+        li
+            margin 10px 0
+            position relative
+        .lk-text
+            margin 0px
+
+    &_left
+        width 430px
+    &_right
+        width 430px
+    .change
+        &_give,&_get
+            h2
+                margin-left 48px
+    .doble-form
+        margin 0
+        &_left
+            margin 0
+        &_right
+            margin 0
+
+input#df_l2-switch1:checked
+    ~.doble-form
+        #df_l2-label1
+            display flex
+            order 1
+            position relative
+            border-top none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#df_l2-switch2:checked
+    ~.doble-form
+        #df_l2-label2
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#df_l2-switch3:checked
+    ~.doble-form
+        #df_l2-label3
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#df_r2-switch1:checked
+    ~.doble-form
+        #df_r2-label1
+            display flex
+            order 1
+            border-top none
+            position relative
+input#df_r2-switch2:checked
+    ~.doble-form
+        #df_r2-label2
+            display flex
+            order 1
+            border-top none
+            position relative
+
+input#df_r2-switch3:checked
+    ~.doble-form
+        #df_r2-label3
+            display flex
+            order 1
+            border-top none
+            position relative
+
+
+input#df_l3-switch1:checked
+    ~.doble-form
+        #df_l3-label1
+            display flex
+            order 1
+            position relative
+            border-top none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#df_l3-switch2:checked
+    ~.doble-form
+        #df_l3-label2
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+input#df_l3-switch3:checked
+    ~.doble-form
+        #df_l3-label3
+            display flex
+            order 1
+            position relative
+            border none
+            border-left 3px solid $blue
+            .i-next
+                display block
+
+
+input#df_r3-switch1:checked
+    ~.doble-form
+        #df_r3-label1
+            display flex
+            order 1
+            border-top none
+            position relative
+input#df_r3-switch2:checked
+    ~.doble-form
+        #df_r3-label2
+            display flex
+            order 1
+            border-top none
+            position relative
+
+input#df_r3-switch3:checked
+    ~.doble-form
+        #df_r3-label3
+            display flex
+            order 1
+            border-top none
+            position relative
+
+input#exchange:checked
+    ~.doble-exchange
+        flex-direction row-reverse
+        .i-circlearrows
+            background $green
+
+//exchange page 3
+
+.exchange-triple_right_text
+    text-align: left
+   
+    .big-text
+        font-family: WhitneySemiBold 
+        font-size: 20px
+    .red
+        color: #bf0000
+        font-family Whitney
+    .green
+        color: #74bd2c
+        font-family Whitney
+    .blue
+        color: #00abec
+    .medium-text
+        font-famiy: WhitneyMedium
+        font-size: 16px
+    .little-texts
+        margin-top: 25px
+.exchange-triple_right
+    text-align: center
+    .big-text
+        font-family: WhitneySemiBold 
+        font-size: 16.5px
+        margin-top: 27px
+        margin-left: 9px
+    .red
+        color: #bf0000
+        font-family Whitney
+    .green
+        color: #74bd2c
+        font-family Whitney
+    .blue
+        color: #00abec
+    .medium-text
+        font-famiy: WhitneyMedium
+        font-size: 16.5px
+        margin-top: -18px
+    .little-text
+        margin-top: -23px
+        margin-right: -7px
+        font-size: 16.5px
+    .button-transparent
+        label
+            margin: auto
+            margin-bottom: 29px
+    .question-box
+        margin-left: 7px
+#success
+    height: 217px
+    .exchange-triple_right.as_strech
+        .big-text
+            font-family: WhitneySemiBold 
+            font-size: 16.5px
+            margin-top: 27px
+            margin-left: 9px
+        .big-text.a
+            margin-top: 27px
+            letter-spacing: -0.1px
+            margin-left: 0px
+        .medium-text
+            font-famiy: WhitneyMedium
+            font-size: 16.5px
+            margin-top: -18px
+        .little-text
+            margin-top: -23px
+            margin-right: -7px
+            font-size: 16.5px
+        .little-text.a
+            margin-top: -47px
+        .little-text.b
+            margin-bottom: 47px
+        .medium-text.a
+            margin-top: -43px
+            font-weight: 600
+            margin-left: 3px
+        .medium-text.b
+            margin-bottom: -23px
+        
+.feedback-1
+    padding-top: 59px
+    .big-text
+        font-family: WhitneyMedium
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        margin-bottom: 7px
+    .little-text
+        font-family: WhitneyMedium
+        font-size: 16px
+    .stars
+        margin-top: 31px
+        margin-bottom: 43px
+        .i-star
+            margin-right: 21px
+            font-size: 28px
+
+    
+.feedback-2
+    padding-top: 59px
+    .big-text
+        font-family: WhitneyMedium
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        margin-bottom: 7px
+    .little-text
+        font-family: WhitneyMedium
+        font-size: 16px
+    .stars
+        margin-top: 31px
+        margin-bottom: 35px
+        .i-star
+            margin-right: 21px
+            font-size: 28px
+
+#f2
+    margin-top: -6px
+    .big-text
+        font-family: WhitneyMedium
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        margin-bottom: 7px
+    .little-text
+        font-family: WhitneyMedium
+        font-size: 16px
+    .feedback-form
+        width: 880px
+        height: 390px
+        display: block
+        margin auto
+        background url('../img/fb-form-bg.png')
+        padding-top: 51px
+        margin-top: 26px
+        .big-text-white
+            color: white
+            font-size: 19px
+            font-family: WhitneyMedium 
+            margin-left: 53px
+            letter-spacing: -0.2px
+        .text-area
+            background: white
+            width: 780px
+            height 160px
+            margin-left: 50px
+            margin-top: 29px
+            padding-top: 15px
+            border-radius: 5px
+            label
+                position absolute
+                margin-top 3px
+                left: calc(50% - 518px)
+                color: #9999
+            textarea
+                width inherit 
+                height inherit 
+                resize: none
+                padding: 0px 24px
+            textarea:focus
+                +label 
+                    display none
+
+        .inline
+            display inline-flex
+            .input-fb
+                margin-left: 0px
+                label
+                    position: absolute
+                    margin-top: 37px
+                    left: calc(50% - 518px)
+                    color: #9999
+                input 
+                    width 380px
+                    height 50px
+                    background white
+                    border-radius 5px
+                    margin-top: 20px
+                    margin-left: 50px
+                    padding-left: 24px
+                input:focus
+                    +label 
+                        display none
+            .button-fb
+                margin-left: 178px
+                margin-top: 21px
+                .button
+                    width 220px
+                    height 50px
+                    border-radius: 5px
+#f1
+    .big-text
+        font-family: WhitneyMedium
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        margin-bottom: 7px
+    .little-text
+        font-family: WhitneyMedium
+        font-size: 16px
+    .logos
+        margin-top: 35px
+        margin-bottom: 53px
+        .logo-bch
+            img 
+                width 268px
+                height 58px
+        .logo-tp
+            margin-left: 111px
+            img 
+                width 230px
+                height 60px
+    .lower-content
+        margin-top: 32px
+    .inline
+        display: inline-flex
+        .input
+            input 
+                width: 375px
+                color: #999999
+        .button
+            margin-top: -6px
+            margin-left: -2px
+            label
+                display block
+                width 208px
+                .link
+                    width: 15px
+                    height 15px
+        .social-icons
+            margin-top: 8px
+            margin-left: -14px
+            .icon
+                margin-left: 11px
+                .i-vk, .i-fb, .i-tg, .i-tw, .i-viber, .i-inst
+                    width:35px
+                    height 35px
+                    font-size: 14px
+                    color white
+                    border-radius: 50%
+                .i-fb
+                    font-size: 16px
+                .i-tw
+                    font-size: 18px
+                .i-tg
+                    font-size: 17px
+                .i-viber
+                    font-size: 27px
+                .i-inst
+                    background: url(../img/inst-back.png)
+                    font-size: 19px
+                .i-inst:hover
+                    background $green
+                .i-inst:before
+                    padding-bottom: 2px
+                    padding-left: 2px
+                .i-viber:before
+                    padding-left: 2px
+                    padding-bottom: 1px
+

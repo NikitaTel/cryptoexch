@@ -1,0 +1,186 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        input.popup-input(type='checkbox' id='inside-pay')
+        .popup.flex
+            label(for='inside-pay').popup_bg
+            .tarif-open.border-r
+                label(for='inside-pay').i-cancel
+                .tarif-open_top-bg.background-mod-dark
+                    h5 Вывод средств с внутреннего счета
+                    .flex-sa.text-center
+                        p Минимальная сумма для вывода 100 USD.
+                            |Все выплаты производятся после проверки администратором
+                            |учетной записи клиента. Как правило, это занимает не более 72 часов
+                            |с момента подачи заявки на снятие средств.
+
+                ul.tarif-open_bot-bg.flex-sb
+                    li.green-line
+                        input(type='radio' id='accounts_switcher11' name='accounts_switcher11' checked)
+                        input(type='radio' id='accounts_switcher22' name='accounts_switcher11')
+                        input(type='radio' id='accounts_switcher33' name='accounts_switcher11')
+                        input(type='radio' id='accounts_switcher111' name='accounts_switcher111' checked)
+                        input(type='radio' id='accounts_switcher222' name='accounts_switcher111')
+                        input(type='radio' id='accounts_switcher333' name='accounts_switcher111')
+                        .doble-form
+                            .doble-form_left
+                                label.doble-form_label(for='accounts_switcher11' id='accounts_label11' onclick='menuToggle4()')
+                                    .flex.flex-grow
+                                        .test.okpay
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                                label.doble-form_label(for='accounts_switcher22' id='accounts_label22' onclick='menuToggle4()')
+                                    .flex.flex-grow
+                                        .test.privat24
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                                label.doble-form_label(for='accounts_switcher33' id='accounts_label33' onclick='menuToggle4()')
+                                    .flex.flex-grow
+                                        .test.skrill
+                                        p.flex-grow.text-left OKPay
+                                        .i-next
+                            .doble-form_right
+                                label.doble-form_label(for='accounts_switcher222' id='accounts_label111' onclick='menuToggle5()')
+                                    .flex
+                                        p USD
+                                label.doble-form_label(for='accounts_switcher222' id='accounts_label222' onclick='menuToggle5()')
+                                    .flex
+                                        p EUR
+                                label.doble-form_label(for='accounts_switcher333' id='accounts_label333' onclick='menuToggle5()')
+                                    .flex
+                                        p RUB
+                        span Платежная система
+                    li.green-line
+                        input.input-form(placeholder='support@smartpays.com')
+                        span Кошелек на который мы потом отправим деньги
+                    li.green-line
+                        input.input-form(placeholder='100$')
+                        span Сумма
+                .exchange-comision
+                    p Комиссия
+                        span 1%
+                        | к получению
+                        span 100 USD
+                .text-margin
+                    input(type="submit" value="Заказать").button.b-blue.border-r
+        h2.title ВНУТРЕННИЙ СЧЕТ
+        p.lk-text Ваш баланс на нашем сайте
+        table.lk-table.fc-border
+            tr
+                th
+                    p №
+                th
+                    p ВАЛЮТА
+                th
+                    p СУММА
+            tr
+                td
+                    p 1
+                td
+                    p RUB
+                td
+                    p 10 000
+                        
+                            a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+                td.long
+            tr
+                td
+                    p 2
+                td
+                    p EUR
+                td
+                    p 6 380
+                        a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+                td.long
+            tr
+                td
+                    p 3
+                td
+                    p USD
+                td
+                    p 10 000
+                        a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+                td.long
+            tr
+                td
+                    p 4
+                td
+                    p RUB
+                td
+                    p 10 000
+                        a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+                td.long
+        p.lk-text История операций
+            table.lk-table.fc-border
+                tr
+                    th
+                        p №
+                    th
+                        p ДАТА
+                    th
+                        p ВАЛЮТА
+                    th
+                        p СУММА
+                    th
+                        p НАЗНАЧЕНИЕ
+                tr
+                    td
+                        p 1
+                    td
+                        p 19.04.18
+                    td
+                        p RUB
+                    td
+                        p 10 000
+                    td.long
+                tr
+                    td
+                        p 2
+                    td
+                        p 19.04.18
+                    td
+                        p EUR
+                    td
+                        p 6 380
+
+                    td.long
+                tr
+                    td
+                        p 3
+                    td
+                        p 20.04.18
+                    td
+                        p USD
+                    td
+                        p 10 000
+
+                    td.long
+                tr
+                    td
+                        p 4
+                    td
+                        p 19.04.17
+                    td
+                        p RUB
+                    td
+                        p 10 000
+                    td.long

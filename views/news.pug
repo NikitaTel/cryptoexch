@@ -1,0 +1,647 @@
+extends layouts/layout-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Электронный обменник валют - Новости",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, контакты, связь, телефон, время работы, график работы, обратная связь, jabber, icq",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com/feedback/",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .subscribe-fixed#subscribe-form
+        .subscribe-absolute
+            .subscribe-content
+                .subscribe-form
+                    .i-close(onclick="$('#subscribe-form').hide()")
+                    .big-text
+                        p ПОДПИШИТЕСЬ НА РАССЫЛКУ
+                    .little-text
+                        p Просто введите свою електронную почту и Вы #[br] будете добавлены в список рассылок.
+                    .input
+                        input(type="text" required placeholder="Имя")
+                    .input
+                        input(type="text" required placeholder="E-mail")
+                    .input  
+                        input.button.b-blue.Subscribe(type="submit" value="Подписаться" onclick="checkFields('.subscribe-form')")
+
+    .rates-new
+        .i-next.nextBtn
+        .i-next.prevBtn(style="transform:rotate(180deg)")
+        .rate-new
+            .inline
+                .rate-logo
+                    img(src="../img/systems/pmhq.png")
+                .big-text.i1
+                    p 28.50 UAH
+                .color-text.red.i1
+                    p - 2.1%
+                .graph.i1.graph-red
+
+            .inline
+                .money-type-text
+                    p USD
+                .big-text.i2
+                    p 55.80 RUB
+                .color-text.i2.green
+                    p + 0.7%
+                .graph.i2.graph-green
+        .rate-new
+            .inline
+                .rate-logo
+                    img(src="../img/systems/btchq.png")
+                .big-text.i1
+                    p 28.50 UAH
+                .color-text.red.i1
+                    p - 2.1%
+                .graph.i1.graph-red
+
+            .inline
+                .money-type-text
+                    p USD
+                .big-text.i2
+                    p 55.80 RUB
+                .color-text.i2.green
+                    p + 0.7%
+                .graph.i2.graph-green
+        .rate-new
+            .inline
+                .rate-logo
+                    img(src="../img/systems/pmhq.png")
+                .big-text.i1
+                    p 28.50 UAH
+                .color-text.red.i1
+                    p - 2.1%
+                .graph.i1.graph-red
+
+            .inline
+                .money-type-text
+                    p USD
+                .big-text.i2
+                    p 55.80 RUB
+                .color-text.i2.green
+                    p + 0.7%
+                .graph.i2.graph-green
+    .main.flex-sb
+        .lk_main
+
+
+            //- input.popup-input(type='checkbox' id='invest6')
+            //- .popup.flex.registration
+            //-     label(for='invest6').popup_bg
+            //-     .tarif-open.border-r
+            //-         label(for='invest6').i-cancel
+            //-         .tarif-open_top-bg.background-mod-dark
+            //-             h5 ПОДПИШИТЕСЬ НА РАССЫЛКУ
+            //-             .flex-sa
+            //-                 .tarif-open_info
+            //-                     h2.title Просто введите свою електронную почту и Вы будете добавлены в список рассылок.
+            //-         ul.tarif-open_bot-bg.flex-sa
+            //-             li
+            //-                 p Имя:
+            //-                 input.input-form(placeholder='Ваше имя')
+            //-                 p Ваш e-mail:
+            //-                 input.input-form(type='email' placeholder='support@smartpays.com')
+            //-                 input(type="submit" value="Подписаться").button.b-blue.border-r
+            h1.title.title-news НОВОСТИ
+                //- label(for='invest6')
+                //-     a.button-bg-g(onclick="$('#subscribe-form').show()") Подписаться
+
+            .lk-news
+                .flex-sb(style="margin-top: 19px;")
+                    .news_block1.flex-sb
+                        .top_news
+                            p Топ новость
+                        .news_block1_colum
+                            .date
+                                .i-calendar
+                                span 6 марта, 2017
+                            h3 Значение BitCoin на #[br] рынке криптовалют
+                            p.n1-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
+                            a.news-more(href="/opennews.html") Подробнее
+                        .news-img-b
+                    //- .share
+                    //-     .button-block
+                    //-         a.share-button(onclick="$('#subscribe-form').show()") подписаться
+                    //-     .icons
+                    //-         a.share-ic
+                    //-             .i-fb
+                    //-         a.share-ic
+                    //-             .i-vk
+                    //-         a.share-ic
+                    //-             .i-tw
+                    //-         a.share-ic
+                    //-             .i-tg    
+                    .news_block2
+                        .news-img-s.news2_1
+                        .news_block2_colum.nc-
+                            h4.n2-title-text
+                                a Снижение комиссии на #[br] вывод Skrill
+                            p.n2-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                            .date
+                                .i-calendar
+                                span 6 марта, 2017
+
+                .subscription
+                    .subs
+                        .htitle
+                            p Подписывайтесь на рассылку наших лучших материалов:
+                        .inner-inline.subs-content
+                            .input
+                                input.input-form(type="text" placeholder="E-mail")
+                            .button-send
+                                a.button.b-blue.border-r(onclick="$('#msgDone').addClass('show')") Подписаться
+
+                            .social-icons
+                                .inner-inline
+                                    .icon
+                                        a(href="https://vk.com/smartexchange") #[.i-vk]
+                                    .icon
+                                        .i-fb
+                                    .icon
+                                        a(href="https://twitter.com/Smart_pays") #[.i-tw]
+                                    .icon
+                                        a(href="https://t.me/smartpays") #[.i-tg]
+                        .green-message#msgDone
+                            p Подписка успешно оформлена.
+                .flex-sb
+                    .news_block2
+                        .news-img-s.news2_2
+                        .news_block2_colum.nc-
+                            h4.n2-title-text
+                                a Добавлена платежная система LavaPay
+                            p.n2-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                            .date
+                                .i-calendar
+                                span 6 марта, 2017
+                    .news_block2
+                        .news-img-s.news2_3
+                        .news_block2_colum.nc-
+                            h4.n2-title-text
+                                a Новые направления обмена. Ваучеры PerfectMoney
+                            p.n2-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                            .date
+                                .i-calendar
+                                span 6 марта, 2017
+                    .news_block2
+                        .news-img-s.news2_4
+                        .news_block2_colum.nc-
+                            h4.n2-title-text
+                                a Сайт работает в обычном режиме
+                            p.n2-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                            .date
+                                .i-calendar
+                                span 6 марта, 2017
+                .lk-news_news-more
+                    a.news-more(href="/opennews.html")
+                        span.i-reload
+                        span Показать ещё
+        aside
+            h1.title БАЗА ЗНАНИЙ
+            .baza-slider_window
+                input(type="radio" name="baza" id="baza-slider1" checked)
+                input(type="radio" name="baza" id="baza-slider2")
+                input(type="radio" name="baza" id="baza-slider3")
+                input(type="radio" name="baza" id="baza-slider4")
+                input(type="radio" name="baza" id="baza-slider5")
+                .baza-slider_box
+                    .baza-slider_wrapper
+                        ul.b-znanii.news_colum2
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        ul.b-znanii.news_colum2
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        ul.b-znanii.news_colum2
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        ul.b-znanii.news_colum2
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        ul.b-znanii.news_colum2
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Как сделать вывод без комиссии
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Оценка рынка криптовалют
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                            li
+                                a.text-hover-green Пошаговая инструкция
+                                p.n4-context-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                
+                .baza-slider_dots.text-margin.flex-sa
+                    div
+                        label.prew(id="baza-slider-lp1" for="baza-slider1")
+                            .i-back
+                        label.prew(id="baza-slider-lp2" for="baza-slider2")
+                            .i-back
+                        label.prew(id="baza-slider-lp3" for="baza-slider3")
+                            .i-back
+                        label.prew(id="baza-slider-lp4" for="baza-slider4")
+                            .i-back
+                        label.prew(id="baza-slider-lp5" for="baza-slider5")
+                            .i-back
+                    div
+                        label.next(id="baza-slider-ln1" for="baza-slider1")
+                            .i-next
+                        label.next(id="baza-slider-ln2" for="baza-slider2")
+                            .i-next
+                        label.next(id="baza-slider-ln3" for="baza-slider3")
+                            .i-next
+                        label.next(id="baza-slider-ln4" for="baza-slider4")
+                            .i-next
+                        label.next(id="baza-slider-ln5" for="baza-slider5")
+                            .i-next
+                .elsebutton(style="margin-top: -30px;")
+                    a(href="#") Смотреть все
+    
+    .main-bg.news-slider
+        .main-content(style="padding: 44px 0;")
+            h1.title.text-center(style="margin-bottom: 66px;margin-top: -33px;line-height: 25px;") ИНТЕРЕСНОЕ
+            .news-slider_window(style="margin-top: -21px;")
+                input(type="radio" checked name="news-slider-input" id="news-slider-input1")
+                input(type="radio" name="news-slider-input" id="news-slider-input2")
+                input(type="radio" name="news-slider-input" id="news-slider-input3")
+                input(type="radio" name="news-slider-input" id="news-slider-input4")
+                input(type="radio" name="news-slider-input" id="news-slider-input5")
+                input(type="radio" name="news-slider-input" id="news-slider-input6")
+                .slider-box
+                    .slider-box_wrapper.flex-sb
+                        .news_block2
+                            .news-img-s.news2_2
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Добавлена платежная система LavaPay
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_3
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Новые направления обмена. Ваучеры PerfectMoney
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_4
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Сайт работает в обычном режиме
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_2
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Добавлена платежная система LavaPay
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_3
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Новые направления обмена. Ваучеры PerfectMoney
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_4
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Сайт работает в обычном режиме
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_2
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Добавлена платежная система LavaPay
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_3
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Новые направления обмена. Ваучеры PerfectMoney
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_4
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Сайт работает в обычном режиме
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+                        .news_block2
+                            .news-img-s.news2_2
+                            .news_block2_colum.nc-
+                                h4.n2-title-text
+                                    a Добавлена платежная система LavaPay
+                                p.n3-content-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                                    | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                                .date
+                                    .i-calendar
+                                    span 6 марта, 2017
+            
+                label.next(id="news-slider-ln1" for="news-slider-input1")
+                    .i-next
+                label.next(id="news-slider-ln2" for="news-slider-input2")
+                    .i-next
+                label.next(id="news-slider-ln3" for="news-slider-input3")
+                    .i-next
+                label.next(id="news-slider-ln4" for="news-slider-input4")
+                    .i-next
+                label.next(id="news-slider-ln5" for="news-slider-input5")
+                    .i-next
+                label.next(id="news-slider-ln6" for="news-slider-input6")
+                    .i-next
+                label.prew(id="news-slider-lp1" for="news-slider-input1")
+                    .i-back
+                label.prew(id="news-slider-lp2" for="news-slider-input2")
+                    .i-back
+                label.prew(id="news-slider-lp3" for="news-slider-input3")
+                    .i-back
+                label.prew(id="news-slider-lp4" for="news-slider-input4")
+                    .i-back
+                label.prew(id="news-slider-lp5" for="news-slider-input5")
+                    .i-back
+                label.prew(id="news-slider-lp6" for="news-slider-input6")
+                    .i-back
+            .elsebutton
+                a(href="#") Смотреть все

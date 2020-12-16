@@ -1,0 +1,309 @@
+extends layouts/layout-aside
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Тарифы обмена",
+        desc: "Тарифы выгодного обмена электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "online currency exchange, best online currency exchange, exchange money online, выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, тарифы обмена, направления обмена, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона онлайн перевод, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com/tarifs/",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block title
+    .main-bg
+        .lk-main-title
+            //- input.popup-input(type='checkbox' id='invest7')
+            //- .popup.flex.registration
+            //-     label(for='invest7').popup_bg
+            //-     .tarif-open.border-r
+            //-         label(for='invest7').i-cancel
+            //-         .tarif-open_top-bg.background-mod-dark
+            //-             h5 РЕГИСТРАЦИЯ
+            //-         ul.tarif-open_bot-bg.flex-sa
+            //-             li
+            //-                 p.lk-text Зарегистрируйтесь на нашем сайте, чтобы активировать накопительную систему скидок,
+            //-                     | отслеживать статус ваших заявок и статистику обменов.
+            //-                     | Так же Вы получите возможность участвовать в
+            //-                     a.text-b-un «Партнерской программе».
+            //-                 ul
+            //-                     li
+            //-                         input.input-form(id="reg-name" required)
+            //-                         label.label-star-red(for="reg-name")
+            //-                             p Логин
+            //-                                 span.red-star *
+            //-                     li
+            //-                         input.input-form(id="reg-pasport" required)
+            //-                         label.label-star-red(for="reg-pasport")
+            //-                             p E-mail
+            //-                                 span.red-star *
+            //-                     li
+            //-                         input.input-form(id="reg-tele" required)
+            //-                         label.label-star-red(for="reg-tele")
+            //-                             p Пароль
+            //-                                 span.red-star *
+            //-                     li
+            //-                         input.input-form(id="reg-mail" required)
+            //-                         label.label-star-red(for="reg-mail")
+            //-                             p Пароль снова
+            //-                                 span.red-star *
+            //-                     li
+            //-                         input(type="submit" value="Регистрация").button.b-blue.border-r
+            //-                     li
+            //-                         input(type="submit" value="Авторизация").button.b-white.border-r
+            h1.title.text-center.rates-title ТАРИФЫ
+            p.lk-text(style="letter-spacing: -0.1px; max-height: 100%")
+                span Уважаемые клиенты!
+                | Данные тарифы без учета скидки.
+                a.text-b-un #[a(href="#" onclick="$('#registr').prop('checked', true );") Зарегистрируйтесь ] на сайте, проводите обменные операции и получайте #[br] накопительную скидку. Для крупных клиентов возможны допольнительные скидки
+            p.lk-text Ознакомиться с резервами необходимой Вам валюты можно
+                a.text-b-un здесь #[span .]
+block content
+    include ./partials/popups
+    .lk_main
+        h2.title.rates_title.flex
+            .pm_icon.ra
+            span RIA USD
+        .rates
+            ul.flex-grow
+                li
+                    p ВЫ ОТДАЕТЕ
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+            ul.flex-grow
+                li.rates-list_white
+                    p ВЫ ПОЛУЧАЕТЕ
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+            ul.flex-shrink.res-fsh
+                li
+                    p РЕЗЕРВ
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+        h2.title.rates_title.flex
+            .pm_icon.ra
+            span RIA USD
+        .rates
+            ul.flex-grow
+                li
+                    p ВЫ ОТДАЕТЕ
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+            ul.flex-grow
+                li.rates-list_white
+                    p ВЫ ПОЛУЧАЕТЕ
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+            ul.flex-shrink.res-fsh
+                li
+                    p РЕЗЕРВ
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+        h2.title.rates_title.flex
+            .pm_icon.ra
+            span RIA USD
+        .rates
+            ul.flex-grow
+                li
+                    p ВЫ ОТДАЕТЕ
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+                li.rates-list_dark.flex-sb
+                    p.t1v 1.9059 USD
+                    p.t1m RIA USD
+            ul.flex-grow
+                li.rates-list_white
+                    p ВЫ ПОЛУЧАЕТЕ
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+                li.rates-list_white.flex-sb
+                    p.t2v 1.9059 USD
+                    p.t2m RIA USD
+            ul.flex-shrink.res-fsh
+                li
+                    p РЕЗЕРВ
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+                li.flex-sb.res-li
+                    p.t3v 19.600
+                    .question-box
+                        .i-question
+                        p.question_help sdfgsdfgsdfgsdfg
+        h2.title.rates_title.flex
+            .pm_icon.ra

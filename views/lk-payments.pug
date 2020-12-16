@@ -1,0 +1,121 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        input.popup-input(type='checkbox' id='skrill-pop')
+        .popup.flex
+            label(for='skrill-pop').popup_bg
+            .verification-skrill.border-r
+                label(for='skrill-pop').i-cancel
+                h2.title.text-center ВЕРИФИКАЦИЯ СЧЕТА SKRILL
+                p.lk-text Ffdhf hkjghrgfi iughsdfighrotight poshviorwbgiurt ipujbvnskdjfgbijg pwrio ghn jgn pijrnbghiuewr gjkwien jkwerb ijwerbg ewpg jbwerj gbwerjg wekjg wejfg p
+                .flex-sb
+                    .parent-selector.flex-grow
+                        input.input-form.file(type="file" required accept="image/jpeg,image/png,image/gif")
+                        .file-name
+                            span.element-to-paste-filename
+                            p ✔
+                    input.button.b-blue.border-r(type="submit" value="Отправить запрос")
+                p (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+        h2.title ВАШИ СЧЕТА
+        p.lk-text Здесь Вы можете добавить свои счета, которые будут автоматически подставляться при оформлении заявки на обмен.
+            br
+            | Счета Skrill и Neteller необходимо верифировать для возможности обмена этих валют (эта операция разовая).
+        .your-accounts.flex-sb
+            input(type='radio' id='accounts_switcher1' name='accounts_switcher' checked)
+            input(type='radio' id='accounts_switcher2' name='accounts_switcher')
+            input(type='radio' id='accounts_switcher3' name='accounts_switcher')
+            .flex-grow
+                p Добавить счет
+                .your-accounts_switcher
+                    .your-accounts_switcher_label
+                        label.flex-sb(for='accounts_switcher1' id='accounts_label1' onclick='menuToggle2()')
+                            .flex
+                                .test.okpay
+                                span OKPay USD
+                            .i-next
+                        label.flex-sb(for='accounts_switcher2' id='accounts_label2' onclick='menuToggle2()')
+                            .flex
+                                .test.skrill
+                                span Skrill EUR
+                            .i-next
+                        label.flex-sb(for='accounts_switcher3' id='accounts_label3' onclick='menuToggle2()')
+                            .flex
+                                .test.privat24
+                                span Privat24 UAN
+                            .i-next
+            .your-accounts_submit.flex-grow.ac-ok
+                p Введите номер вашего счета
+                .flex
+                    .flex-grow
+                        input.input-form(type="text" required placeholder='OK123456')
+                    .flex-grow
+                        input(type="submit" onclick="checkFields('.ac-ok')" value="Сохранить").button.b-blue
+                p.lk-text Символов мин: 5 макс: 10
+            .your-accounts_submit.flex-grow.ac-privat
+                p Введите номер вашего счета
+                .flex
+                    .flex-grow
+                        input.input-form(type="text" required placeholder='1111 2222 3333 4444')
+                    .flex-grow
+                        input(type="submit" onclick="checkFields('.ac-privat')" value="Сохранить").button.b-blue
+                p.lk-text Символов: 16
+            .your-accounts_submit.flex-grow.ac-skrill
+                p Введите номер вашего счета
+                .flex
+                    .flex-grow
+                        input.input-form(type="text" required placeholder='skrill@skrill.mail')
+                    .flex-grow
+                        input(type="submit" onclick="checkFields('.ac-skrill')" value="Сохранить").button.b-blue
+                p.lk-text Символов мин: 5 макс: 15
+        table.lk-table
+            tr
+                th
+                    p(class="pay-system") ПЛАТЕЖНАЯ СИСТЕМА
+                th
+                    p НОМЕР СЧЕТА
+                th
+                    p ВЕРИФИКАЦИЯ СЧЕТА
+                th
+                    p
+            tr
+                td
+                    .flex-start
+                        .test.skrill
+                        p Skrill USD
+                td
+                    p skrill@mail.ru
+                td
+                    p Не верифицирован
+                    label(for='skrill-pop').profile-status.no-activ
+                td
+                    button.i-cancel.red-star
+            tr
+                td
+                    .flex-start
+                        .test.privat24
+                        p Приват 24 UAN
+                td
+                    p Приват 24 UAN
+                td
+                    p Не нужна
+                td
+                    button.i-cancel.red-star

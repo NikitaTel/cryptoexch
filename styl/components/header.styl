@@ -1,0 +1,502 @@
+.lk-header
+    background: url(../img/lk-header-bg.png) 50%/cover!important;
+.header
+    background url("../img/header_background.png") 50% / cover
+    font-family: Whitney
+    min-height 69px
+    font-weight 500
+    letter-spacing: 0.35px;
+    line-height: 12px;
+    font-size: 14px
+    color $white
+    position relative
+    &_all
+        margin auto
+        width 1180px
+        &_top
+            padding-top 20px
+            align-items center
+        &_mid
+            width 100%
+            padding 35px 0
+            align-items center
+        &_content
+            padding-top 20px
+            display flex
+            // flex-direction column
+            .button
+                padding: 13px 0;
+                display: inline-block;
+                width: 220px;
+            h1
+                font-family WhitneySemiBold
+                font-size 33px
+                line-height 30px
+                padding-bottom 20px
+                text-transform: uppercase
+                margin-top 10px
+    .i-calendar, .i-circlearrows
+        margin 0 10px 0 -31px
+        font-size 16px
+        opacity .5
+    .i-call-answer
+        top -3px
+        margin 0 10px 0 -28px
+        font-size 16px
+        opacity .5
+
+.header-lk
+    .header_all_mid
+        padding 17px 0 0
+
+    .mini
+        margin-top -12px
+    .header_contact
+        padding-bottom 0
+    .header_social_item
+        margin-bottom 50px
+.header_social_item.align-left
+    p
+        text-align center
+
+.header_all_mid
+    justify-content: unset!important
+    padding: 34px 0!important
+.select-wrapper
+    position relative
+    .i-menu
+        font-size 20px
+        top 5px
+        &:hover
+            color $blue
+.language-select.open
+    height: 90px
+    label
+        display flex
+#hlk
+    // transition height 500ms
+.language-select
+    background rgba(255, 255, 255, 0.1)
+    height: 27px;
+    display: inline-flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 554px
+    border-radius: 5px;
+    width: 46px;
+    top: 45px;
+    font-size: 13px;
+    margin-top: 0px;
+    text-align: left;
+    padding-right: 10px;
+
+
+    &:before
+        content: "\E011"
+        // transform rotate(90deg)
+        font-family: 'icon-font'
+        position: absolute
+        left: 33px
+        top: 7px
+        font-size: 7px
+        .i-dzown:before
+            content "\E00F"
+            position absolute
+            right 12px
+            top 11px
+            font 8px 'icon-font'
+            text-rendering optimizeLegibility
+            speak none
+            color white
+
+    input
+        &:checked
+            +label
+                display flex
+                order 1
+                text-align left
+    .span
+        margin-left: -4px
+        margin-top: -4px
+        height: 9px;
+    label
+        flex 1
+        display none
+        text-align center
+        flex-direction column
+        justify-content center
+        order 2
+        padding 8px 14px
+        width 60px
+        min-height 30px
+        transition background .3s
+        &:hover
+            cursor pointer
+            background $blue
+
+.header-log
+    font-size 12px
+    margin-left: 60px
+    position: absolute
+    left: calc(50% + 311px)
+    .reg
+        border: 1px solid #00abec
+    label
+        margin-left 10px
+        padding 8px 20px 9px
+        font-family WhitneyLight
+        line-height 12px
+
+        margin-left: 11px
+        margin-top: -5px
+        padding: 6px 18px 9px 20px
+        font-family: WhitneyLight
+        line-height: 12px
+        border: 1px solid WHITE
+        font-size: 14px
+
+        &:hover
+            background $blue
+            border 1px solid $blue
+    a
+        &:hover
+            color $blue
+    &_user-name
+        &:after
+            display block
+            content 'Александр Игоревич'
+    .avatar
+        display block
+        width 26px
+        height 26px
+        margin-left 15px
+        border-radius 100%
+        border 1px solid white
+.header-nav.mini
+    margin-top: -28px!important
+.header-logo.mini1
+    margin-top: -7px;
+    margin-bottom: 7px;
+
+.header-nav
+    align-items center
+    justify-content: unset!important
+    margin-left: 17px
+    margin-top: -11px
+
+    a
+        margin-left: 20px
+        font-size 13px
+        color: white
+        &:hover
+            color $blue
+
+.grafic
+    line-height: 20px;
+    font-family WhitneyLight
+    padding-left 30px
+    padding-top 10px
+    .flex
+        &:nth-child(1)
+            padding-bottom 20px
+            span
+                margin 0 5px
+                font-family WhitneySemiBold
+                font-weight: 400;
+        &:nth-child(2)
+            span
+                font-weight 700
+                margin-left 5px
+                font-family WhitneyMedium
+
+.header_slider
+    overflow hidden
+    margin 6px 0 0
+
+.header_contact
+    flex-direction column
+    flex-shrink 0
+    padding-bottom 30px
+    .footer_contact
+        padding-left 30px
+        margin 0 0 0 30px
+        .flex
+            .footer_number
+                position relative
+
+.header_social_item
+    display inline-block
+    flex-shrink 0
+    &:first-child
+        margin-right 30px
+    p
+        font-size 12px
+        letter-spacing 0.5px
+        font-weight 700
+        line-height 20px
+    a
+        margin 15px 15px 0 0
+    &.align-left
+        margin-top 15px
+        p
+            padding 0 0 0 16px
+        a
+            margin 10px 0 0 15px
+
+.change-button
+    cursor pointer
+    position absolute
+    bottom 0
+    z-index 15
+    left 50%
+    width 400px
+    height 50px
+    overflow hidden
+    transform translateX(-50%)
+    display: flex;
+    justify-content: center;
+    margin-left: -4px;
+    margin-bottom: 3px;
+    padding-bottom: 10px;
+
+    .i-doublenext
+        display: flex
+        margin: auto
+        margin-top: 6px
+        font-size: 13px
+    .i-doublenext:hover, .btnText:hover
+        color #00abec
+    .btnText
+        margin: auto
+        font-size: 13px
+.header_all_content
+    display inline-flex
+    &_window
+        position relative
+        &_dots
+            padding-bottom 25px
+            .nav-dot
+                margin 0 2px
+                box-sizing content-box
+                background #fff
+                border 3px solid #000
+                &:first-child
+                    margin-left 0
+    &_slider-box
+        overflow hidden
+        width 750px
+        position relative
+        &_wrapper
+            width 3000px
+            flex-shrink 0
+            transition all .5s
+            .header-news
+                padding-bottom 25px
+                width 750px
+                p
+                    font-size 18px
+                    font-family WhitneyLight
+                    line-height: 24px
+                    color: #e5e5e5
+                    margin: 0 0 50px
+                .b-blue
+                    padding: 4px 0
+                    display: inline-block
+                    width: 185px
+                    height: 31px
+                    margin-top: 17px
+
+
+input
+    &#header-slider-input1
+        &:checked
+            ~.header_all_content_slider-box .header_all_content_slider-box_wrapper
+                transform translateX(0px)
+            ~.header_all_content_window_dots #header-slider-dot1
+                background #fff
+                border 3px solid #676362
+                opacity 1
+
+    &#header-slider-input2
+        &:checked
+            ~.header_all_content_slider-box .header_all_content_slider-box_wrapper
+                transform translateX(-750px)
+            ~.header_all_content_window_dots #header-slider-dot2
+                background #fff
+                border 3px solid #676362
+                opacity 1
+
+    &#header-slider-input3
+        &:checked
+            ~.header_all_content_slider-box .header_all_content_slider-box_wrapper
+                transform translateX(-1500px)
+            ~.header_all_content_window_dots #header-slider-dot3
+                background #fff
+                border 3px solid #676362
+                opacity 1
+
+    &#header-slider-input4
+        &:checked
+            ~.header_all_content_slider-box .header_all_content_slider-box_wrapper
+                transform translateX(-2250px)
+            ~.header_all_content_window_dots #header-slider-dot4
+                background #fff
+                border 3px solid #676362
+                opacity 1
+.header-logos
+    margin-top: -1px
+    margin-left: 262px
+    .header-logo1
+        width: 165px
+    .header-logo2
+        width: 165px
+        margin-top: 24px
+
+.regBtn
+    margin-left: 12px!important
+    margin-top: -3px!important
+    padding: 7px 16px 9px 16px!important
+.authBtn
+    margin-left: 11px!important;
+    margin-top: -3px!important;
+    padding: 7px 20px 9px 18px!important;
+
+.header-mob-nav
+    display: none
+
+.menu-close
+    display: none
+    color:white
+
+@media screen and (min-width: 640px) and (max-width: 1024px)
+    .header-nav
+        margin: 0
+        display: none
+        top: 0
+        left: 0
+        position: fixed
+        z-index: 1
+        background-color: black
+        opacity: 0.8
+        width:100%
+        height:100%
+        flex-direction: column-reverse
+        align-items: flex-end
+        padding-right: 10px
+        padding-top: 20px
+        .nav-bar
+            display: flex
+            flex-direction column
+            margin-bottom auto
+        .nav-bar > *
+            margin-top: 40px
+        .lang-and-close
+            display inline-block
+            .close-menu
+                font-size 40px
+    .header-log
+        display none
+
+    .header_all_mid
+        position: fixed
+        justify-content  space-between!important
+        top:0
+        left: 0
+        background: url("../img/header_background.png") 50% / cover
+        z-index: 1000
+    .header-mob-nav
+        a[class*=i-]
+            font-size: 46px
+        display inline-flex
+        justify-content space-between
+        width 110px
+        margin-right 30px
+    .slide-dots
+        .i-dot
+            font-size: 11px
+
+    .header-logos
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items flex-end
+        margin: 0
+        width: 420px
+
+    .header_all_content
+        font-size: 47px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+        &_window
+            display flex
+            flex-direction column
+        &_slider-box
+            height: 500px
+            width: 520px
+            display flex
+            flex-direction column
+            justify-content center
+            align-items center
+            &_wrapper
+                position: relative
+                width: inherit
+                .header-news
+                    display:none
+                    opacity: 0
+                    transition opacity 1s linear 0s
+                a.i-next
+                a.i-back
+                    cursor pointer
+                    position absolute
+                    top 50%
+                    font-size 21px
+                a.i-back
+                    left 0
+                a.i-next
+                    right 0
+    .header_all
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+
+    .change-button
+        left: auto
+        transform none
+        position: relative
+        margin-top: 85px
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 12px;
+        color: #00abec;
+        font-weight: bold;
+        text-align: center;
+        .i-doublenext
+             animation : arrow-animation 1s ease-in-out 2s infinite alternate
+
+
+@keyframes arrow-animation
+{
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+        transform: translateY(10px)
+    }
+}
+
+

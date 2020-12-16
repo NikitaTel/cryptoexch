@@ -1,0 +1,81 @@
+extends layouts/layout-pass-recovery
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Обмен электронных валют – Инвесторам",
+      desc: "Заработок для партнеров электронного обменника валют.",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block content  
+   .pass-rec-content#pass-rec-step1
+      .title-text
+         p ВОССТАНОВЛЕНИЕ ПАРОЛЯ
+      .pass-recovery-form
+         .big-text.a
+            p Введите Ваш E-mail или номер телефона для восстановления пароля:
+         .inline.a
+            .input-mail
+               input(type="text" required placeholder="Email/Номер телефона")
+            .button-send
+               a.button.b-blue.border-r(onclick="checkFields('#pass-rec-step1 .inline.a')") Отправить
+               .little-text
+                  p Отправить повторно через #[span(id="sendtime-val") 10:45]
+      
+         .big-text.b
+            p Введите код из сообщения:
+         .inline.b
+            .input-mail
+               input(type="text" required placeholder="Код")
+            .button-send
+               a.button.b-blue.border-r(onclick="$('#pass-rec-step1').hide();$('#pass-rec-step2').show();") Отправить
+
+
+
+               
+   .pass-rec-content#pass-rec-step2(style="display: none")
+      .title-text
+         p ВОССТАНОВЛЕНИЕ ПАРОЛЯ
+      .pass-recovery-form-2
+         .big-text.a
+            p Придумайте новый пароль
+         .little-text.gray
+            p Придумайте пароль, который больше нигде не используете. #[br] Пароль должен содержать не меньше 8-ми знаков, среди которых могут быть буквы, символы и цифры.
+         .inline.a
+            .input-mail
+               input.input-form(id="pass" type="password" required)
+               label.label-star-red(for="pass")
+                  p Пароль 
+                     span.red-star *
+            .input-mail
+               input.input-form(id="repass" type="password" required)
+               label.label-star-red(for="repass")
+                  p Подтверждение пароля
+                     span.red-star *
+            .button-send
+               a.button.b-blue.border-r(onclick="$('.message').show()") Сохранить
+         .message(style="display: none")
+            .green-text
+               p  Ваш пароль успешно изменён: #[a(href="#" style="color:#00abec" onclick="$('#auth-aside').css('border', '2px solid #5f5f5f')") Авторизируйтесь на сайте.]
+
+         
+         
+               
+
+
+
+
+         
+      
+            
+            

@@ -1,0 +1,161 @@
+extends layouts/layout-aside-lk
+
+block vars
+   -
+      page = {
+         language: "ru",
+         title: "Обмен электронных валют",
+         desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+         keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+         author: "1000.tech",
+         appTitle: "Smart Pays",
+         type: "website",
+         card: "summary",
+         image: "img/test-img.jpg",
+         url: "https://smart-pays.com",
+         site_name: "Smart Pays",
+         domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   .lk_main
+      input.popup-input(type='checkbox' id='verification-id')
+      .popup.flex
+         label(for='verification-id').popup_bg
+         .verification-id.border-r
+            h2.title ПРИМЕР ФОТО С ВАШИМ ID (1)
+            label(for='verification-id').i-cancel.lkvr
+      input.popup-input(type='checkbox' id='verification-id2')
+      .popup.flex
+         label(for='verification-id2').popup_bg
+         .verification-id2.border-r
+            h2.title ПРИМЕР ФОТО С ВАШИМ ID (2)
+            label(for='verification-id2').i-cancel.lkvr
+
+      h2.title ВЕРИФИКАЦИЯ ЛИЧНОСТИ
+      p.lk-text В этом разделе Вы можете настроить верификацию личности.
+         br
+         | Особенно рекомендуем Вам это сделать, если Вы участвуете в нашей партнерской программе.
+      .lk-normes
+         p.lk-text Согласно нашим
+            a.text-b-un правилам
+            | и
+            a.text-b-un «политики противодействия отмыванию денежных средств»
+            | , мы проводим верификацию личности наших клиентов. Вам необходимо пройти процедуру верификации личности для открытия возможности совершать обмен через наш сервис. Все Ваши персональные данные полностью защищены согласно
+            a.text-b-un «политики конфиденциальности»
+            | .Данная процедура проводится добровольно и единожды. Данные указанные при верификации, должны быть достоверными. Если Вы опасаетесь за предоставляемые Вами документы, Вы можете написать на сканах, что они предоставляются «для сайта smart-pays.com».
+         p.lk-text
+            strong Внимание!&nbsp;
+            | В верификации может быть отказано по следующим причинам: предоставлены не все документы, документы не надлежащего качества.
+      h2.title.lk-title  ДЛЯ ПРОХОЖДЕНИЕ ВЕРИФИКАЦИИ ПРИКРЕПИТЕ СЛЕДУЮЩИЕ ДОКУМЕНТЫ:
+      ul.document-list
+         li
+            .counter 1
+            p ПАСПОРТ (ГЛАВНАЯ СТРАНИЦА ИЛИ ЛИЦЕВАЯ СТОРОНА)
+               label(for='verification-id').text-b-un Пример
+         li
+            .counter 2
+            p ПАСПОРТ (ВТОРАЯ СТРАНИЦА ИЛИ ОБРАТНАЯ СТОРОНА)
+               label(for='verification-id2').text-b-un Пример
+         li
+            .counter 3
+            P ДОКУМЕНТ ПОДТВЕРЖДАЮЩИЙ АДРЕС ПРОЖИВАНИЯ (ПРОПИСКА В ПАСПОРТЕ, ВЫПИСКА ИЗ БАНКА, КВИТАНЦИЯ ЗА КОММУНАЛЬНЫЕ УСЛУГИ ИЛИ ДРУГОЙ ДОКУМЕНТ)
+         li.list-mark-b Документы должны быть четкими, цветными, полно размерными и в полном объёме. Допускается сканированные документы и фото.
+         li.list-mark-b Срок обработки заявки на верификацию до
+            span 24 часов
+
+      h2.title ЗАПОЛНИТЕ ИНФОРМАЦИЮ О СЕБЕ И ПРИКРЕПИТЕ НЕОБХОДИМЫЕ ДОКУМЕНТЫ:
+      p.lk-text
+         span.red-star *
+         | Поля отмеченные звездочкой обязательны к заполнению.
+      .verification
+         ul.verification_data.flex-sb
+            li
+               input.input-form(id="verif-sename" required)
+               label.label-star-red(for="verif-sename")
+                  p Фамилия
+                     span.red-star *
+            li
+               input.input-form(id="verif-name" required)
+               label.label-star-red(for="verif-name")
+                  p Имя
+                     span.red-star *
+            li
+               input.input-form(id="verif-pasport" required)
+               label.label-star-red(for="verif-pasport")
+                  p Серия и номер паспорта
+                     span.red-star *
+            li
+               input.input-form(id="verif-adres" required)
+               label.label-star-red(for="verif-adres")
+                  p Адрес проживания
+                     span.red-star *
+            li
+               input.input-form(id="verif-tele" required)
+               label.label-star-red(for="verif-tele")
+                  p Телефон
+                     span.red-star *
+            li
+               input.input-form(id="verif-mail" required)
+               label.label-star-red(for="verif-mail")
+                  p E-mail
+                     span.red-star *
+         ul.verification_foto
+            li.flex-sb
+               .inline.chfile-parent
+                  .ver-text
+                     p 1. Паспорт (главная, лицевая сторона)
+                        span.red-star *
+                  .file-input
+                     .inline
+                        .chfile-dialog
+                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
+                           label.chfile-label.button.b-white.border-r( for="ver-sec") Выберите файл
+                        .chfile-filename
+                           p#chf1 файл не выбран
+                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+
+            li.flex-sb
+               .inline.chfile-parent
+                  .ver-text
+                     p 2. Паспорт (вторая, обратная сторона)
+                        span.red-star *
+                  .file-input
+                     .inline
+                        .chfile-dialog
+                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
+                           label.chfile-label.button.b-white.border-r( for="ver-sec") Выберите файл
+                        .chfile-filename
+                           p#chf2 файл не выбран
+                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+            li.flex-sb
+               .inline.chfile-parent
+                  .ver-text
+                     p 3. Документ подтверждающий адрес проживания
+                        span.red-star *
+                  .file-input
+                     .inline
+                        .chfile-dialog
+                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
+                           label.chfile-label.button.b-white.border-r.chfile-success( for="ver-sec") #[.i-vcheck(style="font-size: 18px;")]
+                        .chfile-filename
+                           p#chf3 12345.png
+                        .chfile-close
+                           a(href="")
+                              img(src="../img/chfile-close.svg")
+                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+
+      h2.title.lk-title ВАШИ ЗАЯВКИ НА ВЕРИФИКАЦИЮ
+      table.lk-table
+         tr
+            th
+               p ДАТА
+            td.long
+            th
+               p СТАТУС
+         tr
+            td
+               p 12.01.18, 12:30
+            td.long
+            td.request-ok

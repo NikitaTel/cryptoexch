@@ -1,0 +1,230 @@
+extends layouts/layout-aside
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Обмен электронных валют – Инвесторам",
+      desc: "Заработок для партнеров электронного обменника валют.",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   .lk_main
+      h2.title.exchange-title
+         p ОБМЕН
+         .exchange-title_money
+            .pm_icon.pm
+            p PERFECT MONEY USD
+         p НА
+         .exchange-title_money
+            .pm_icon.ac
+            p PAYER RUB
+      .exchange-steps.flex-sa
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 1
+            p Впишите сумму и заполните данные
+         .exchange-steps_space
+         .exchange-steps_step.flex
+            .circle.flex.flex-shrink
+               p 2
+            p Проверьте данные и получите инструкции
+         .exchange-steps_space
+         .exchange-steps_step.flex.active
+            .circle.flex.flex-shrink
+               p 3
+            p Оплатите заявку
+      h2.title.uppercase.text-margin.ex2-fat-ordNumber Заявка №661122
+      .exchange-triple.flex.border-r#cancelled
+         .exchange-triple_left.flex-col.flex-sb.flex
+            .exchange-triple_right_text
+               .big-text
+                  p Статус операции:
+                     span.red.ex-fat-bottomText ОТМЕНЕНА
+               .little-texts
+                  .little-text
+                     p Режим обработки:
+                        span Автоматический      
+                  .little-text
+                     p Время создания заявки:
+                        span 10:00 12.12.87
+                  .little-text
+                     p Условия обмена:
+                        span 100 USD PerfectMoney на 100 USD AdvCash
+                  .little-text
+                     p Счет получателя:
+                        span U123123123123
+               
+           
+         .exchange-triple_right.as_strech
+            .big-text.red
+               p.ex-fat-bottomText ПРИЧИНА ОТМЕНЫ:
+            .medium-text
+               p отправлена на Ваш счет:
+            .little-text
+               p 4345345345345
+            .button-transparent
+               label.button.b-white.exchange-input_label.border-r(for='exchange-step')
+                  div
+                     span Проверить оплату
+                     .question-box.question-box-ex
+                        .i-question
+                        p.question_help
+                           span.ff_wsb Внимание!
+                           | Нажмите “Проверить оплату” если вы оплатили заявку.
+                           |Далее проверка будет проходить автоматически каждые 30 секунд.
+
+      .exchange-triple.flex.border-r#success(style="display: none")
+         .exchange-triple_left.flex-col.flex-sb.flex
+            .exchange-triple_right_text
+               .big-text
+                  p Статус операции:
+                     span.green.ex-fat-bottomText ВЫПОЛНЕННАЯ
+               .little-texts
+                  .little-text
+                     p Режим обработки:
+                        span Автоматический      
+                  .little-text
+                     p Время создания заявки:
+                        span 10:00 12.12.87
+                  .little-text
+                     p Время исполнения заявки:
+                        span 10:00 12.12.87
+                  .little-text
+                     p Условия обмена:
+                        span 100 USD PerfectMoney на 100 USD AdvCash
+                  .little-text
+                     p Счет получателя:
+                        span U123123123123
+               
+           
+         .exchange-triple_right.as_strech
+            .big-text.a
+               p Средства в размере #[span.blue(id="value") 100 USD]
+            .medium-text.a
+               p отправлены на Ваш счет:
+            .little-text.a
+               p 4345345345345
+            .medium-text.b
+               p.ex-fat-bottomText Номер исходящей транзакции: 
+            .little-text.b
+               p 327465287356235
+            //- .button-transparent
+            //-    label.button.b-white.exchange-input_label.border-r(for='exchange-step')
+            //-       div
+            //-          span Проверить оплату
+            //-          .question-box
+            //-             .i-question
+            //-             p.question_help
+            //-                span.ff_wsb Внимание!
+            //-                | Нажмите “Проверить оплату” если вы оплатили заявку.
+            //-                |Далее проверка будет проходить автоматически каждые 30 секунд.
+
+
+      .feedback-1
+         .big-text
+            p Благодарим вас за произведённый обмен!
+         .little-text
+            p Оцените, пожалуйста, наш сервис:
+         .stars#s1
+            a(onclick="star(1,'#s1'); handleStars()").i-star.current
+            a(onclick="star(2,'#s1'); handleStars()").i-star.current
+            a(onclick="star(3,'#s1'); handleStars()").i-star.current
+            a(onclick="star(4,'#s1'); handleStars()").i-star.current
+            a(onclick="star(5,'#s1'); handleStars()").i-star.current
+            a(onclick="star(6,'#s1'); handleStars()").i-star.current
+            a(onclick="star(7,'#s1'); handleStars()").i-star.current
+            a(onclick="star(8,'#s1'); handleStars()").i-star.current
+            a(onclick="star(9,'#s1'); handleStars()").i-star.current
+            a(onclick="star(10,'#s1'); handleStars()").i-star.current
+      #f1(style="display:none")
+         .big-text
+            p Благодарим за вашу оценку!
+         .little-text
+            p Оставьте, пожалуйста, Ваш отзыв о работе с нами на одном из ресурсов:
+         .logos.inline
+            .logo-bch
+               img(src="../img/bestchange.png" alt="")
+            .logo-tp
+               img(src="../img/trustpilot.png" alt="")
+         .big-text
+            p Получите кэшбек на ваш счет!
+         .little-text
+            p Поделитесь ссылкой на наш ресурс с друзьями:
+         .inline.lower-content  
+            .input
+               input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+            .button
+               label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                  div
+                     span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+            .social-icons
+               .inline
+                  .icon
+                     .i-fb
+                  .icon
+                     .i-vk
+                  .icon
+                     .i-tw
+                  .icon
+                     .i-inst
+                  .icon
+                     .i-viber
+                  .icon
+                     .i-tg   
+      #f2(style="display:none")
+         .big-text
+            p  Благодарим за вашу оценку!
+         .little-text
+            p Пожалуйста, поделитесь, как мы могли бы улучшить наш сервис:
+         .feedback-form
+            .big-text-white
+               p НАПИШИТЕ ВАШ ОТЗЫВ:
+            .text-area
+               textarea(required id="feedback-text")
+               label(for="feedback-text")
+                  span Текст отзыва #[span.red-star *]
+            .inline
+               .input-fb
+
+                  input(type="text" name="name" id="username")
+                  label(for="username")
+                     span Ваше имя #[span.red-star *]
+               .button-fb
+                  input.button.b-blue.feedLeave(type="submit" value="Оставить отзыв")
+      //- .feedback-2
+      //-    .big-text
+      //-       p Благодарим вас за произведённый обмен!
+      //-    .little-text
+      //-       p Оцените, пожалуйста, наш сервис:
+      //-    .stars#s2
+      //-       a(onclick="star(1,'#s2')").i-star.current
+      //-       a(onclick="star(2,'#s2')").i-star.current
+      //-       a(onclick="star(3,'#s2')").i-star.current
+      //-       a(onclick="star(4,'#s2')").i-star.current
+      //-       a(onclick="star(5,'#s2')").i-star.current
+      //-       a(onclick="star(6,'#s2')").i-star.current
+      //-       a(onclick="star(7,'#s2')").i-star.current
+      //-       a(onclick="star(8,'#s2')").i-star.current
+      //-       a(onclick="star(9,'#s2')").i-star.current
+      //-       a(onclick="star(10,'#s2')").i-star.current
+         
+               
+
+
+
+
+         
+      
+            
+            

@@ -1,0 +1,403 @@
+extends layouts/layout-aside
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Обмен электронных валют – Инвесторам",
+      desc: "Заработок для партнеров электронного обменника валют.",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, партнерам, партнерка, рефералы, заработок, заработок в интернете",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block title
+   .main-bg
+      .lk-main-title
+         h1.title.text-center ИНВЕСТОРАМ
+         p.lk-text
+            strong Уважаемые гости нашего сервиса!&nbsp;
+            | Мы предлагаем вам принять участие в развитии нашего обменного сервиса и ознакомиться с программой инвестирования, которая поможет вам заработать и стать частью нашего успеха.
+block content
+   include ./partials/popups
+   .lk_main
+      input.popup-input(type='checkbox' id='invest5')
+      .popup.flex
+         label(for='invest5').popup_bg
+         .tarif-open.border-r
+            label(for='invest5').i-cancel
+            .tarif-open_top-bg.background-mod-dark
+               h5 ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+               .flex-sa
+                  .tarif-open_info
+                     h2.title СРОК
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 90 дней
+                  .tarif-open_info
+                     h2.title ДОХОД
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 4%
+                  .tarif-open_info
+                     h2.title СТАВКА
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 4 USD
+            ul.tarif-open_bot-bg.flex-sb
+               li.green-line
+                  p Ваш кошелек:
+                  input.input-form(placeholder='support@smartpays.com')
+                  span Кошелек на который мы потом отправим деньги
+               li.green-line
+                  p Сумма депозита:
+                  input.input-form(placeholder='100 USD')
+                  .advcash-logo
+                  input(type="submit" value="Перейти к оплате").button.b-blue.border-r
+               li.green-line
+                  p Дата окончания:
+                  input.input-form(placeholder='28.10.12, 12:30' disabled='disable')
+                  span
+                     | Дата окончания срока
+                     br
+                     | инвестиции
+      input.popup-input(type='checkbox' id='invest12')
+      .popup.flex
+         label(for='invest12').popup_bg
+         .tarif-open.border-r
+            label(for='invest12').i-cancel
+            .tarif-open_top-bg.background-mod-dark
+               h5 ТАРИФНЫЙ ПЛАН "ВТОРОЙ"
+               .flex-sa
+                  .tarif-open_info
+                     h2.title СРОК
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 180 дней
+                  .tarif-open_info
+                     h2.title ДОХОД
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 8%
+                  .tarif-open_info
+                     h2.title СТАВКА
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 8 USD
+            ul.tarif-open_bot-bg.flex-sb
+               li
+                  p Ваш кошелек:
+                  input.input-form(placeholder='support@smartpays.com')
+                  span Кошелек на который мы потом отправим деньги
+               li
+                  p Сумма депозита:
+                  input.input-form(placeholder='100 USD')
+                  .advcash-logo
+                  input(type="submit" value="Перейти к оплате").button.b-blue.border-r
+               li
+                  p Дата окончания:
+                  input.input-form(placeholder='28.10.12, 12:30' disabled='disable')
+                  span
+                     | Дата окончания срока
+                     br
+                     | инвестиции
+      input.popup-input(type='checkbox' id='invest26')
+      .popup.flex
+         label(for='invest26').popup_bg
+         .tarif-open.border-r
+            label(for='invest26').i-cancel
+            .tarif-open_top-bg.background-mod-dark
+               h5 ТАРИФНЫЙ ПЛАН "ТРЕТИЙ"
+               .flex-sa
+                  .tarif-open_info
+                     h2.title СРОК
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 360 дней
+                  .tarif-open_info
+                     h2.title ДОХОД
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 16%
+                  .tarif-open_info
+                     h2.title СТАВКА
+                     .flex
+                        .tarif-open_info_logo
+                           .i-leader
+                        p 16 USD
+            ul.tarif-open_bot-bg.flex-sb
+               li
+                  p Ваш кошелек:
+                  input.input-form(placeholder='support@smartpays.com')
+                  span Кошелек на который мы потом отправим деньги
+               li
+                  p Сумма депозита:
+                  input.input-form(placeholder='100 USD')
+                  .advcash-logo
+                  input(type="submit" value="Перейти к оплате").button.b-blue.border-r
+               li
+                  p Дата окончания:
+                  input.input-form(placeholder='28.10.12, 12:30' disabled='disable')
+                  span
+                     | Дата окончания срока
+                     br
+                     | инвестиции
+      h2.title ТАРИФНЫЕ ПЛАНЫ
+      p.lk-text Для оформления депозита выбирите подходящий тарифный план:
+      ul.slides8.flex-sb.border-r
+         input(type="radio" name="radio-btn8" id="tarif5" checked)
+         li.slide-container8
+            ul.slide8
+               li
+                  h2.title.text-center ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+               li
+                  p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor
+               li
+                  p Условия тарифа:
+               li
+                  p Срок инвестиций - 90 дней
+                     br
+                     |Доходность - 5% за весь срок
+                     br
+                     |Минимальная сумма - 100$
+                     br
+                     |Максимальная сумма - 50 000$
+               li
+                  p Способы оплаты:
+               li.flex-sb
+                  a(href='')
+                  a(href='')
+                  a(href='')
+               li
+                  label(for='invest5').button.b-blue.border-r Инвестировать
+         input(type="radio" name="radio-btn8" id="tarif12" )
+         li.slide-container8
+            ul.slide8
+               li
+                  h2.title.text-center ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+               li
+                  p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor
+               li
+                  p Условия тарифа:
+               li
+                  p Срок инвестиций - 180 дней
+                     br
+                     | Доходность - 12% за весь срок
+                     br
+                     | Минимальная сумма - 100$
+                     br
+                     | Максимальная сумма - 50 000$
+               li
+                  p Способы оплаты:
+               li.flex-sb
+                  a(href='')
+                  a(href='')
+                  a(href='')
+               li
+                  label(for='invest12').button.b-blue.border-r Инвестировать
+         input(type="radio" name="radio-btn8" id="tarif26" )
+         li.slide-container8
+            ul.slide8
+               li
+                  h2.title.text-center ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+               li
+                  p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor
+               li
+                  p Условия тарифа:
+               li
+                  p Срок инвестиций - 360 дней
+                     br
+                     | Доходность - 26% за весь срок
+                     br
+                     | Минимальная сумма - 100$
+                     br
+                     | Максимальная сумма - 50 000$
+               li
+                  p Способы оплаты:
+               li.flex-sb
+                  a(href='')
+                  a(href='')
+                  a(href='')
+               li
+                  label(for='invest26').button.b-blue.border-r Инвестировать
+         li.nav-dots8.flex-sb
+            label(for="tarif5" class="nav-dot8" id="img-dot-tarif5")
+               .tarif-plan
+                  .tarif-plan_bg.tarif5
+                  h5 ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+                  .tarif-plan_srok.flex-sb
+                     p СРОК ИНВЕСТИРОВАНИЯ
+                        span 90 ДНЕЙ
+                     p ДОХОДНОСТЬ
+                        span 5%
+            label(for="tarif12" class="nav-dot8" id="img-dot-tarif12")
+               .tarif-plan
+                  .tarif-plan_bg.tarif12
+                  h5 ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+                  .tarif-plan_srok.flex-sb
+                     p СРОК ИНВЕСТИРОВАНИЯ
+                        span 180 ДНЕЙ
+                     p ДОХОДНОСТЬ
+                        span 12%
+            label(for="tarif26" class="nav-dot8" id="img-dot-tarif26")
+               .tarif-plan
+                  .tarif-plan_bg.tarif26
+                  h5 ТАРИФНЫЙ ПЛАН "СТАРТОВЫЙ"
+                  .tarif-plan_srok.flex-sb
+                     p СРОК ИНВЕСТИРОВАНИЯ
+                        span 360 ДНЕЙ
+                     p ДОХОДНОСТЬ
+                        span 26%
+
+      p.lk-text
+         span.red-star *
+         | Инвестиции принимаются через платежную систему WebMoney  в валюте USD.
+         br
+         | &nbsp;&nbsp;&nbsp;Минимальная сумма депозита — 100 USD
+
+      h2.title.lk-title НАШИ ПРЕИМУЩЕСТВА
+      ul.document-list
+         li
+            .counter 1
+            p.uppercase Начисления и выплаты по партнерской программе ведутся в долларах.
+         li
+            .counter 2
+            p.uppercase Минимальная сумма для снятия заработанных денег с партнерского счета составляет 10 USD.
+         li
+            .counter 3
+            p.uppercase За каждый совершенный обмен по вашей партнерской ссылке вы получаете
+               | вознаграждение в размере от 5% до 30% от суммы прибыли сервиса.
+         span Процент отчислений зависит от суммы совершенных обменов по вашей партнерской ссылке:
+         li.list-mark-b 1 000 — 5 000 USD — 5%
+         li.list-mark-b 5 000 — 15 000 USD — 10%
+         li.list-mark-b 15 000 — 30 000 USD — 15%
+         li.list-mark-b 30 000 — 60 000 USD — 20%
+         li.list-mark-b 60 000 — 100 000 USD — 25%
+         li.list-mark-b свыше 100 000 USD — 30%
+         li
+            .counter 4
+            p.uppercase Суммы партнерских вознаграждений могут быть со временем изменены.
+         span При этом все заработанные средства сохраняются на счете с учетом действовавших ранее ставок.
+            | По некоторым направлениям партнерский процент может не начисляться.
+         li
+            .counter 5
+            p.uppercase На странице, где вы публикуете о нас информацию должно быть четко
+               | указано об услугах, предоставляемых нашим сайтом.
+         span В рекламных текстах запрещаются любые упоминания о наличии «бесплатных бонусов» на нашем сайте.
+         li
+            .counter 6
+            p.uppercase Запрещается размещать партнерскую ссылку:
+         li.list-mark-b В массовых рассылках писем (СПАМ);
+         li.list-mark-b На сайтах, принудительно открывающих окна браузера, либо открывающих сайты в скрытых фреймах;
+         li.list-mark-b На сайтах, распространяющих любые материалы, прямо или косвенно нарушающие законодательство Украины и РФ;
+         li.list-mark-b На сайтах, публикующих списки сайтов с «бесплатными бонусами»;
+         span Сайты, нарушающие одно или несколько вышеперечисленных правил, будут занесены в черный список нашей партнерской
+            | программы. Оплата за посетителей, пришедших с подобных сайтов производиться не будет.
+         li
+            .counter 7
+            p.uppercase Запрещается регистрироваться по своей реферальной ссылке с целью
+               | получения денежного вознаграждения.
+         li
+            .counter 8
+            p.uppercase Партнер несет полную ответственность за сохранность своих
+               | аутентификационных данных (логина и пароля) для доступа к аккаунту.
+         li
+            .counter 9
+            p.uppercase Данные условия могут изменяться в одностороннем порядке без оповещения
+               | участников программы, но с публикацией на этой странице и новостях.
+         li
+            .counter 10
+            p.uppercase При несоблюдении данных условий аккаунт нарушителя будет заблокирован
+               | без выплат.
+      h2.title.lk-title МОИ ДЕПОЗИТЫ
+      table.lk-table.fc-border.my-deposits
+         tr
+            th №
+            th ДАТА
+            th СУММА
+            th СИСТЕМА
+            th ПРОЦЕНТ
+            th К ВЫПЛАТЕ
+            th СТАТУС
+         tr
+            td 1
+            td
+               p 12.01.18, 12:30
+               p
+                  span (закрытие 16.01.19, 12:30)
+            td 10 000 USD
+            td Adv Cash USD
+            td 5%
+            td
+               p 1050
+               a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+            td
+               p.pay.ordered
+         tr
+            td 1
+            td
+               p 12.01.18, 12:30
+               p
+                  span (закрытие 16.01.19, 12:30)
+            td 10 000 USD
+            td Adv Cash USD
+            td 5%
+            td
+               p 1050
+               a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+            td
+               p.pay.ordered
+      .flex-sb.for-partners(style="margin: 50px auto 25px;")
+         a
+            .for-partners_img.forma4
+            span Условия партнерской программы
+         a
+            .for-partners_img.forma3
+            span Партнерский
+               br
+               | FAQ
+         a
+            .for-partners_img.forma2
+            span Партнерский
+               br
+               | кабинет
+         a
+            .for-partners_img.forma1
+            span Гарантии
+block aside
+   //- h2.title.underline НОВОСТИ
+   //- ul.aside-news.news_colum.border-r
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       .date.date-dark
+   //-          .i-calendar
+   //-          span 6 марта, 2017
+   //-       .news_text
+   //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   //-    li
+   //-       a.news-more2(href="/news.html") Все новости

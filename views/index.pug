@@ -1,0 +1,875 @@
+extends layouts/layout
+
+block vars
+   -
+      page = {
+         language: "ru",
+         title: "Обмен электронных валют",
+         desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+         keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+         author: "1000.tech",
+         appTitle: "Smart Pays",
+         type: "website",
+         card: "summary",
+         image: "img/test-img.jpg",
+         url: "https://smart-pays.com",
+         site_name: "Smart Pays",
+         domain: "smart-pays.com"
+      }
+
+block content
+   include ./partials/popups
+   //- ОТДАЕТЕ ПОЛУЧАЕТЕ
+   //- input.popup-input(type='checkbox' id='invest7')
+   //- .popup.flex.registration
+   //-    label(for='invest7').popup_bg
+   //-    .tarif-open.border-r
+   //-       label(for='invest7').i-cancel
+   //-       .tarif-open_top-bg.background-mod-dark
+   //-          h5 РЕГИСТРАЦИЯ
+   //-       ul.tarif-open_bot-bg.flex-sa
+   //-          li
+   //-             p.lk-text Зарегистрируйтесь на нашем сайте, чтобы активировать накопительную систему скидок,
+   //-                | отслеживать статус ваших заявок и статистику обменов.
+   //-                | Так же Вы получите возможность участвовать в
+   //-                a.text-b-un «Партнерской программе».
+   //-             ul
+   //-                li
+   //-                   input.input-form(id="reg-name" required)
+   //-                   label.label-star-red(for="reg-name")
+   //-                      p Логин
+   //-                         span.red-star *
+   //-                li
+   //-                   input.input-form(id="reg-pasport" required)
+   //-                   label.label-star-red(for="reg-pasport")
+   //-                      p E-mail
+   //-                         span.red-star *
+   //-                li
+   //-                   input.input-form(id="reg-tele" required)
+   //-                   label.label-star-red(for="reg-tele")
+   //-                      p Пароль
+   //-                         span.red-star *
+   //-                li
+   //-                   input.input-form(id="reg-mail" required)
+   //-                   label.label-star-red(for="reg-mail")
+   //-                      p Пароль снова
+   //-                         span.red-star *
+   //-                li
+   //-                   input(type="submit" value="Регистрация").button.b-blue.border-r
+   //-                li
+   //-                   input(type="submit" value="Авторизация").button.b-white.border-r
+
+
+
+
+
+
+
+
+
+   .exchange-bg#exchange_block
+
+      .change.flex-sb
+         .change_give
+            ul.slides3
+               li.slide-container3
+                  ul.slide3
+                     .give-title.text-center
+                        h2 ОТДАЕТЕ
+                     ul.slides3
+                        input(type="checkbox" name="radio-btn41" id="dinero" checked)
+                        li.slide-container4
+                           ul.slide4
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch(title='Выберите валюту') USD
+                                       a.money_name_item(title='Выберите валюту') EUR
+                                       a.money_name_item(title='Выберите валюту') RUB
+
+                           input(type="checkbox" name="radio-btn42" id="dinero-mas")
+                           ul.slide4.slide4mas
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch(title='Выберите валюту') USD
+                                       a.money_name_item(title='Выберите валюту') EUR
+                                       a.money_name_item(title='Выберите валюту') RUB
+
+                           label.dinero-mas(for='dinero-mas')
+                              ul.slide4
+                                 li
+                                    .money
+                                       .pm_icon
+                                       .money_name
+                                          span Еще
+                        li.nav-dots4
+                           label(for="dinero" class="nav-dot4" id="img-dot-dinero")
+                              p.text-margin Электронные валюты
+                              .i-next
+                     ul.slides3
+                        input(type="checkbox" name="radio-btn4" id="banc" )
+                        li.slide-container4
+                           ul.slide4
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.pr
+                                    .money_name
+                                       span AdvCash
+                                       a.money_name_item.ch(title='Выберите валюту') USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.ac
+                                    .money_name
+                                       span Payeer
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                           li.nav-dots4
+                              label(for="banc" class="nav-dot4" id="img-dot-banc")
+                                 p.text-margin Наличные
+                                 .i-next
+                     ul.slides3
+                        input(type="checkbox" name="radio-btn5" id="banc2" )
+                        li.slide-container4
+                           ul.slide4
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.pr
+                                    .money_name
+                                       span AdvCash
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.ac
+                                    .money_name
+                                       span Payeer
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                    span.price 1
+                           li.nav-dots4
+                              label(for="banc2" class="nav-dot4" id="img-dot-banc2")
+                                 p.text-margin Денежные переводы
+                                 .i-next
+
+         .change_give.change_get
+            ul.slides5
+               li.slide-container5
+                  ul.slide5
+                     .give-title.text-center
+                        h2 ПОЛУЧАЕТЕ
+                     ul.slides5
+                        input(type="checkbox" name="radio-btn41" id="dinero5" checked)
+                        li.slide-container4
+                           ul.slide5
+                              li
+                                 .money
+                                    .pm_icon.ac
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                              li
+                                 .money
+                                    .pm_icon.bc
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                           input(type="checkbox" name="radio-btn42" id="dinero-mas2")
+                           ul.slide5
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                           label.dinero-mas(for='dinero-mas2')
+                              ul.slide5
+                                 li
+                                    .money
+                                       .pm_icon
+                                       .money_name
+                                          span Еще
+                           li.nav-dots4
+                              label(for="dinero5" class="nav-dot4" id="img-dot-dinero5")
+                                 p.text-margin Электронные валюты
+                                 .i-next
+                     ul.slides5
+                        input(type="checkbox" name="radio-btn41" id="dinero6" checked)
+                        li.slide-container4
+                           ul.slide5
+                              li
+                                 .money
+                                    .pm_icon.ac
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                              li
+                                 .money
+                                    .pm_icon.bc
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                                    a.less(onclick="$('#reserve-request').prop('checked', true)") мало?
+                           input(type="checkbox" name="radio-btn42" id="dinero-mas3")
+                           ul.slide5
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             | =
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                              li
+                                 .money
+                                    .pm_icon.pm
+                                    .money_name
+                                       span Perfect Money
+                                       a.money_name_item.ch USD
+                                       a.money_name_item EUR
+                                       a.money_name_item RUB
+                                       span.price
+                                          p 1 USD
+                                          p
+                                             |=
+                                          p 28,25 UAN
+                                       a.money_name_item.changeBtn Обменять
+                                 .money_change
+                                    span 12456
+                           label.dinero-mas(for='dinero-mas3')
+                              ul.slide5
+                                 li
+                                    .money
+                                       .pm_icon
+                                       .money_name
+                                          span Еще
+                           li.nav-dots4
+                              label(for="dinero6" class="nav-dot4" id="img-dot-dinero6")
+                                 p.text-margin Электронные валюты
+                                 .i-next
+      //- блокировка обменов
+      .blockexchange-popup-absolute#blockexchange
+         .blockexchange-popup-content
+            .blockexchange-form
+               .sm-logo
+                  img(src="../img/blockexchange-logo.png" alt="logo")
+               .little-text
+                  p На данный момент в разделе ведутся технические работы. #[br] Сервис заработает через:
+               .timer
+                  span.timer-digit 0
+                  span.timer-digit 0
+                  span :
+                  span.timer-digit 0
+                  span.timer-digit 0
+                  span :
+                  span.timer-digit 0
+                  span.timer-digit 0
+               .little-text
+                  p Мы заботимся о качестве Вашего обслуживания.
+               .big-text
+                  p Благодарим за выбор Smart Pays!
+      //- блокировка обменов
+
+   //- РЕЗЕРВЫ
+   .reserve.main-bg.background-mod-dark
+      .reserve_all.main-content
+         h2.title.text-center РЕЗЕРВЫ
+         a(href="#").i-next.next
+         a(href="#").i-next.prev(style="transform:rotate(180deg")
+         ul.flex-sb.reserve1
+            li
+               .pm_icon.pm.ic1
+               .pm-text
+                  span Perfect Money
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.pr.ic1
+               .pm-text
+                  span Perfect Money
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.ac.ic1
+               .pm-text
+                  span Perfect Money
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.bc.ic1
+               .pm-text
+                  span Perfect Money
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            //- li
+            //-    .pm_icon.bc
+            //-    .pm-text
+            //-       span Perfect Money USD
+            //-       p 0.6100
+         ul.flex-sb.reserve2
+            li
+               .pm_icon.ac
+               .pm-text
+                  span AdvCash
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.pm
+               .pm-text
+                  span Perfect Money USD
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.pr
+               .pm-text
+                  span Perfect Money USD
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            li
+               .pm_icon.bc
+               .pm-text
+                  span Perfect Money USD
+                  p #[span.second-val 000 000 #[b USD]] #[span.second-val 000 000 #[b USD]]
+            //- li
+            //-    .pm_icon.ac
+            //-    .pm-text
+            //-       span Perfect Money USD
+            //-       p 0.6100
+   //- НОВОСТИ
+   .news.main-bg
+      .main-content
+         h2.title.text-center НОВОСТИ
+         .flex-sb(style="margin-bottom: -26px;")
+            .news_block1.flex-sb
+               .top_news
+                  p Топ новость
+               .news_block1_colum
+                  .date
+                     .i-calendar
+                     span 6 марта, 2017
+                  h3 Значение BitCoin на рынке криптовалют
+                  p.news_text
+                     | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                  a.news-more(href="/opennews.html") Подробнее
+               .news-img-b
+
+            .news_block2
+               .news-img-s.news2_1
+               .news_block2_colum
+                  h4
+                     a Снижение комиссии на вывод Skrill
+                  p.news_text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                     | auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+
+                  .date
+                     .i-calendar
+                     span 6 марта, 2017
+            ul.news_block3
+               li
+                  p.news_text
+                     a This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                  .date
+                     .i-calendar
+                     span 6 марта, 2017
+               li
+                  p.news_text
+                     a This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                  .date
+                     .i-calendar
+                     span 6 марта, 2017
+               li
+                  p.news_text
+                     a This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+                  .date
+                     .i-calendar
+                     span 6 марта, 2017
+               li
+                  a.news-more2(href="/news.html") Все новости
+   //- ОТЗЫВЫ И ОБМЕНЫ
+   .exchange.main-bg
+      .main-content.flex-sb
+         div
+            h2.title.text-center ОТЗЫВЫ
+            .slides2.border-r
+               input(type="radio" name="radio-btn2" id="img-7" checked)
+               input(type="radio" name="radio-btn2" id="img-8" )
+               input(type="radio" name="radio-btn2" id="img-9" )
+               input(type="radio" name="radio-btn2" id="img-10")
+               input(type="radio" name="radio-btn2" id="img-11")
+               input(type="radio" name="radio-btn2" id="img-12")
+               .slides2_wrapper.flex-sb
+                  .slide2
+                     ul.comment
+                        li Сергей Соколов
+                        li.client-info
+                           img(src="../img/index-fb-tustpilot.png").index-tp-5stars
+                           //- div
+                           //-    a.i-star.active
+                           //-    a.i-star.active
+                           //-    a.i-star.active
+                           //-    a.i-star
+                           //-    a.i-star
+                           .cauntri_name Россия
+                           .comment-date
+                              p.text-margin 07.06.2017,
+                                 span 14:55
+                        li.messege
+                           p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                  .slide2 2
+                  .slide2 3
+                  .slide2 4
+                  .slide2 5
+                  .slide2 6
+               label.i-next(for="img-7" id="nav-next-7")
+               label.i-next(for="img-8" id="nav-next-8")
+               label.i-next(for="img-9" id="nav-next-9")
+               label.i-next(for="img-10" id="nav-next-10")
+               label.i-next(for="img-11" id="nav-next-11")
+               label.i-next(for="img-12" id="nav-next-12")
+               label.i-back(for="img-7" id="nav-prev-7")
+               label.i-back(for="img-8" id="nav-prev-8")
+               label.i-back(for="img-9" id="nav-prev-9")
+               label.i-back(for="img-10" id="nav-prev-10")
+               label.i-back(for="img-11" id="nav-prev-11")
+               label.i-back(for="img-12" id="nav-prev-12")
+               a.news-more(href='/feedback.html') Все отзывы (243)
+
+         .exchange_list
+            h2.title.text-center НЕДАВНИЕ ОБМЕНЫ
+            ul.flex-sb
+               li.flag
+                  .flag_img.russia
+                  p 08:12
+
+
+                  p 530.00
+               li.iz
+                  .pm_icon.ac
+                  span AdvCash
+
+               li
+                  .i-next
+                  p.cipher 530.00
+
+               li.iz
+                  .pm_icon.bc
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.ukraine
+                  p 08:12
+
+                  p 1750.00
+               li.iz
+                  .pm_icon.pm
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 1750.00
+
+               li.iz
+                  .pm_icon.pr
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.south-africa
+                  p 08:12
+
+                  p 880.00
+               li.iz
+                  .pm_icon.ac
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 880.0
+
+               li.iz
+                  .pm_icon.bc
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.czech-republic
+                  p 08:12
+
+                  p 1750.00
+               li.iz
+                  .pm_icon.pr
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 1750.00
+
+               li.iz
+                  .pm_icon.pm
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.australia
+                  p 08:12
+
+                  p 530.00
+               li.iz
+                  .pm_icon.ac
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 530.00
+
+               li.iz
+                  .pm_icon.bc
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.ukraine
+                  p 08:12
+
+                  p 695.00
+               li.iz
+                  .pm_icon.pr
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 695.00
+
+               li.iz
+                  .pm_icon.pm
+                  span BitCoin
+            ul.flex-sb
+               li.flag
+                  .flag_img.russia
+                  p 08:12
+
+                  p 530.00
+               li.iz
+                  .pm_icon.ac
+                  span AdvCash
+               li
+                  .i-next
+                  p.cipher 530.00
+
+               li.iz
+                  .pm_icon.pr
+                  span BitCoin
+      .recent-exchanges#recExchI
+         .rc-close(onclick="$('#recExchI').hide()")
+            .i-close
+
+         h2.rc-title Последние обмены
+         .rc-grid
+            .rec-changes-line.inline.line-iter
+               .country-logo.logo-russia
+
+               .rc-time
+                  p.rc-timeval 08:12:03
+               .rc-divider
+               .rc-summ1
+                  p.rc-summ1-val 530.00
+               .rc-logo1.logo-ac
+
+               .next
+                  .i-next
+               .rc-summ2
+                  p.rc-summ2-val 530.00
+               .rc-logo2.logo-btc
+            .rec-changes-line.inline.line-iter
+               .country-logo.logo-russia
+
+               .rc-time
+                  p.rc-timeval 08:12:03
+               .rc-divider
+               .rc-summ1
+                  p.rc-summ1-val 530.00
+               .rc-logo1.logo-ac
+
+               .next
+                  .i-next
+               .rc-summ2
+                  p.rc-summ2-val 530.00
+               .rc-logo2.logo-btc
+            .rec-changes-line.inline.line-iter
+               .country-logo.logo-russia
+
+               .rc-time
+                  p.rc-timeval 08:12:03
+               .rc-divider
+               .rc-summ1
+                  p.rc-summ1-val 530.00
+               .rc-logo1.logo-ac
+
+               .next
+                  .i-next
+               .rc-summ2
+                  p.rc-summ2-val 530.00
+               .rc-logo2.logo-btc
+            .rec-changes-line.inline.line-iter
+               .country-logo.logo-russia
+
+               .rc-time
+                  p.rc-timeval 08:12:03
+               .rc-divider
+               .rc-summ1
+                  p.rc-summ1-val 530.00
+               .rc-logo1.logo-ac
+
+               .next
+                  .i-next
+               .rc-summ2
+                  p.rc-summ2-val 530.00
+               .rc-logo2.logo-btc
+
+
+
+
+
+
+
+   //- СЕРТИФИЦИРОВАНЫ
+   .main-bg
+      .main-content.cert-mc
+         h2.title.text-center.cert-title МЫ СЕРТИФИЦИРОВАНЫ
+         .slides6
+            input(type="radio" name="radio-btn6" id="img-20" checked )
+            input(type="radio" name="radio-btn6" id="img-21" )
+            input(type="radio" name="radio-btn6" id="img-22" )
+            input(type="radio" name="radio-btn6" id="img-23" )
+            input(type="radio" name="radio-btn6" id="img-24" )
+            input(type="radio" name="radio-btn6" id="img-25" )
+            input(type="radio" name="radio-btn6" id="img-26" )
+            input(type="radio" name="radio-btn6" id="img-27" )
+            .slides6_wrapper.flex-sb
+               a.logos1
+               a.logos2
+               a.logos3
+               a.logos4
+               a.logos1
+               a.logos2
+               a.logos3
+               a.logos4
+            label.i-next(for="img-20" id="nav-next-20")
+            label.i-next(for="img-21" id="nav-next-21")
+            label.i-next(for="img-22" id="nav-next-22")
+            label.i-next(for="img-23" id="nav-next-23")
+            label.i-next(for="img-24" id="nav-next-24")
+            label.i-next(for="img-25" id="nav-next-25")
+            label.i-next(for="img-26" id="nav-next-26")
+            label.i-next(for="img-27" id="nav-next-27")
+            label.i-back(for="img-20" id="nav-prev-20")
+            label.i-back(for="img-21" id="nav-prev-21")
+            label.i-back(for="img-22" id="nav-prev-22")
+            label.i-back(for="img-23" id="nav-prev-23")
+            label.i-back(for="img-24" id="nav-prev-24")
+            label.i-back(for="img-25" id="nav-prev-25")
+            label.i-back(for="img-26" id="nav-prev-26")
+            label.i-back(for="img-27" id="nav-prev-27")
+   //- ПРЕИМУЩЕСТВА
+   .advantages.main-bg
+      .main-content(style="padding-bottom: 36px;")
+         h2.title.text-center(style="margin-bottom: 55px;") НАШИ ПРЕИМУЩЕСТВА
+         .flex-sb(style="margin-left: 22px;margin-bottom: -10px;")
+            .advantages_list
+               .advantages_img.predst
+               h6 Официальный представитель
+               p.text-margin Мы являемся авторизированным обменным пунктом представленных платежных систем.
+            .advantages_list
+               .advantages_img.tarifi
+               h6 Выгодные тарифы
+               p.text-margin Только у нас самые выгодные тарифы по обмену и выводу электронных валют. С нами Вы экономите средства и время.
+            .advantages_list
+               .advantages_img.prefi_comodo
+               h6 Защита Comodo
+               p.text-margin Все Ваши данные находятся в полной безопасности за счет шифрования и защиты от подмены данных.
+            .advantages_list
+               .advantages_img.rabotn
+               h6 Лояльные операторы
+               p.text-margin Наши операторы в любое время с радостью помогут Вам разобраться с любыми сложностями.
+   script(type='text/javascript' src="https://www.google.com/recaptcha/api.js" async defer)
+
+

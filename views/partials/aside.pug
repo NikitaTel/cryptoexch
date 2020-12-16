@@ -1,0 +1,93 @@
+//- h2.title.underline.profile-hideable ПРОФИЛЬ
+//- ul.profil.profile-hideable
+//-    li.flex-sb
+//-       .avatar
+//-          img(src='../img/man.png')
+//-       .name
+//-          p Здравствуйте,
+//-             span.lk-client-name !
+//-          p.lk-client-id ID
+//-    li
+//-       p Статус:
+//-          span.profile-status.activation
+//-       p Скидка:
+//-          span 10%
+//-       p Сумма обменов:
+//-          span 10 000$
+//-       p Партнерсике:
+//-          span 15%
+//-       p Рефералов:
+//-          span 22
+//-       p Баланс:
+//-          span 1000$
+//-          a(onclick="document.getElementById('moneyOut').style.display='block'").button-bg-g.MoneyOut Вывод
+//-    li
+//-       a.button.b-blue Выйти
+//- h2.title.underline.lk-hideable ЛИЧНЫЙ КАБИНЕТ
+//- .nav-lk.border-r.lk-hideable
+//-    a(href='lk-main.html').flex-sb
+//-       p.i-personal-id-card-of-a-man
+//-       p ЛИЧНЫЕ ДАННЫЕ
+//-    a(href='lk-security.html').flex-sb
+//-       p.i-setti
+//-       p НАСТРОЙКИ БЕЗОПАСНОСТИ
+//-    a(href='lk-verification.html').flex-sb
+//-       p.i-leader
+//-       p ВЕРИФИКАЦИЯ ЛИЧНОСТИ
+//-    a(href='lk-payments.html').flex-sb
+//-       p.i-credit-card
+//-       p ВАШИ СЧЕТА
+//-    a(href='lk-inside-pay.html').flex-sb
+//-       p.i-wallet
+//-       p ВНУТРЕННИЙ СЧЕТ
+//-    a(href='lk-cabinet.html').flex-sb
+//-       p.i-briefcase
+//-       p ПАРТНЕРСКИЙ КАБИНЕТ
+//-    a(href='lk-operations.html').flex-sb
+//-       p.i-menu-lines
+//-       p КАБИНЕТ ИНВЕСТОРА
+h2.title.underline АВТОРИЗАЦИЯ
+ul.autoriz.border-r#auth-aside
+   li
+      input.input-form(maxlength="25" required size="40" name="login" placeholder="Логин или E-mail" onchange="checkFields('#auth-aside')")
+   li
+      input.input-form(id="pass" required placeholder="Пароль" type="password" maxlength="25" size="40" name="password" onchange="checkFields('#auth-aside')")
+      label.autoriz_label(for="pass")
+         a.text-b-un(href="/pass-recovery.html" target="_blank") Забыли пароль?
+   li   
+      form(action="?" method="POST")
+         div(class="g-recaptcha" data-sitekey="6LfX2eEZAAAAALpteI7Fqfm1fqpQG24RCn8S4ruL" )
+   li.flex-sb
+      label.button.b-white.border-r(onclick="document.getElementById('registr').checked=true;") Регистрация
+      a.button.b-blue.border-r(onclick="checkFields('#auth-aside')") Войти
+h2.title.underline НОВОСТИ
+ul.aside-news.news_colum.border-r
+   li
+      .date.date-dark
+         .i-calendar
+         span 6 марта, 2017
+      .news_text
+         a.text-hover-green.aside-news-text(href="/opennews.html") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   li
+      .date.date-dark
+         .i-calendar
+         span 6 марта, 2017
+      .news_text
+         a.text-hover-green.aside-news-text(href="/opennews.html") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   li
+      .date.date-dark
+         .i-calendar
+         span 6 марта, 2017
+      .news_text
+         a.text-hover-green.aside-news-text(href="/opennews.html") This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
+   li
+      a.news-more2(href="/news.html") Все новости (112)
+//- h2.title.underline ПРОВЕРКА СТАТУСА ЗАЯВКИ
+//- ul.autoriz.border-r
+//-    li
+//-       input.input-form( placeholder="ID обмена" type="text")
+//-    li
+//-       input.input-form(placeholder="E-mail" type="text")
+//-    li
+//-       input(type="submit" value="Проверить").button.b-blue.border-r
+script(type='text/javascript' src="https://www.google.com/recaptcha/api.js" async defer)

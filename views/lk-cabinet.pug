@@ -1,0 +1,269 @@
+extends layouts/layout-aside-lk
+
+block vars
+    -
+        page = {
+        language: "ru",
+        title: "Обмен электронных валют",
+        desc: "Электронный обменник валют. Выгодный обмен электронных валют онлайн. PerfectMoney, Payeer, Яндекс.Деньги, Advanced cash, Skrill, Neteller, SolidTrustPay, Приватбанк, Сбербанк, Альфабанк, Visa/MasterCard, Western uniоn, MoneyGram, RIA USD, Золотая Корона",
+        keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, перфект мани обмен, перфект мани, perfect money, обмен perfect money, купить perfect, обмен payeer, payeer perfect, Золотая корона обмен, приват 24 обмен, обмен advcash, обмен moneygram, вестерн юнион обмен, ria usd, OOOPay",
+        author: "1000.tech",
+        appTitle: "Smart Pays",
+        type: "website",
+        card: "summary",
+        image: "img/test-img.jpg",
+        url: "https://smart-pays.com",
+        site_name: "Smart Pays",
+        domain: "smart-pays.com"
+        }
+
+block content
+    include ./partials/popups
+    .lk_main
+        h2.title ПАРТНЕРСКИЙ КАБИНЕТ
+        p.lk-text Информация о партнерской программе, статистика и рекламные материалы
+        .flex-sb
+            ul.partner-info
+                li
+                    div ВАШ ПАРТНЕРСКИЙ ПРОЦЕНТ
+                        .question-box
+                            .i-question
+                            p.question_help Информация о партнерской программе, статистика и рекламные материалы
+                    p 6 380%
+                li
+                    p ПОСЕТИТЕЛЕЙ
+                    p.text-b-un 134
+                li
+                    p СУММА ОБМЕНОВ
+                    p.text-b-un 4143
+                li
+                    p КОЛИЧЕСТВО РЕФЕРАЛОВ
+                    p.text-b-un 10 000
+                li
+                    p ОБМЕНОВ
+                    p 0,67
+                li
+                    p CTR
+                    p 10000
+            ul.partner-info
+                li
+                    p ВАШ ID
+                    p 123456
+                li
+                    p ТЕУЩИЙ БАЛАНС
+                    p 4143
+                li
+                    p ВЫПЛАЧЕНО
+                    p 10 000
+                li
+                    p ОЖИДАЮТ ВЫПЛАТЫ
+                    p 6380
+                li
+                    p ДОСТУПНО ДЛЯ ВЫПЛАТЫ
+                        a.button-bg-tb(onclick="$('#moneyOut').show()") Вывод
+                    p 0.67
+                li
+                    p ЗАРАБОТАНО ЗА ВСЕ ВРЕМЯ
+                    p 6380
+        h2.title РЕКЛАМНЫЕ МАТЕРИАЛЫ
+        p.lk-text
+            |This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        p.lk-text
+            |Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+        .advertising
+            input(type="radio" name="advertising" id="advertising-input1" checked)
+            .advertising_container
+                .banner
+                    input(type="radio" name="banner" id="banner-input1" checked)
+                    .banner_container
+                        .banner-img.banner1
+                        input(type='checkbox' id='banner1' name='banner1')
+                        label(for='banner1')
+                            p
+                        span < a href='sdfgsdfgsdfg'>
+                        .banner-img.banner2
+                        input(type='checkbox' id='banner2' name='banner2')
+                        label(for='banner2')
+                            p
+                        span < a href='sdfgsdfgsdfg'>
+                    input(type="radio" name="banner" id="banner-input2" )
+                    .banner_container 2
+                    input(type="radio" name="banner" id="banner-input3" )
+                    .banner_container 3
+                    input(type="radio" name="banner" id="banner-input4" )
+                    .banner_container 4
+                    input(type="radio" name="banner" id="banner-input5" )
+                    .banner_container 5
+                    input(type="radio" name="banner" id="banner-input6" )
+                    .banner_container 6
+                    .banner_dots.flex
+                        label.banner_dots_dot(for='banner-input1' id='banner-label1')
+                            span 468x60
+                        label.banner_dots_dot(for='banner-input2' id='banner-label2')
+                            span 200x200
+                        label.banner_dots_dot(for='banner-input3' id='banner-label3')
+                            span 120x600
+                        label.banner_dots_dot(for='banner-input4' id='banner-label4')
+                            span 100x100
+                        label.banner_dots_dot(for='banner-input5' id='banner-label5')
+                            span 88x31
+                        label.banner_dots_dot(for='banner-input6' id='banner-label6')
+                            span 240x400
+            input(type="radio" name="advertising" id="advertising-input2" )
+            .advertising_container 
+                .partner-links 
+                    .partner-link 
+                        .header-text
+                            p Партнерская ссылка 1
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                    .partner-link 
+                        .header-text
+                            p Партнерская ссылка 2
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+
+                    .partner-link 
+                        .header-text
+                            p Партнерская ссылка 3
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                    .partner-link 
+                        .header-text
+                            p Партнерская ссылка 4
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+
+            input(type="radio" name="advertising" id="advertising-input3" )
+            .advertising_container 
+                .inform
+                    .inline
+                        .form-scrollable
+                            .text
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                        .button
+                            label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                div
+                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                .inform
+                    .inline
+                        .form-scrollable
+                            .text
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                       
+                        .button
+                            label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                div
+                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                .inform
+                    .inline
+                        .form-scrollable
+                            .text
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                        
+                        .button
+                            label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                div
+                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+
+            input(type="radio" name="advertising" id="advertising-input4" )
+            .advertising_container 
+                .partner-links 
+                    .partner-link 
+                        .header-text
+                            p Скопировать файл XML 1
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                    .partner-link 
+                        .header-text
+                            p Скопировать файл XML 2
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+
+                    .partner-link 
+                        .header-text
+                            p Скопировать файл XML 3
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                    .partner-link 
+                        .header-text
+                            p Скопировать файл XML 4
+                        .inline
+                            .input
+                                input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                            .button
+                                label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                    div
+                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+            .advertising_dots.flex-sb
+                label.advertising_dots_dot(for='advertising-input1' id='advertising-label1')
+                    span Баннеры
+                label.advertising_dots_dot(for='advertising-input2' id='advertising-label2')
+                    span Партнерские ссылки
+                label.advertising_dots_dot(for='advertising-input3' id='advertising-label3')
+                    span Текстовые материалы
+                label.advertising_dots_dot(for='advertising-input4' id='advertising-label4')
+                    span Мониторингам
+

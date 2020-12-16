@@ -1,0 +1,67 @@
+header.header(id='header' role='banner')
+   .header_all
+      .header_all_mid.flex-sb
+         a.header-logo.big(href="index.html")
+            img(src="../img/header-logo.svg" alt="Smart Pays")
+         nav.header-nav.flex-sb
+            .nav-bar
+               a(href="/") ГЛАВНАЯ
+               a(href="/rates.html") ТАРИФЫ
+               a(href="/partners.html") ПАРТНЕРАМ
+               a(href="/news.html") БЛОГ
+               a(href="/contact.html") ПОДДЕРЖКА
+               a(href="/investors.html") ОБМЕН
+            .lang-and-close
+               a.close-menu.i-close(onclick="closeHeaderMenu()")
+               .language-select#full-header-lang
+                  input(type='radio' name='language-select' id="language-select1" onclick="menuToggle()" checked)
+                  label(for='language-select1')
+                     .span UA
+                  input(type='radio' name='language-select' id="language-select2" onclick="menuToggle()")
+                  label(for='language-select2')
+                     .span EN
+                  input(type='radio' name='language-select' id="language-select3" onclick="menuToggle()")
+                  label(for='language-select3')
+                     .span RU
+            .header-log.flex
+               label.border-r.authBtn(onclick="$('#auth').prop('checked', true)") Войти
+               label.border-r.reg.regBtn(onclick="$('#registr').prop('checked', true)") Регистрация
+         .header-mob-nav
+            a.i-personal-id-card-of-a-man(onclick)
+            a.i-menu(onclick="openHeaderMenu()")
+
+      .header_all_content
+         .header_all_content_window
+            .header_all_content_slider-box
+               .header_all_content_slider-box_wrapper.flex-sb
+                  .header-news
+                     h1 Добро пожаловать на Smart Pays! 1
+                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor #[br] incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, #[br]adipiscing elit, sed do eiusmod tempor incididunt
+
+                  .header-news
+                     h1 Добро пожаловать на Smart Pays! 2
+                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor #[br] incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, #[br]adipiscing elit, sed do eiusmod tempor incididunt
+
+                  .header-news
+                     h1 Добро пожаловать на Smart Pays! 3
+                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor #[br] incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, #[br]adipiscing elit, sed do eiusmod tempor incididunt
+
+                  .header-news
+                     h1 Добро пожаловать на Smart Pays! 4
+                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor #[br] incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, #[br]adipiscing elit, sed do eiusmod tempor incididunt
+                  a.i-back(onclick="nextHeaderSlide(-1)")
+                  a.i-next(onclick="nextHeaderSlide(1)")
+               a.button.b-blue.border-r Подробнее
+            .header_all_content_window_dots.flex
+               .slide-dots
+                  a.i-dot.slide-dot(onclick='showHeaderSlide(0)')
+                  a.i-dot.slide-dot(onclick='showHeaderSlide(1)')
+                  a.i-dot.slide-dot(onclick='showHeaderSlide(2)')
+                  a.i-dot.slide-dot(onclick='showHeaderSlide(3)')
+         .header-logos
+            .header-logo1
+               img(src="../img/header-trustpilot.png" alt="")
+            .header-logo2
+               img(src="../img/header-bestchange.png" alt="")
+      .change-button
+         a(href="#main") #[span.btnText ОБМЕНЯТЬ #[br] #[.i-doublenext]]

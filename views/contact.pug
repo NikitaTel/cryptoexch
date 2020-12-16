@@ -1,0 +1,190 @@
+extends layouts/layout-contact
+
+block vars
+   -
+      page = {
+      language: "ru",
+      title: "Электронный обменник валют - Контакты",
+      desc: "Контакты, обратная связь. Электронный обменник валют",
+      keywords: "выгодный обмен, обменник валют, электронный обменник, обмен электронных валют, обменный пункт электронных валют, обмен денег онлайн, контакты, связь, телефон, время работы, график работы, обратная связь, jabber, icq",
+      author: "1000.tech",
+      appTitle: "Smart Pays",
+      type: "website",
+      card: "summary",
+      image: "img/test-img.jpg",
+      url: "https://smart-pays.com/feedback/",
+      site_name: "Smart Pays",
+      domain: "smart-pays.com"
+      }
+
+block title
+   .main-bg
+      .lk-main-title
+         h1.title.text-center.contacts-title  КОНТАКТЫ
+         p.lk-text(style="margin: -2px auto;") Мы всегда готовы ответить на интересующие Вас вопросы, а также выслушать Ваши предложения по улучшению нашего сервиса. Напишите нам по почте через форму обратной связи или свяжитесь с нами любым удобным для Вас способом.
+block content
+   include ./partials/popups
+   .lk_main
+      .lk-contact.border-r
+         .lk-contact_girl.flex-shrink
+            .agent-status
+               .inline
+                  .online
+                     img
+                     a
+                  
+         .lk-contact_text
+            
+               
+            .lk-contact_text_item.flex-grow(style="margin-top: 73px")
+               .lk-contact_text_bot
+                  h2.title ГРАФИК РАБОТЫ САЙТА:
+                  .contact-graph-text
+                     p ПН-ПТ: 09:00-22:00 (UTC+02:00) #[br] СБ-ВС:  Свободный график #[br] Текущее время сервера: #[span#server-time-val 15:45], ПН
+
+                  a.green-dotted-link(href="/rules.html") Регламент нашей компании
+               .lk-contact_text_bot
+                  h2.title.social СВЯЖИТЕСЬ С НАМИ:
+                  .footer_social
+                     a.i-at(href="skype:SkypeUser?call")
+                     a.i-skype(href="skype:SkypeUser?call")
+                     a.i-viber(href="viber://chat?number=+447441913262")
+                     a.i-tg(href="https://t.me/smartpays")
+                  .chat-btn
+                     a.button-transparent(href="skype:SkypeUser?call") Написать в чат
+                  //- h2.title СОЦИАЛЬНЫЕ СЕТИ:
+                  //- .footer_social
+                  //-    a.i-vk(href="https://vk.com/smartexchange")
+                  //-    a.i-tw(href="https://twitter.com/Smart_pays")
+                  //-    a.i-fb(href="")
+
+      p.lk-text
+         strong Внимание!&nbsp;
+         | Через Skype, ICQ и другие меседжеры не проводятся никакие обменные операции, реквизиты для оплаты не передаются. Скайп только для поддержки и консультаций! Добавляйте нас в скайп только по ссылке с сайта.
+      //- ul.contact-form
+      //-    li
+      //-       h2.title.text-center ФОРМА КОНТАКТОВ
+      //-    li
+      //-       ul.flex-sb
+      //-          li
+      //-             input.input-form(id="verif-sename2" type="name" required)
+      //-             label.label-star-red(for="verif-sename2")
+      //-                p Ваше имя
+      //-                   span.red-star *
+      //-          li
+      //-             input.input-form(id="verif-name2" type="email" required)
+      //-             label.label-star-red(for="verif-name2")
+      //-                p Ваш e-mail
+      //-                   span.red-star *
+      //-          li
+      //-             input.input-form(placeholder='ID обмена')
+      //-    li
+      //-       textarea.border-r(rows="5" cols="10" name="text" placeholder='Сообщение')
+      //-    li
+      //-       .user-license
+      //-          input(type="checkbox" id="license-agree" name="license-agree")
+      //-          label.flex(for='license-agree')
+      //-             .agree-ok
+      //-                p.i-check
+      //-             p Даю согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ "О персональных данных" и принимаю условия
+      //-                a.text-b-un Пользовательского соглашения
+      //-    li
+      //-       input(type="submit" value="Отправить сообщение").button.b-blue
+      //- .flex-sb.for-partners
+      //-    p
+      //-    a
+      //-       .for-partners_img.forma3
+      //-       span  FAQ
+      //-    p
+      .recent-questions
+         .big-text
+            p часто задаваемые вопросы:
+
+         .little-text
+            p Если Вы не нашли ответ на Ваш вопрос, свяжитесь с нами удобным для Вас способом и мы с радостью поможем Вам. 
+         .questions-block
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            .questions(onclick="accordion(this)")
+               .accordion
+                  .stick   
+                     img(src="../img/arrow-down.svg" alt="").arrow
+                  p.accordion-title Зачем регистрироваться на сайте?
+                  p.accordion-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum #[br]auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.#[br] Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu#[br] in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac #[br]urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum.
+            .divider
+            

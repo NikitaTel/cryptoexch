@@ -1,0 +1,53 @@
+
+
+#menuToggle
+  display block
+  position: relative;
+  width: 20px;
+  height: 14px;
+  z-index: 4;
+  cursor pointer
+
+
+#menuToggle
+  &:hover
+    .menu-lines
+      span
+        background $blue
+  .menu-lines
+    span
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin-bottom 4px
+      background: $white
+      border-radius: 5px;
+      z-index: 1;
+      &:last-child
+        margin-bottom 0
+
+#menuToggle.open .menu-nav
+  display block
+
+.menu-nav
+  display none
+  position relative
+  top 10px
+  color $white
+  font-size 12px
+  text-transform uppercase
+  border-radius 5px
+  a
+    display block
+    padding 8px 20px
+    width 230px
+    min-height 30px
+    background rgba(0, 0, 0, 0.7)
+    transition background .3s
+    &:hover
+      background $blue
+    &:first-child
+      border-radius 5px 5px 0 0
+    &:last-child
+      border-radius 0 0 5px 5px
+

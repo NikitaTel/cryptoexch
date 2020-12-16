@@ -1,0 +1,1312 @@
+/*CONTACT*/
+
+.lk-contact
+    background: url(../img/team.png);
+    height: 242px;
+    position: relative;
+    margin: 58px auto 16px;
+    font-size: 12px;
+    color: #0a263e;
+    padding: 7px 20px;
+    &:before
+        border-radius 5px
+    &_numbers
+        display none
+    &_switcher
+        position relative
+        height 35px
+        &_label
+            position absolute
+            top 0
+            left 0
+            display flex
+            flex-direction column
+            min-width 102px
+            border-radius 5px
+            overflow hidden
+            border 1px solid rgba(169, 183, 197, 0);
+            .i-next
+                display none
+                transform rotate(90deg)
+                margin-left 6px
+                top 1px
+                font-size 8px
+            &.open
+                border-radius 5px
+                border 1px solid rgba(169, 183, 197, 0.3);
+                background #0a263e
+                label
+                    display block
+                    border-top 1px solid rgba(169, 183, 197, 0.3);
+                    &:hover
+                        background $blue
+            label
+                display none
+                padding 10px 5px
+                align-items center
+                justify-content space-between
+                order 2
+    &_girl
+        height 300px
+        width 279px
+        background url("../img/girl.png")
+        position absolute
+        left 30px
+        bottom 0
+    &_text
+        margin-top -75px
+        width 62%
+        float right
+        &_item
+            display flex
+            .lk-contact_text_top
+                width 50%
+                .title
+                    line-height 24px
+                p
+                    line-height 24px
+            .lk-contact_text_bot
+                padding-top 30px
+                width 50%
+                color $white
+                margin-left: 13px;
+                margin-right: -9px
+                p
+                    margin 15px 0 15px
+                .title
+                    padding 10px 0 5px
+                    color $white
+                p
+                    span
+                        font-family WhitneySemiBold
+                        font-weight 700
+                    a
+                        margin-left 5px
+                        font-size 13px
+.contact-graph-text
+    font-size: 12.5px;
+    letter-spacing: 0.3px;
+    margin-top: 18px;
+    line-height: 1.9;
+.footer_social
+        
+    width: 105%!important
+.lk-contact_text_bot
+    .footer_social
+        margin-top 2rem
+        width: 105%!important
+        margin-left 34px
+        a
+            margin-right 5px
+    .social
+        margin-left: 35px;
+.lk-contact_text_top
+    .title
+        margin-top 1.3rem
+
+.chat-btn
+    margin-top 1.5rem
+    margin-left 2.1rem
+    .button-transparent
+        background: transparent
+        border white 1px solid 
+        border-radius 6px
+        color white
+        padding 8px 32px
+        transition 300ms
+    .button-transparent:hover
+        transition 300ms
+        background rgba(255,255,255,0.54)
+
+.green-dotted-link
+    color #7fb858
+    font-size 13px
+    transition 300ms
+    border-bottom 2px dashed #7fb858
+.green-dotted-link:hover
+    transition 300ms
+    color #f6f6f6
+    border-bottom 2px dashed #f6f6f6
+
+.recent-questions
+    width 100%
+    .big-text
+        text-transform: uppercase
+        font-size: 20px
+        font-family Whitney
+        margin-top 39px
+        letter-spacing -1.2px
+    .little-text
+        font-size 13px
+        margin-top 9px
+        letter-spacing -0.34px
+        margin-bottom: 15px
+    .questions
+        width: 91%
+        // width 100%
+        margin 8px 33px
+        display inline-block
+      
+        
+        .accordion
+            height 30px
+            border-left 4px #00abec solid
+            .stick
+                position: sticky
+                .arrow
+                    position absolute
+                    width 10px
+                    height 10px
+                    margin-left -24px
+                    margin-top 10px
+                    transition 500ms
+
+
+            .accordion-title
+                text-align left
+                margin-left 12px
+                padding-top 5px
+                padding-top 7px
+                letter-spacing 0.1px
+
+            .accordion-content,.accordion-content-active
+                overflow-y: hidden
+                display: none
+                height: 104px
+                width: 105%
+                color: #49535d
+                font-size 13px
+                padding-top 8px
+                padding-left 11px
+                letter-spacing -0.1px
+                line-height 1.29
+    .questions:hover
+        cursor pointer
+::-webkit-scrollbar
+    width 6px
+::-webkit-scrollbar-track
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 10px;
+::-webkit-scrollbar-thumb
+    background: #00abec
+    border-radius: 10px
+.questions-block
+    margin-top 20px
+    //
+    max-height: 380px
+    overflow-y: auto
+    height: fit-content
+   
+    
+.divider
+    margin-left: 40px
+    height 0.7px
+    background #d6d6d6
+    width: calc(100% - 65px)
+
+input
+    &#lk-contact-switcher1:checked
+        ~.lk-contact_switcher label#contact-switcher1
+            display flex
+            order 1
+            border-top none
+            .i-next
+                display inline-block
+        ~.ukraine
+            display block
+
+    &#lk-contact-switcher2:checked
+        ~.lk-contact_switcher label#contact-switcher2
+            display flex
+            order 1
+            border-top none
+            .i-next
+                display inline-block
+        ~.russia
+            display block
+
+    &#lk-contact-switcher3:checked
+        ~.lk-contact_switcher label#contact-switcher3
+            display flex
+            order 1
+            border-top none
+            .i-next
+                display inline-block
+        ~.czech-republic
+            display block
+
+/*FEEDBACK*/
+.feedback-logos
+    a
+        display block
+        background-position center
+        background-size contain
+        width 287px
+        height 80px
+        background-repeat no-repeat
+        width: 100%;
+        margin-bottom: -28px;
+        &.best-change
+            background-image url("../img/feedback-bestchange.png")
+        &.mmg
+            background-image url("../img/feedback-trustpilot.png")
+
+.add-comment
+    background #334566 url("../img/addotziv2.png") 50% 0 no-repeat/contain
+    .user-license
+        // color white;
+    .title
+        // color $white
+.star-mark
+    margin-right 7px
+    margin-left 10px
+    padding 3px
+
+
+.lk-comment
+    margin 40px 0
+    li
+        margin 10px 0
+    .comment-date
+        color #ebf1f7
+
+/* NEWS */
+.exchange-rates
+    width 1180px
+    margin auto
+    display flex
+    justify-content center
+    &_item
+        margin 10px
+        padding 5px 8px
+        background $grey
+        p
+            color $text-dark
+            font-size 12px
+            &.er_icon
+                margin 0 5px
+            span
+                font-family WhitneySemiBold
+                margin 0 3px
+.change-status
+    font-size 14px
+    &.down
+        transform rotate(90deg)
+        color red
+    &.up
+        color $green
+        transform rotate(-90deg)
+.share
+    width 30px
+    height 100px
+    background white
+    height: fit-content
+    padding-bottom: 15px
+    background: #334566
+    border-radius: 6px
+    align-self: center
+    border: 1.3px solid #0000001c
+    .button-block
+        
+        .share-letter
+            transform: rotate(-90deg);
+            color: #fff;
+            margin-top: -2px;
+            display: block;
+            
+
+        .share-button
+            line-height: 12px;
+            padding: 9px 9px;
+            display: inline-table;
+            font-family: 'WHITNEYMEDIUM';
+            font-size: 10px;
+            letter-spacing: -1.4px;
+            text-transform: uppercase;
+            text-align: center;
+        .share-button:hover
+            .share-letter
+            
+                color: #00c26b;
+            
+            
+    .icons
+        .share-ic
+            margin-top: 2px
+            .i-fb, .i-vk, .i-tw, .i-tg, .i-whatsapp, .i-viber, .i-inst
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 15px;
+                display: flex;
+                margin: auto;
+                background transparent
+            .i-vk
+            
+            
+               
+                font-size: 9px
+            .i-viber
+                font-size: 23px
+            .i-fb
+                font-size: 15px;
+                margin-top: -4px!important;
+            
+.share-fixed
+    position: fixed
+    left:0%
+    top: 24%
+            //.i-tg
+             
+
+
+// .registration
+//     .tarif-open
+//         width 440px
+//         &_info
+//             width 100%
+//         &_bot-bg
+//             li
+//                 width 100%
+//                 span
+//                     color red
+//                     padding 0
+//                 .input-form
+//                     text-align left
+ 
+
+.lk-news
+    .news_block1,.news_block2
+        border 1px solid rgba(169, 183, 197, 0.3);
+        margin 20px 0
+    &_news-more
+        text-align center
+        margin 0 0 30px
+.news-more
+    span
+        margin 3px
+    &:hover
+        .i-reload
+            transition all 0.5s
+            animation: rotate 1s linear infinite;
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);}}
+
+.baza-slider
+    &_box
+        position relative
+        height: 858px;
+        overflow hidden
+        width 280px
+    &_wrapper
+        transition all .5s
+        position absolute
+        left 0
+        display flex
+        justify-content space-between
+        width 1480px
+        .b-znanii
+            width 280px
+            flex-shrink 0
+    &_dots
+        padding 5px 0
+        .next,.prew
+            display none
+            &:hover
+                transform scale(1.2)
+    &_window
+        margin-top: -23px
+
+
+
+/* OPEN NEWS */
+.unfolded-news
+    margin-top: 21px
+    position relative
+    &_img
+        float left
+        border-radius 5px
+        background-image url("../img/news2.png")
+        background-size contain
+        width 445px
+        height 304px
+        border 1px solid rgba(169, 183, 197, 0.3);
+        margin-right 20px
+        overflow hidden
+    .title
+        line-height 28px
+    >p
+        font-size 12px
+        letter-spacing 0.65px
+        line-height 16px
+        padding 5px 0
+        color: #4b555f
+    .news-more2
+        font-family Whitney
+
+/* PARTNERS */
+.partners-banner
+    background-image url("../img/pref.png")
+    background-position center
+    background-size cover
+    margin 35px 0 25px
+    align-items center
+    max-height 274px
+    &:before
+        border-radius 5px
+    &_man
+        margin-left: -63px;
+        height: 394px;
+        margin-top: -120px;
+        width: 325px;
+        background-image: url(../img/businessman.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    &_discount-girl
+        background-image: url(../img/discount.png);
+        height: 452px;
+        background-size: 74%;
+        margin-top: -120px;
+        width: 347px;
+        background-position: center;
+        background-repeat: no-repeat
+        margin-left: -75px;
+    &_text
+        padding: 25px 0;
+        margin-left: -149px;
+        h6
+            color $white
+            font-size 28px
+            letter-spacing: 0.75px;
+            text-align center
+            p
+                font-size 100px
+                font-weight 700
+                font-family "WhitneySemiBold"
+                letter-spacing 2.5px
+                span
+                    font-size 26px
+.discounts-list
+    align-items: center!important;
+    padding: 0px 0px 10px!important;
+    margin-left: -3px!important;
+    margin-top: -8px!important;
+    width: 100%!important;
+    p
+        letter-spacing: 0px!important
+    li
+        margin-top: -6px;
+
+.partners_title
+    margin: 39px 0;
+
+/* PARTNERS POPUP */
+.tarif-open
+    overflow hidden
+    width 880px
+    margin 20px auto
+    position relative
+    z-index 2
+    background $grey
+    .button
+        margin 0 auto
+        max-width 250px
+    &_top-bg
+        background-image url("../img/tarif5.png") no-repeat 50%/cover
+        color $white
+        padding 20px
+        h5
+            text-align center
+            padding-bottom 20px
+            position relative
+            z-index 2
+        .text-center
+            font-size 14px
+    &_info
+        width 20%
+        position relative
+        z-index 2
+        .title
+            text-align center
+            color $white
+            font-size 16px
+            padding 10px 10px 10px 20px
+        &_logo
+            display flex
+            align-items center
+            justify-content center
+            position relative
+            z-index 2
+            font-size 32px
+            width 64px
+            height 64px
+            background $white
+            border-radius 100%
+            margin -25% -10% -25% -10%
+            color $green
+            flex-shrink 0
+            border 1px solid $blue
+            box-shadow: 0 0 15px rgba(0,169,236,1);
+        p
+            display block
+            color $text-grey
+            width 130px
+            padding 10px
+            text-align center
+            border-radius 5px
+            font-size 16px
+            border 1px solid $blue
+            background $white
+    &_bot-bg
+        background $grey
+        text-align center
+        li
+            padding 0px 10px
+            position relative
+            &:last-child
+                padding 10px 10px 20px 10px
+            &.green-line
+                position relative
+                width 32%
+                padding 20px 10px
+                &:active,&:hover
+                    &:after
+                        display block
+                        position absolute
+                        top 0
+                        left 30%
+                        content ""
+                        border-top 3px solid $green
+                        width 40%
+                &:last-child
+                    padding-bottom 20px
+            .input-form
+                text-align center
+                margin 15px 0
+                &:not(:disabled)
+                    &::-webkit-input-placeholder
+                        color black
+                    &::-moz-placeholder
+                        color black
+                    &:-ms-input-placeholder
+                        color black
+                    &:-moz-placeholder
+                        color black
+                    &::-webkit-input-placeholder
+                        color black
+            span
+                color $text-grey
+                font-size 12px
+                padding 15px 10px
+            .advcash-logo
+                display block
+                width 144px
+                height 45px
+                background url(../img/advcash.png) no-repeat 50%/cover
+                margin 15px auto
+
+/* RATES */
+.rates
+    display flex
+    justify-content space-between
+    align-items center
+    border-radius 5px
+    background #e8f0f6
+    font-size 12px
+    color $text-dark
+    font-family WhitneySemiBold
+    line-height 12px
+    margin-bottom 30px
+    .t1v
+        font-size: 13.5px;
+    .t1m
+        margin-left: 0.7em;
+        padding-right: 21px;
+        font-size: 13px
+        font-family: Whitney
+    .t2v
+        font-size: 12.5px;
+    .t2m
+        margin-left: -123px;
+        margin-right: 55px;
+        font-size: 13px
+        font-family: Whitney
+        font-weight: 600;
+
+    .t3v
+        font-size: 13px;
+        font-family: 'Whitney';
+    .i-question
+        color: #fff!important
+    &_title
+        padding 0 0 8px
+        margin -13px 0 0
+        span
+            padding-left 20px
+    ul
+        li
+            border-bottom 1px solid rgba(169, 183, 197, 0.3)
+            padding 10px 20px
+            &:last-child
+                border-radius 0 0 5px 5px
+            p
+                margin-bottom: 0.75em;
+                margin-top: .9em;
+        &.flex-shrink
+            flex-grow 0
+            width 150px
+            text-align center
+            border-left 1px solid rgba(169, 183, 197, 0.3)
+            .flex-sb
+                align-items center
+        .rates-list_dark
+            background: #334566;
+            color: #fff;
+            position: relative;
+            border-bottom: 1px solid #a9b7c5;
+            padding-right: 112px;
+            p
+                &:first-child
+                    font-family Whitney
+            &:before
+                display block
+                content ""
+                width: 0;
+                height: 56%
+                position absolute
+                right -7px
+                top 3px
+                border-right 20px solid $dark-blue
+                transform: rotate(-27deg)
+            &:after
+                display block
+                content ""
+                position absolute
+                right -7px
+                bottom 3px
+                width 0
+                height 56%
+                transform: rotate(27deg)
+                border-right 20px solid $dark-blue
+        .rates-list_white
+            padding-right 40px
+            padding-left 40px
+            &.flex-sb
+                p
+                    &:first-child
+                        font-family Whitney
+
+/* INVESTORS */
+.document-list
+    color #0a263e
+    margin 0 0 37px
+    li
+        display flex
+        align-items center
+        padding: 1px 0 10px;
+        margin-left: -7px;
+        
+
+        .counter
+            font-size: 28px;
+            flex-shrink: 0;
+            width: 50px;
+            font-family: 'WhitneySemiBold';
+            border-right: 3px solid #00abec;
+            margin-right: 20px;
+            text-align: center;
+        p
+            font-size: 16px;
+            font-family: Whitney;
+            margin-top: .7em;
+            margin-bottom: .7em;
+            font-family: 'WhitneySemiBold';
+            letter-spacing: 0.6px;
+            line-height: 1.2;
+            .text-b-un
+                margin-left 5px
+                font-size 12px
+                text-transform none
+    >span
+        padding 5px 70px 20px
+        font-size 13px
+        display block
+    .list-mark-b
+        margin 0 0 0 80px
+        font-size 13px
+        position relative
+        &:before
+            position absolute
+            top -3px
+            left -13px
+            font-size 16px
+            content '•'
+            font-family "Tahoma"
+            color $blue
+        span
+            font-weight 600
+            margin-left 3px
+            color black
+
+.for-partners
+    margin: -25px auto 25px;
+    &_img
+        width 71px
+        height 55px
+        background-size contain
+        margin 28px
+        background-position center
+        background-repeat no-repeat
+        &.forma1
+            background-image url("../img/forma1.png")
+        &.forma2
+            background-image url("../img/forma2.png")
+        &.forma3
+            background-image url("../img/forma3.png")
+        &.forma4
+            background-image url("../img/forma4.png")
+        &.forma5
+            background-image url("../img/forma5.png")
+    a
+        border-radius 5px
+        background $blue
+        overflow hidden
+        text-align center
+        color $white
+        width 24%
+        height 178px
+        display block
+        box-shadow: inset 0 1px 95px -73px rgba(255, 255, 255, 0.5);
+        transition box-shadow .3s
+        &:hover
+            box-shadow: inset 0 150px 95px -73px rgba(255, 255, 255, 0.5);
+        span
+            border-top 1px solid #91dcf9
+            font-size 12px
+            width 100%
+            padding 17px 15px 0
+            font-family WhitneySemiBold
+
+.timer-digit
+    background #ebf1f7
+    padding 2px
+    margin-left 2px
+    border-radius 5px
+
+.blockexchange-popup-absolute
+    position absolute
+    // display none
+    width 100%
+    height 100%
+    background rgba(52,69,97,0.50)
+    backdrop-filter blur(2px)
+    top 0
+    .blockexchange-popup-content
+        width 580px
+        height 335px
+        background-color #fff
+        background-image url(../img/blockexchange.png)
+        background-repeat no-repeat
+        background-position center
+        margin auto
+        margin-top calc(20% - 177px)
+        border-radius 5px
+        padding-top 55px
+
+        .sm-logo
+            display flex
+            justify-content center
+            margin-top -5px
+            margin-bottom 29px
+        .blockexchange-form
+            width: inherit 
+            height: inherit 
+        .little-text
+            font-size: 13px
+            text-align center
+            margin-top 22px;
+            margin-left -7px;
+            letter-spacing -0.4px
+        .timer
+            display flex
+            font-size 33px
+            justify-content center
+            margin-top 12px
+            letter-spacing 3px
+            margin-left 2px
+            margin-bottom: -7px
+        .big-text
+            text-align center
+            font-size 23px
+            margin-left 7px
+            margin-top 17px
+            letter-spacing 0.2px
+        
+.action-block
+   
+    
+    width: 100%
+    height: 49px
+    top: 0
+    background: #f5f5f5
+    padding-top: 15px
+    margin-bottom: 25px;
+    .i-close
+        transition:  500ms
+        width: 10px
+        height 10px
+        position: absolute
+        left: 98.5%
+        
+        font-size: 13px
+        color: black
+    .i-close:hover
+        color:rgba(0,0,0,0)
+
+    .text
+        font-size: 16px
+        font-family: Whitney
+        text-align: center
+        color: #000
+        width: 100%
+        letter-spacing: -.4px
+        margin-top: -1px
+        padding-left: 12.5%
+    .action-span
+        font-size: 22px
+        color: #5be
+        font-family: 'WhitneySemiBold'
+        font-weight: 600
+        margin-right: 38px
+    .link
+        color: #66c0ee
+        text-decoration: underline
+        padding-left: 20px
+        padding-top: 56px
+    .link:hover
+        color: $green
+.help-message
+    background: #fff
+    border-radius: 5px
+    color: #555
+    //display: none
+    position: absolute
+    left: -21px
+    bottom: 8px
+    padding: 14px 20px
+    width: 270px
+    font-size: 12px
+    overflow: visible
+    border: 1px solid #ccc
+    box-shadow: 0 3px 10px rgba(0,0,0,.2)
+.help-message:after
+    content: ""
+    background: #fff
+    height: 11px
+    position: absolute
+    border-bottom: 1px solid #ccc
+    border-right: 1px solid #ccc
+    transform: rotate(405deg)
+    left: 26px
+    bottom: -6px
+    width: 11px
+.wrong-field
+    border: 2px solid #ff00008f!important;
+#auth-aside
+    .g-recaptcha
+        width: 100%
+        height: 80px
+        transform: scale(0.77)
+        transform-origin: 0 0
+        margin-left: 2.9px
+.inputs
+    .g-recaptcha
+        height: 56px
+        margin-top: -3px
+        transform: scale(.78)
+        margin-top: 12px
+        transform-origin: 0 0
+.rules-page
+    .big-text
+        text-align: center
+        margin: 23px 0px
+        letter-spacing: .5px
+        color: #0a263e
+        font-family: WhitneyLight
+        font-weight: 400
+        font-size: 23px
+    .content-text
+        font-size: 16px
+        color: #0a263e
+        font-family: Whitney
+        margin: 22px 0
+        text-align: left
+        margin: 20px 0px
+    .list
+        color: black
+        .el
+            list-style-type: disc
+            margin-left: 9px
+.lk-news
+    .subscription
+        border-radius: 10px
+        margin 20px 0px
+.news_block1, .news_block2
+    border: 1px solid #dee2e7;
+.title-news
+    margin 0 0 5px!important
+      
+.partner-links
+    margin-top: 22px
+    .partner-link
+        margin-top: 5px
+        .header-text
+            font-size 16.5px
+            font-family: Whitney 
+        .input
+            .input-form
+                background white!important
+                color #999999!important
+                width: 428px!important
+                margin-top: 15px!important
+.inform
+    margin-top: 24px
+    .form-scrollable
+        border: 1px solid #dee2e7
+        padding: 15px 25px
+        overflow-y: auto
+        width: 1185px
+        max-height: 100px
+        height: fit-content
+        border-radius: 5px
+        .text
+            font-size: 13px
+            letter-spacing: -0.1px
+            line-height: 1.4
+    .button
+        margin-top: 21px
+
+.inline
+    display: inline-flex
+.exchange-input_label
+    span
+        margin-left: -6px
+
+.user-h
+    margin-left: 130px!important;
+    font-size: 12px!important;
+.avatar
+    display: block!important
+    width: 26px!important
+    height: 26px!important
+    margin-left: 15px!important
+    border-radius: 100%!important
+    border: 1px solid #fff!important
+    margin-top: -10px!important
+
+.rates-new
+    margin-top: 27px
+    margin-left: -16px;
+    display flex
+    justify-content: center
+    margin-bottom: 6px;
+    .nextBtn, .prevBtn
+        position absolute
+        color #adb4c1!important
+        top 12%
+        margin-top: 7px;
+    .nextBtn:hover, .prevBtn:hover
+        cursor pointer
+    .nextBtn
+        margin-left: 3px
+        left: 80%;
+    .prevBtn
+        left: 19%;
+
+    .i-next
+        font-size: 18px
+        color white
+
+
+    .rate-new
+        display inline-grid
+        width 365px
+        height 110px
+        padding: 15px 7px 0px 32px
+        margin-left: 19px;
+        border 1px solid #dee2e7
+        border-radius: 5px
+        margin-bottom: 37px
+        .inline
+            display inline-flex
+            
+        .rate-logo
+            width: 50px;
+            height: 50px;
+            img 
+                width: 50px;
+                height: 50px;
+
+
+        .big-text
+            font-size 16px
+            font-family: Whitney 
+        .big-text.i1
+            font-weight: 600;
+            margin-left: 28px;
+            margin-top: 7px;
+            letter-spacing: 0.7px;
+        .big-text.i2
+            margin-left: 35px;
+            font-size: 18px;
+            font-family: 'WhitneySemiBold';
+            margin-top: -25px;
+
+        .color-text
+            font-family: 'WhitneySemiBold';
+            font-size: 12px;
+        .color-text.i1
+            margin-top: 9px;
+            margin-left: 16px;
+            letter-spacing: .7px;
+        .color-text.i2
+            margin-left: 14px;
+            margin-top: -23px;
+        .red
+            color: #e51e2a
+        .green
+            color #71b82c
+        .graph
+            width 40px
+            height 25px
+        .graph
+            background-size: contain
+        .graph.i1
+            margin-left: 24px;
+            margin-top: 5px;
+        .graph.i2
+            margin-left: 26px;
+            margin-top: -31px
+        .graph-green
+            background url('../img/graph-green.png')
+        .graph-red
+            background: url('../img/graph-red.png')
+        .money-type-text
+            margin-top: -17px;
+            margin-left: 7px;
+.navig.cont
+    display: flex
+    justify-content: flex-end
+    
+.fdb-logo
+    width: 80px!important;
+    height: 20px!important;
+    position: absolute!important;
+    margin-top: -5px;
+    margin-left: 798px!important;
+.lktdisc1
+    margin-top: 42px!important
+    margin-bottom: -27px!important
+    padding-left: 46px!important
+    letter-spacing: -0.6px!important;
+.lktdisc2
+    margin-top: 29px!important
+    margin-bottom: -4px!important
+    padding-left: 23px!important
+    letter-spacing: -0.6px!important
+.fbmain
+    padding: 0px 0 33px!important
+    
+    .lk-text
+        margin: 15px auto!important
+    .flex-sa
+        justify-content: space-evenly!important
+    li
+        margin: 37px 0!important
+.fbtitle
+    margin: 46px 0px 23px!important
+.news-text 
+    padding 0!important
+    .a:hover
+        color $green
+.aside-news
+    .date
+        font-family: 'WhitneyLight'!important;
+        font-size: 12px!important;
+        font-weight: 100!important;
+    li
+        padding: 6px 28px!important
+            
+.aside-news-text
+    
+    font-size: 12.5px!important;
+    line-height: 16px!important;
+    font-family: 'Whitney'!important;
+    text-decoration: none!important;
+    font-weight: 100!important
+    // padding: 0 0 4px!important;
+.rates-title
+    font-size: 24px!important;
+    line-height: 24px!important;
+    margin: 45px 0px 24px!important;
+    margin-left: 23px!important;
+.res-li
+    // padding: 10.4px 19px!important;
+.res-fsh
+    // margin-top: -0.1px;
+.auto-ex, .manual-ex
+    width 65px 
+    height 61px
+    display flex
+    justify-content:  center
+    background-size: cover
+    margin auto
+.auto-ex
+    background: url('../img/auto-ex.svg')
+    margin-top: 15px;
+.manual-ex
+    background: url('../img/manual-ex.svg')
+.ex-mode-text
+    text-align: center;
+    margin-top: 23px;
+.tbigAtt
+    text-decoration: underline!important;
+    font-size 18px!important;
+    font-family Whitney !important;
+.attImg
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    margin-top: -3px;
+.tTextFor
+    font-size: 16px!important;
+    font-weight: 600!important;
+    letter-spacing: 0.2px;
+    margin-top: -10px!important;
+    margin-bottom: 15px!important;
+.tStepFor
+    p
+        font-size: 15px!important;
+        margin-top: .7em!important;
+        margin-bottom: .7em!important;
+        font-family: WhitneyLight!important;
+        letter-spacing: -0.2px!important;
+.ex-bottom-text
+    font-size: 13px;
+    margin-top: -8px;
+    p
+        a
+            color: #00abec
+            &:hover
+                color $green
+.ex-dlist
+        margin: -6px 14px 5px!important
+    .tStepFor
+        display: flex;
+        align-items: center;
+        padding: 0!important
+        margin-left: 0px!important
+        /* margin-right: -43px; */
+        width: 100%!important
+        .counter
+            font-size: 21px!important
+            flex-shrink: 0;
+            width: 37px!important
+            font-family: 'WhitneySemiBold';
+            border-right: 3px solid #00abec;
+            margin-right: 17px!important
+            text-align: center;
+.inline-text-course
+    
+    display: inline-flex;
+    justify-content: center;
+    width: 93%;
+    margin-top: 10px;
+    .part1
+        margin-right: 43px;
+    .big
+        font-weight: 600
+        font-size: 17px;
+        margin-right: 5px;
+    .lit
+        font-size: 16px;
+        margin-top: 2px;
+
+    .less
+        color: #00abec;
+        margin-left: 12px;
+        font-size: 13px
+        margin-top: 3px
+        text-decoration: underline
+        &:hover
+            color $green
+    .inline
+        display: inline-flex
+.ex2-fat-span
+    font-weight: 600
+    font-family: WhitneySemiBold!important
+.ex2-fat-ordNumber
+    font-weight: 600
+    font-family: WhitneySemiBold!important
+    letter-spacing: -0.6px;
+.ex-fat-bottomText
+    font-weight: 600
+    font-family: WhitneySemiBold!important
+    
+.ex2-tt1, .ex2-tt2
+    font-size: 13px
+.ex2-tt1
+    margin-bottom: 24px;
+.ex2-cancel-btn
+    margin-right: 40px;
+    margin-top: -55px;
+
+.t-sum-ex2
+    margin-top: 33px;
+    margin-bottom: -36px;
+    margin-right: 4px;
+.n1-content-text
+    color: #4b555f;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    // padding: 0 0 15px;
+    font-family: 'WhitneyMedium';
+.n2-content-text
+    font-family: 'Whitney';
+    font-size: 12.5px;
+    color: #4b555f;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    // padding: 0 0 15px;
+
+.n2-title-text
+    line-height: 1.3!important;
+    letter-spacing: -.4px!important;
+    color: #0a263e!important;
+    font-size: 17px!important;
+    margin-top: 0px!important;
+    margin-bottom: 11px!important;
+    font-family: Whitney!important
+
+.n3-content-text
+    color: #4b555f;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    // padding: 0 0 15px;
+    font-family: 'Whitney';
+    font-size: 12px;
+    // padding: 0 0 15px;
+.n4-context-text
+    width: 111%;
+    margin-top: 8px;
+    margin-bottom: -15px;
+    color: #4b555f;
+    font-size: 12.5px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    padding: 0 0 15px;

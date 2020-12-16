@@ -1,0 +1,876 @@
+body
+    font-family: "Whitney";
+
+/*TEXT*/
+.text-margin
+    margin-top .7em
+    margin-bottom .7em
+
+.title
+    font-size 20px
+    letter-spacing 0.5px
+    color: #0a263e;
+    font-family: WhitneyLight
+    font-weight: 400;
+    &.lk-title
+        padding 20px 0
+
+h1.title
+    font-size 24px
+    line-height 24px
+    margin 0 0 28px
+.discounts-title //override h1.title
+    margin 11px 0 17px!important
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 28px;
+    margin-top: 43px!important;
+    margin-bottom: -17px!important;
+.contacts-title 
+    margin: 45px 0 24px!important;
+.text-b-un
+    color $blue
+    margin 0 3px
+    text-decoration underline
+    &:hover
+        color $green
+
+.text-hover-green
+    &:hover
+        color $green
+.ff_wsb
+    font-family WhitneySemiBold
+.text-hover-blue
+    &:hover
+        color $blue
+.text-blue
+    color $blue
+.red-star
+    color red
+
+.text-green
+    color $green
+
+.reglament
+    color: $green
+    font-family: WhitneyMedium
+    display inline-block
+    line-height 20px
+    border-bottom: 2px dashed $green
+    &:hover
+        color $blue
+        border-bottom: 2px dashed $blue
+
+.pm-text
+    color $dark-blue
+    font-size 12px
+    flex-shrink 0
+    span
+        font-family WhitneySemiBold
+        font-weight: 600;
+        margin-top 0.7em
+    p
+        margin-top .7em
+        margin-bottom .7em
+
+.lk-text:not(:empty)
+    font-size 13px
+    line-height 17px
+    color #0a263e;
+    font-family Whitney
+    margin 22px 0
+    span
+        font-family WhitneySemiBold
+        margin 0 3px
+    p
+        font-family WhitneyLight
+        display inline
+
+/*BUTTONS*/
+.button-bg
+    &-g
+        color $white
+        background $green
+        padding 0 14px
+        font-size 12px
+        display inline-block
+        border-radius 5px
+        line-height 20px
+        margin-left 10px
+        cursor pointer
+        &:hover
+            background $blue
+    &-b
+        color $white
+        background $blue
+        padding 0 14px
+        font-size 12px
+        display inline-block
+        border-radius 5px
+        line-height 20px
+        margin-left 10px
+        cursor pointer
+        &:hover
+            background $green
+
+.button
+    display block
+    width 100%
+    font-size 12px
+    line-height 24px
+    padding 13px 20px
+    text-align center
+    font-family WhitneySemiBold
+    &.b-white
+        color $blue
+        padding 12px 20px
+        border 1px solid $blue
+        &:hover
+            color $white
+            background $green
+            border 1px solid $green
+    &.b-blue
+        color $white
+        background $blue
+        &:hover
+            background $green
+    &.b-red
+        color $white
+        background: #c82526;
+        &:hover
+          background red
+.news-more
+    display inline-block
+    margin-top 10px
+    align-items center
+    border-radius 5px
+    padding 10px 25px
+    background $blue
+    color: $white
+    font-family: WhitneySemiBold
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.4px;
+    &:hover
+        background $green
+.lk-news_news-more
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-bottom: 25px;
+    .news-more
+        margin-right: 6px;
+        margin-left: -6px;
+        .i-reload
+            margin-left: -6px;
+            margin-right: 6px;
+
+   
+.news-more2
+    font-family WhitneySemiBold
+    color $blue
+    font-size: 12px;
+    font-weight: 400;
+    display inline-block
+    padding 5px
+    &:after
+        display inline-block
+        content ""
+    &:hover
+        color $green
+
+/*FORMS*/
+
+input[type=checkbox], input[type=radio]
+    display none
+
+.input-form
+    border 1px solid #dee2e7;
+    padding 12px 20px
+    background $white
+    font-size 16px
+    line-height 24px
+    color black
+    border-radius 5px
+
+input.input-form
+    &:valid
+        +label
+            display: none;
+    &:focus
+        +label
+            display: none;
+    &:disabled
+        background $grey
+        &::-webkit-input-placeholder
+            color: $text-grey
+        &::-moz-placeholder
+            color: $text-grey
+        &:-ms-input-placeholder
+            color: $text-grey
+        &:-moz-placeholder
+            color: $text-grey
+        &::-webkit-input-placeholder
+            color $text-grey
+
+.label-star-red
+    position absolute
+    display inline-block
+    left 20px
+    top 50%
+    font-size 16px
+    transform translateY(-50%)
+    color $text-grey
+
+.input-form[type=file]
+    padding 9px 20px
+    button, a, label
+        background red
+    &:valid
+        opacity 0
+        position relative
+        z-index 2
+        +.file-name
+            display: block
+
+.parent-selector
+    position relative
+    .file-name
+        position absolute
+        top 0
+        left 0
+        border 1px solid #dee2e7;
+        padding 12px 20px
+        font-size 16px
+        line-height 24px
+        background $white
+        color $text-grey
+        border-radius 5px
+        display none
+        height 100%
+        width 100%
+        overflow hidden
+        p
+            width 90px
+            display flex
+            height 100%
+            justify-content center
+            align-items center
+            color $white
+            position absolute
+            top 0
+            right 0
+            background $blue
+            border-radius 0 5px 5px 0
+
+.user-license
+    display flex
+    align-items center
+    >label
+        >p
+            font-size 13px
+            line-height 17px
+    input
+        &:checked
+            +label
+                .agree-ok
+                    p
+                        display block
+                        overflow visible
+                        font-size 14px
+    .text-b-un
+        margin-left 3px
+
+.agree-ok
+    flex-shrink 0
+    justify-content center
+    align-items center
+    margin-right 15px
+    width 30px
+    height 30px
+    background $white
+    border-radius 5px
+    border 1px solid #dee2e7
+    color black
+    display flex
+    p
+        display none
+/*LOGOS*/
+
+.pm_icon
+    background no-repeat 50%/cover
+    width 30px
+    height 30px
+    flex-shrink 0
+    &.er_icon
+        width 20px
+        height 20px
+    &.pr
+        background-image url("../img/pr.png")
+    &.pm
+        background-image url("../img/pm.png")
+    &.ac
+        background-image url("../img/ac.png")
+    &.bc
+        background-image url("../img/bc.png")
+    &.ra
+        background-image url("../img/logo/ria.jpg")
+        width 40px
+        height 40px
+
+/*IMAGES*/
+
+.header-logo
+    display block
+    &.big
+        width 347px
+        height 63px
+    img
+        width 340px
+    &.mini
+        width 278px
+        height 50px
+
+.avatar
+    flex-shrink 0
+    border-radius 100%
+    width 70px
+    height 70px
+
+.test
+    width 70px
+    height 26px
+    margin -3px 5px -3px 0
+    background-position center
+    background-size contain
+    background-repeat no-repeat
+    &.skrill
+        background-image url("../img/logo/skrill.png")
+    &.privat24
+        background-image url("../img/privat24.png")
+    &.okpay
+        background-image url("../img/okpay.png")
+
+.flag_img
+    height 14px
+    width 22px
+    background-repeat no-repeat
+    background-position center
+    background-size 100%
+    flex-shrink 0
+    &.ukraine
+        background-image url("../img/country/ukraine.svg")
+    &.russia
+        background-image url("../img/country/russia.svg")
+    &.south-africa
+        background-image url("../img/country/south-africa.svg")
+    &.czech-republic
+        background-image url("../img/country/czech-republic.svg")
+    &.australia
+        background-image url("../img/country/russia.svg")
+
+.background-mod-dark
+    background-color $dark-blue
+    position relative
+    >*
+        position relative
+        z-index 2
+    &:before
+        content ''
+        display block
+        position absolute
+        left 0
+        top 0
+        height 100%
+        width 100%
+        z-index 1
+        opacity .7
+        background-image url("../img/image-backgraund.png")
+        background-size cover
+        background-position bottom
+#lk-id
+    $:after
+        display inline-block
+        content '12345'
+.lk-client-id, .id-text
+    font-size: 14px
+/*STATUS INFO*/
+
+.lk-client-id
+    &:after
+        display inline-block
+        content '12345'
+.lk-client-name
+    &:before
+        display inline-block
+        content 'Александр'
+.deal-ok
+    color $green!important
+    &:before
+        display block
+        content 'Выполненная сделка'
+.deal-del
+    color red!important
+    &:before
+        display block
+        content "Удаленная заявка"
+.request-ok
+    color $green!important
+    &:before
+        display block
+        content 'Выполненная заявка'
+.profile-status
+    display inline-block
+    &.activation
+        color $green
+        &:before
+            display inline-block
+            content "Верифицирован"
+    &.no-activ
+        border: 1px solid #00abec;
+        padding: 0 14px;
+        cursor: pointer;
+        font-size: 12px;
+        border-radius: 5px;
+        line-height: 20px;
+        margin-left: 3px;
+        color: #000;
+
+        &:before
+            display inline-block
+            content "Верифицировать"
+        &:hover
+            background $blue
+.pay
+    &.ordered
+        &:before
+            display inline-block
+            content 'Заказана выплата'
+
+/*OTHER*/
+.notification
+    width 100%
+    height 50px
+    .flex-sb
+        width 1180px
+        margin auto
+    .warning
+        width 100%
+        position fixed
+        top 0
+        z-index 20
+        font-size 12px
+        align-items center
+        background #edc92c
+        padding 14px 0
+        .i-warning
+            font-size 20px
+        p
+            width 100%
+            padding 2px 0 0 20px
+        button
+            margin 5px
+            &:hover
+                opacity .4
+    &.information
+        background #f5f5f5
+        p
+            margin 16px 0
+
+.date
+    color #a9b7c5
+    line-height 12px
+    padding 6px 10px 6px 0
+    font-family WhitneyLight
+    border-radius 5px
+    display inline-flex
+    margin 5px 0
+    align-items center
+    font-size: 14px;
+    letter-spacing: .3px;
+    .i-calendar
+        margin-right 7px
+    &.date-dark
+        padding 6px 10px
+        color $white
+        background $dark-blue
+
+.top_news
+    position absolute
+    top 0
+    left 0
+    border-radius 5px 0 5px 0
+    background $blue
+    display inline-block
+    align-items center
+    padding 0 17px
+    color: $white
+    font-family: WhitneySemiBold
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    p
+        margin-top .7em
+        margin-bottom .7em
+    &:after
+        content: '';
+        position: absolute;
+        left: 8px;
+        bottom: -7px;
+        border: 5px solid transparent
+        border-top: 3px solid $blue
+        border-right: 8px solid $blue
+
+.news_colum
+    li
+        padding 10px 20px
+        border-bottom 1px solid rgba(169, 183, 197, 0.3)
+        &:last-child
+            border none
+            text-align center
+
+.news_colum2
+    border-radius 5px
+    li
+        padding 10px 20px
+        border-bottom 1px solid rgba(169, 183, 197, 0.3);
+        &:last-child
+            border none
+
+.iz
+    border-radius 50px 10px 10px 50px
+    display flex
+    justify-content space-between
+    align-items center
+    span
+        font-size 12px
+        padding 0 12px
+        letter-spacing 0.5px
+
+.border-r
+    border-radius 5px
+
+.country
+    position relative
+    padding-left 25px
+    &:after
+        content: "";
+        display block
+        height: 16px;
+        position: absolute;
+        left 0
+        top: 0
+        width: 16px;
+    &:before
+        display block
+    &.ukraine
+        &:before
+            content 'Украина'
+        &:after
+            background: rgba(0, 0, 0, 0) url("../img/country/ukraine.svg") no-repeat scroll center center;
+    &.russia
+        &:before
+            content 'Россия'
+        &:after
+            background: rgba(0, 0, 0, 0) url("../img/country/russia.svg") no-repeat scroll center center;
+    &.czech-republic
+        &:before
+            content 'Чехия'
+        &:after
+            background: rgba(0, 0, 0, 0) url("../img/country/czech-republic.svg") no-repeat scroll center center;
+
+.cauntri
+    font-family WhitneySemiBold
+    color $dark-blue
+    font-weight 600
+    &_name
+        font-size 14px
+        letter-spacing 0.4px
+        padding-left 25px
+        position relative
+        &:after
+            background: rgba(0, 0, 0, 0) url("../img/country/russia.svg") no-repeat scroll center center;
+            content: "";
+            height: 16px;
+            position: absolute;
+            left 0
+            top: 0
+            width: 16px;
+
+.security_help
+    margin 20px 0 0 10px
+    font-size 16px
+
+.question-box-rates
+    display: inline-flex;
+    font-family: WhitneyMedium;
+    line-height: 15px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 100%;
+    background: #a1b8c8;
+    padding: 3px;
+    /* margin-left: 40px; */
+    margin-right: -10px;
+    border: 1px solid #d6dade;
+    // display inline-flex
+    //     font-family WhitneyMedium
+    //     line-height 15px
+    //     align-items center
+    //     position relative
+    //     justify-content center
+    //     border-radius 100%
+    //     background $white
+    //     padding 3px
+    //     border 1px solid #d6dade
+
+.question-box
+    display: inline-flex;
+    font-family: WhitneyMedium;
+    line-height: 15px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 100%;
+    background: #a1b8c8;
+    padding: 3px;
+    /* margin-left: 40px; */
+    margin-right: -10px;
+    border: 1px solid #d6dade;
+    &:hover
+        .question_help
+            display inline-block
+            z-index 20
+.question-box-ex
+    background: white!important
+    padding 4px!important
+    .i-question
+        font-size 8px!important
+.i-question
+    font-size 10px
+    color $text-grey
+
+.question_help
+    background: #f5f5f5;
+    border-radius: 5px;
+    color: #555;
+    display: none; 
+    position: absolute;
+    left: -408px;
+    bottom: -77px;
+    padding: 14px 20px;
+    width: 485px;
+    font-size: 12px;
+    overflow: visible;
+    border: 1px solid #cccccc;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    &:after
+        content: "";
+        background: #f5f5f5;
+        height: 11px;
+        position: absolute;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        transform: rotate(406deg);
+        left: 410px;
+        bottom: 53px;
+        width: 11px;
+
+.popup-input
+    &:checked
+        +.popup
+            display flex
+
+.popup
+    position fixed
+    left 0
+    top 0
+    height 100vh
+    width 100vw
+    z-index 105
+    display none
+    &_bg
+        background rgba(52,69,97,0.50)
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+    .i-cancel
+        position absolute
+        font-size 20px
+        right 20px
+        top 20px
+        z-index 3
+        color $text-grey
+        &:hover
+            color red
+
+.button_up
+    position: fixed
+    display: none
+    opacity: 0
+    visibility: hidden
+    z-index: 100
+    right: 290px;
+    bottom: 50px;
+    width: 37px;
+    height: 50px;
+    background: #fff0;
+    border-radius: 5px;
+    color: #00abec99;
+    font-size: 9px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    &.fixed
+        opacity 1
+        visibility visible
+    .i-arrows-up
+        width 100%
+        margin 11px 0 6px
+        font-size 11px
+    &:hover
+        color black
+    @media (min-width 1380px)
+        display block
+
+.agent-status
+    .inline
+        display inline-flex
+        .offline
+            img
+                position absolute
+                bottom 13px
+                width 22px
+                left calc(50% - 60px)
+                content url("../img/offline.svg")
+                animation shine-offline 6s ease-out infinite
+                padding: 1px
+            a
+                position absolute
+                bottom 15px
+                font-size 14px
+                font-family WhitneySemiBold
+                left 50%
+                transform translateX(-50%)
+                &:before
+                    display block
+                    color red
+                   
+                    content 'Я offline'
+        .online
+            img
+                position absolute
+                bottom 12px
+                width 22px
+                left calc(50% - 60px)
+                content url("../img/online.svg")
+                animation shine-online 6s ease-out infinite
+                padding: 3px
+            a
+                position absolute
+                bottom 14px
+                font-size 14px
+                font-family WhitneySemiBold
+                left 50%
+                transform translateX(-50%)
+                &:before
+                    display block
+                    color #00ae00
+                    content 'Я online'
+@keyframes shine-online 
+    
+    0%
+        background #b1ed6238
+        border-radius 106px
+    
+    33%
+        background #97d44759
+        border-radius 106px
+    50%
+        background #b1ed62
+        border-radius 106px
+    100%
+        background #b1ed6252
+        border-radius 106px
+@keyframes shine-offline
+    
+    0%
+        background #ff000000
+        border-radius 106px
+    
+    33%
+        background #ff00006b
+        border-radius 106px
+    50%
+        background #ff00006e
+        border-radius 106px
+    100%
+        background #ff000010
+        border-radius 106px
+       
+.chfile-parent
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+    .chfile-label
+        color: #00abec!important
+        padding: 3px 0px!important
+        border: 1px solid #00abec!important
+        margin-left: 27px!important
+        margin-top: 7px!important
+        font-family: Whitney
+    .chfile-filename
+        font-size: 11px;
+        margin-left: 22px;
+        width: 125px;
+        text-align: center;
+    .ver-file-formats-text
+        font-size: 12px!important
+        margin-top: 6px!important
+        margin-left: 16px!important
+        color: #999999;
+    .chfile-success
+        background: #00abec;
+        color: #fff!important;
+        width: 135px;
+        margin-left: 19px!important;
+        margin-top: 11px!important;
+        margin-right: -29px!important;
+        padding: 3px!important;
+        font-size: 21px;
+
+.chfile-close
+    width: 15px;
+    height: 15px;
+    margin-top: 16px;
+    margin-left: 244px;
+    position: absolute;
+
+.file
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+.chfile-label:focus,.chfile-label:hover, .chfile-label:visited
+    display block!important
+
+.button-bg-tb
+    color: #fff;
+    padding: 0 14px;
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #00abec;
+    color: black;
+    font-weight: 700;
+    &:hover
+        background $blue
