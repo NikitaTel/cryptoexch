@@ -1,0 +1,52 @@
+mixin bill-verification-popup(closeHandler)
+    section.bill-verification-skrill&attributes(attributes)
+        span.i-close(onclick=closeHandler)
+        .bill-verification-skrill__title
+            p Верификация счета Skrill
+        .bill-verification-skrill__tip
+            p Отправьте Ваши файлы для верификации
+        form.bill-verification-skrill__files.verification-files
+            .verification-files__choose-file.choose-file
+                .choose-file__file-numeration
+                    p 1. Файл 1
+                .choose-file__button
+                    label(for='verification-file1') Выберите файл
+                    input(type='file' id='verification-file1' name='verification-file1')
+                .choose-file__selected-files
+                    .selected-file
+                        span Файл не выбран
+                .choose-file__supported-formats
+                    p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+            .verification-files__choose-file.choose-file
+                .choose-file__file-numeration
+                    p 2. Файл 2
+                    span.choose-file__tooltip Ваше фото с первым разворотом паспорта
+                .choose-file__button
+                    label(for='verification-file2') Выберите файл
+                    input(type='file' id='verification-file2' name='verification-file2')
+                .choose-file__selected-files
+                    .selected-file
+                        span Файл не выбран
+                .choose-file__supported-formats
+                    p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+            .verification-files__choose-file.choose-file
+                .choose-file__file-numeration
+                    p 3. Файл 3
+                .choose-file__button
+                    label(for='verification-file3') Выберите файл
+                    input(type='file' id='verification-file3' name='verification-file3')
+                .choose-file__selected-files
+                    .selected-file
+                        span 12345.png
+                        span.i-close(onclick="event.target.parentNode.remove()")
+                    .selected-file
+                        span 12345.png
+                        span.i-close(onclick="event.target.parentNode.remove()")
+                    .selected-file
+                        span 12345.png
+                        span.i-close(onclick="event.target.parentNode.remove()")
+                .choose-file__supported-formats
+                    p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+            .verification-files__submit
+                label(for='verification-submit') Отправить запрос
+                input(type='submit' id='verification-submit' name='verification-submit')

@@ -58,11 +58,14 @@ block content
                   span 100 USD PerfectMoney на 100 USD AdvCash
                p Счет получателя:
                   span U123123123123
-           
+
          .exchange-triple_right.as_strech
             .flex-sa.border_bot.flex-shrink.flex-grow
                .exchange-triple_right_text.text-center(style="text-align:center")
-                  a.countdown 20:00
+                  a.countdown
+                     span.countdown__minutes 20
+                     span :
+                     span.countdown__seconds 00
             .flex-sb.flex-grow.exchange-triple_right_step2.as_strech
                .ex2-tt1
                   P У вас есть #[span.ex-fat-bottomText 20 минут] для совершения #[br] оплаты.
@@ -98,7 +101,7 @@ block content
          li
             .counter 8
             p.uppercase Ожидайте исполнения заявки
-      .lk-text
+      .lk-text(style="margin: 0 0 49px 0")
          span Пожалуйста, будьте внимательны!
          |Все поля должны быть заполнены в точном соответствии с инструкцией. В противном случае, платеж может не пройти.
       .flex-sb
@@ -124,8 +127,12 @@ block content
                      input.button.b-blue.border-r_rght(type='submit' onclick="checkFields('.exchange-input')" id='exchange-step2' value='Подтвердить')
                p.text-margin.lk-text(style="margin-top: 10px;margin-left: 23px;")
                   a.text-b-un Отправить еще
-                  span (50сек)
-block aside
+                  span.send-again-timer(style="color: #999999; font-family: Whitney") (#[span.send-again-timer__seconds 50]сек)
+   script
+      include ../js/timers/send-again-timer.js
+   script
+      include ../js/timers/payment-timer.js
+   //block <aside></aside>
    //- h2.title.underline НОВОСТИ
    //- ul.aside-news.news_colum.border-r
    //-    li

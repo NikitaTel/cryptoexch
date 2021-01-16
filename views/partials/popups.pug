@@ -116,25 +116,25 @@ input.popup-input(type='checkbox' id='registr')
                             div.registration-new-logo
                                 a(href="#") #[.i-at]
 
-                    ul.inputs 
+                    ul.inputs
                         li
                             input.input-form(id="registr-email" type="email" onchange="checkFields('.registration-new')" required)
                             label.label-star-red(for="registr-email")
                                 p E-mail
-                                    //- span.red-star *                 
+                                    //- span.red-star *
                         li
                             form(action="?" method="POST" style="margin-left: 2.5%")
                                 div(class="g-recaptcha" data-sitekey="6LfX2eEZAAAAALpteI7Fqfm1fqpQG24RCn8S4ruL")
                                 br
                             //input(type="submit" value="Submit")
                         li
-                            input(type="submit" onclick="handleReg()" value="Регистрация").button.b-blue.border-r 
+                            input(type="submit" onclick="handleReg()" value="Регистрация").button.b-blue.border-r
 
                         //- здесь переход по клику чисто для демонстрации сейчас
                         li.registration-new-no-acc-text
                             p Зарегистрированы? #[label(for='auth' onclick="document.getElementById('registr').checked=false;") Войдите на сайт]
                         p.error(style="color:red;font-size: 12px;")
-    //- РЕГИСТРАЦИЯ      
+    //- РЕГИСТРАЦИЯ
     //- РЕГИСТРАЦИЯ ШАГ 2
 input.popup-input(type='checkbox' id='registr-step2')
 .popup.flex.registration-s2
@@ -163,16 +163,16 @@ input.popup-input(type='checkbox' id='registr-step3')
         ul.tarif-open_bot-bg.flex-sa
             li
                 p.registration-s3-note-text Придумайте пароль, который больше #[br] нигде не используется. #[br] Пароль должен содержать не меньше #[br] 8-ми знаков, среди которых могут #[br] быть буквы, символы и цифры.
-                    ul.inputs 
+                    ul.inputs
                         li
                             input.input-form(id="registr-password" type="password" onchange="checkFields('.registration-s3')" required)
                             label.label-star-red(for="registr-password")
                                 p Пароль
-                                    span.red-star *                 
+                                    span.red-star *
                         li
                             input.input-form(id="registr-password2" type="password" onchange="checkpass('#registr-password', '#registr-password2')" required)
                             label.label-star-red(for="registr-password2")
-                                p Пароль
+                                p Повторите пароль
                                     span.red-star *
                         li
                             input(type="submit" onclick="handleRegPass()" value="Сохранить").button.b-blue.border-r
@@ -206,12 +206,12 @@ input.popup-input(type='checkbox' id='auth')
                             div.auth-logo
                                 a(href="#") #[.i-at]
 
-                    ul.inputs 
+                    ul.inputs
                         li
                             input.input-form(id="auth-login" onchange="checkFields('.authorization')" required)
                             label.label-star-red(for="auth-login")
                                 p Логин или Email
-                                    span.red-star *                 
+                                    span.red-star *
                         li
                             input.input-form(id="auth-login" onchange="checkFields('.authorization')" required)
                             label.label-star-red(for="auth-pasport")
@@ -228,7 +228,7 @@ input.popup-input(type='checkbox' id='auth')
                             input(type="submit" onclick="checkFields('.authorization')" value="Войти").button.b-blue.border-r
                         li.auth-no-acc-text
                             p Нет аккаунта? #[label(for='registr' onclick="document.getElementById('auth').checked=false;") Зарегистрируйтесь]
-//- АВТОРИЗАЦИЯ      //- было for="invest7"   
+//- АВТОРИЗАЦИЯ      //- было for="invest7"
 
     //- ЗАПРОС РЕЗЕРВА
 input.popup-input(type='checkbox' id='reserve-request')
@@ -243,12 +243,12 @@ input.popup-input(type='checkbox' id='reserve-request')
                 p.reserve-request-note-text Выберите удобный тип связи #[br] и введите необходимую сумму
                 ul
 
-                    ul.inputs 
+                    ul.inputs
                         li
                             input.input-form(id="request-mail" required)
                             label.label-star-red(for="request-mail")
                                 p Telegram/E-mail?
-                                    span.red-star *                 
+                                    span.red-star *
                         li
                             input.input-form(id="request-summ" required)
                             label.label-star-red(for="request-summ")
@@ -264,9 +264,9 @@ input.popup-input(type='checkbox' id='reserve-request')
         h2.title.titleRe.text-center НЕДАВНИЕ ОБМЕНЫ
         .close
             .i-close(onclick="$('#recExch').hide()")
-        
+
     .exchange_listPP
-        
+
             ul.flex-sb.inflex
                 li.flag
                     .flag_img.russia

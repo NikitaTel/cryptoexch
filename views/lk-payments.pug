@@ -19,22 +19,13 @@ block vars
 
 block content
     include ./partials/popups
+    include ./partials/bill-verification-skrill-popup
+
     .lk_main
         input.popup-input(type='checkbox' id='skrill-pop')
         .popup.flex
             label(for='skrill-pop').popup_bg
-            .verification-skrill.border-r
-                label(for='skrill-pop').i-cancel
-                h2.title.text-center ВЕРИФИКАЦИЯ СЧЕТА SKRILL
-                p.lk-text Ffdhf hkjghrgfi iughsdfighrotight poshviorwbgiurt ipujbvnskdjfgbijg pwrio ghn jgn pijrnbghiuewr gjkwien jkwerb ijwerbg ewpg jbwerj gbwerjg wekjg wejfg p
-                .flex-sb
-                    .parent-selector.flex-grow
-                        input.input-form.file(type="file" required accept="image/jpeg,image/png,image/gif")
-                        .file-name
-                            span.element-to-paste-filename
-                            p ✔
-                    input.button.b-blue.border-r(type="submit" value="Отправить запрос")
-                p (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+            +bill-verification-popup("(()=>{document.querySelector('#skrill-pop').checked = false})()")(style="margin: auto;")
         h2.title ВАШИ СЧЕТА
         p.lk-text Здесь Вы можете добавить свои счета, которые будут автоматически подставляться при оформлении заявки на обмен.
             br
@@ -86,8 +77,8 @@ block content
                     .flex-grow
                         input(type="submit" onclick="checkFields('.ac-skrill')" value="Сохранить").button.b-blue
                 p.lk-text Символов мин: 5 макс: 15
-        table.lk-table
-            tr
+        table.lk-table.bills
+            tr.bills__header
                 th
                     p(class="pay-system") ПЛАТЕЖНАЯ СИСТЕМА
                 th

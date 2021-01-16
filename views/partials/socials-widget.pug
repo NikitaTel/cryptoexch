@@ -1,0 +1,17 @@
+mixin socials-widget()
+    section.socials-bar&attributes(attributes)
+        a(href='').socials-bar__share поделиться
+        section.socials-bar__links
+            //Пробуй генерировать иконочный шрифт, у меня место значков выводит юникод, может старые библиотеки галпа не справляются, хз хз. Я иконмуном закостылял
+            a(href='https://facebook.com').icon-widget-fb
+                //img(src="../img/widget-fb.svg")
+            a(href='https://vkontakte.com').icon-widget-vk
+                //img(src="../img/widget-vk.svg")
+            a(href='https://twitter.com').icon-widget-twitter
+                //img(src="../img/widget-twitter.svg")
+            a(href='https://instagram.com').icon-widget-instagram
+                //img(src="../img/widget-instagram.svg")
+            a(href='https://viber.com').icon-widget-viber
+                //img(src="../img/widget-viber.svg")
+            a(href='https://whatsapp.com').icon-widget-whatsapp
+                //img(src="../img/widget-whatsapp.svg")

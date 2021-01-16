@@ -115,6 +115,10 @@ main
     h2.title
         color $white
         margin-bottom 28px
+    .exchange-list__item
+        overflow hidden
+        &:nth-child(even)
+            background rgba(255, 255, 255, 0.05)
     &_list
         width 580px
         .i-next
@@ -124,20 +128,6 @@ main
             align-items center
             padding 4px 10px
             margin-bottom 5px
-            &:nth-child(even)
-                background rgba(255, 255, 255, 0.05)
-            &:nth-last-child(6)
-                opacity 1
-            &:nth-last-child(5)
-                opacity 0.9
-            &:nth-last-child(4)
-                opacity 0.6
-            &:nth-last-child(3)
-                opacity 0.6
-            &:nth-last-child(2)
-                opacity 0.4
-            &:nth-last-child(1)
-                opacity 0.4
             li
                 display flex
                 justify-content space-between
@@ -187,14 +177,7 @@ main
     width: 80px!important
     margin-left: 10px!important
     text-align: right!important;
-.reserve1
-    width: 96%
-    margin: auto
-.reserve2
-    width: 96%
-    margin: auto
-    margin-top: 17px
-    margin-bottom: 10px
+
 .reserve_all
     .main-content
         padding 50px 0
@@ -428,52 +411,87 @@ main
     letter-spacing: 0.4px;
 .ic1
     margin-top: -32px
-.reserve1
-    .second-val:first-child
-        margin-left: 0px!important
-    .second-val
-        margin-top: .1em!important
 
-        font-weight: 100!important
-        font-family: Whitney!important
-        margin-left: 21px!important
-        font-size: 11px!important
-
-.pm-text
-    p
-        margin-top: 0.6em!important
-.reserve2
-    .second-val
-        margin-top: .1em!important
-        margin-left: 21px!important
-        font-weight: 100!important
-        font-size: 11px!important
-        font-family: Whitney!important
-    .second-val:first-child
-        margin-left: 0px!important
-
-.reserve1, .reserve2
-    li
-        background: white!important
-        border-radius: 3px!important
-    .main-content
-        padding: 55px 0!important
-.reserve_all
-    .next, .prev
-        position: absolute
-        top: 57%
-        font-size: 17px
+.reserves-slider
+    width 1130px
+    display flex
+    margin auto
+    overflow hidden
+    &__container
+        width 1180px
+        margin auto
+        position relative
+        overflow hidden
+    &__wrapper
+        display flex
+        flex 0 0 auto
+        flex-wrap wrap
+    &__next-el, &__prev-el
+        position absolute
+        color #adb4c1!important
+        top 50%
+        cursor pointer
+    &__prev-el
+        left: 0;
+        transform: rotate(180deg) translateY(50%);
+    &__next-el
+        right: 0;
+        transform: translateY(-50%);
+    .i-next
+        font-size: 18px
         color white
-    .next
-        left: 99%
-    .prev
-        left: -1%
+    &__slide
+        width 261px
+        display flex
+        justify-content flex-start
+        padding 5px 15px
+        align-items center
+        border-radius 5px
+        background rgba(235, 241, 247, 0.9)
+        .pm_icon
+            margin-right 20px
+        &.reserve1
+            width: 266px
+            margin: auto
+        &.reserve2
+            width: 266px
+            margin: auto
+            margin-top: 17px
+            margin-bottom: 10px
+        &.reserve1, &.reserve2
+            background: white!important
+            border-radius: 3px!important
+        &.reserve1
+            .second-val:first-child
+                margin-left: 0px!important
+            .second-val
+                margin-top: .1em!important
+
+                font-weight: 100!important
+                font-family: Whitney!important
+                margin-left: 21px!important
+                font-size: 11px!important
+
+        .pm-text
+            p
+                margin-top: 0.6em!important
+        &.reserve2
+            .second-val
+                margin-top: .1em!important
+                margin-left: 21px!important
+                font-weight: 100!important
+                font-size: 11px!important
+                font-family: Whitney!important
+            .second-val:first-child
+                margin-left: 0px!important
+
 .recent-exchanges
-    position: fixed;
-    height: 187px;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 73.05%;
+    left: 357px;
     z-index: 999;
+    max-height: 180px;
+    overflow: hidden;
 .logo-russia
     background: url('../img/country/russia.svg')
 .logo-australia
@@ -488,129 +506,100 @@ main
     background: url('../img/ac.png')
 .logo-btc
     background: url('../img/bc.png')
-.rec-changes-line.inline
-    width 300px
-    height 38px
-    padding-top: 7px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 5px
-    .country-logo
-        width: 25px;
-        height: 20px;
-        background-size: cover;
-        margin-left: 10px;
-        margin-top: -2px;
-    .rc-summ1, .rc-summ2
-        font-family: WhitneyMedium;
-        font-weight: 400;
-        line-height: 26px;
-        color: #ffffff;
-        font-size: 14px;
-        letter-spacing: -.1px;
-        mix-blend-mode: difference;
-    .rc-summ1
-        margin-left: 14px;
-        margin-top: -3px;
-    .rc-summ2
-        margin-left: 5px;
-        margin-top: -3px;
-    .next
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-family: WhitneyMedium;
-        font-weight: 400;
-        line-height: 26px;
-        mix-blend-mode: difference;
-        color white
+
+._new-exchange
+    transition all 2s ease
+
+@media screen and (max-width: 1200px)
+    body, .reserve_all .main-content, .change, .main-content
+        min-width auto
+        width: auto
+    .news
+        &_block1, &_block2, &_block3
+            width 100%
+        &-img-s news2_1
+            width 100%
+            height 100px
+        &_block3
+            background transparent
+            li
+                display none
+                &:nth-child(4)
+                    display list-item
+        &-more2
+            font-size 18px
+            padding 5px 0 1px 0
+            border-bottom 1px solid #00abec
+    .reserves-slider
+        width 89%
         .i-next
+            color #ffffff !important
             font-size 16px
-            color white!important
-            margin-top: -13px!important
-    .rc-logo1, .rc-logo2
-        width: 25px;
-        height: 25px;
-        background-size: cover;
-    .rc-logo1
-        margin-left: 7px;
-        margin-top: -2px;
-    .rc-logo2
-        margin-left: 8px;
-        margin-top: -3px;
-    .rc-time
-        font-family: 'Whitney';
-        line-height: 26px;
-        /* text-shadow: 1px 2px 1px rgba(0,0,0,.941); */
-        font-size: 12px;
-        margin-left: 8px;
-        margin-top: -2px;
-        color:white
-        mix-blend-mode: difference;
-    .rc-divider
-        margin-left: 8px;
-        margin-right: -8px;
-        padding: 10px 0px;
-        width: 1px;
-        height: 38px;
-        background: #599bbec4;
-        margin-top: -8px
-
-.line-iter
-    margin-top: 4px
-.rc-title
-    font-size: 15.5px;
-    margin-left: 14px
-    color: white
-    mix-blend-mode: difference;
-.rc-close
-    position: absolute;
-    left: 276px;
-    top: 7px;
-    font-size: 11px;
-    color: white
-    mix-blend-mode: difference;
-    z-index: 9999
-    &:hover
-        cursor pointer
-.rc-grid
-    display: grid
-.recent-exchanges
-
-    .i-next
-        font-size: 11px!important;
-        margin-left: 5px;
-        margin-top: -6px;
-.iz
-    .i-next
-        font-size: 12px!important;
-        color: white!important;
-
-.rc-grid
-    .new-exchange
-        transform: translateY(-100px)
-        animation:
-            add-exchange-animation 2s ease 0s forwards
-    .remove-exchange
-        animation: remove-exchange-animation 2s ease 0s forwards
-
-@keyframes add-exchange-animation {
-    from{
-        height: 0;
-    }
-    to {
-        height: auto;
-        transform: translateY(0);
-    }
-}
-
-@keyframes remove-exchange-animation {
-    to {
-        height: 0;
-        transform: translateY(100px);
-    }
-}
-
-@media screen and (max-device-width: 1024px)
-    .recent-exchanges
-        display none;
-
+        &__container
+            width 100%
+        &__slide
+            padding 5px 7px
+            .pm-text
+                > span
+                    margin-bottom 12px
+                p
+                    display flex
+                    flex-direction column
+                    margin 0 !important
+                    .second-val
+                        margin-left 0 !important
+                    span
+                        margin 6px 0
+    .exchange
+        width 100%
+        &-bg:before
+            display none
+        &_list
+            width 100%
+            max-width 580px
+            margin auto
+            overflow hidden
+            ul li
+                &.flag
+                    width auto
+                    p
+                        &:nth-child(3)
+                            width auto !important
+                            font-size 14px
+                            padding-right 5px
+                        &:nth-child(2)
+                            padding 0 12px
+                &:nth-child(3)
+                    padding 0 7px
+    .iz span
+        padding 0 6px
+    .cipher
+        font-size 14px !important
+        width auto !important
+    .news-img-b
+        width 38%
+    .advantages
+        .flex-sb
+            flex-wrap wrap
+            flex-direction row
+            padding 0 15px
+            max-width: 400px;
+            margin auto !important
+        &_list
+            width 150px
+    .cookie
+        height auto
+        padding-bottom 20px
+        &-text
+            margin 0
+            p
+                padding-right 10px
+        &-content
+            margin-left 20px
+            width 89%
+        &-button
+            margin-left 21%
+            top 40%
+    .change.flex-sb
+        display flex
+        flex-direction column

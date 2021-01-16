@@ -1,4 +1,4 @@
-footer 
+footer
     border-top: 2px solid #00abec!important
 
 .footer
@@ -37,7 +37,6 @@ footer
     &_grafic
         li
             &:first-child
-                color: #137296;
                 font-family: WhitneyMedium
             p
                 span
@@ -108,6 +107,8 @@ footer
     margin-top: 5px;
 .footerClass
     display: inline-flex;
+    > .cert-logos
+        display none
 .footer_grafic
     margin-left: -158px;
     padding-left: 0;
@@ -133,7 +134,7 @@ footer
     width: 187px!important;
     border-radius: 5px!important;
     margin: 3px auto -6px 83px!important;
-.footer_number 
+.footer_number
     font-weight: 600!important
     font-size: 14px!important
     letter-spacing: .65px!important
@@ -141,9 +142,54 @@ footer
     margin-left: 42px!important
 .wtimegraf-small
     font-size:  11px
-    font-family: Whitney!important 
+    font-family: Whitney!important
     font-weight: 100!important
     margin-left: -3px!important;
 .wdaygraf
     font-size: 13px;
     margin-left: -3px;
+
+@media screen and (max-width: 1200px)
+    .footerClass
+        display flex
+        flex-wrap wrap
+        max-width 366px
+        li > .cert-logos
+            display none
+        > .cert-logos
+            display flex
+            margin 0
+            .cert-logo2
+                height auto !important
+        > ul:nth-child(1)
+            display flex
+            flex-direction column
+            li:nth-child(2)
+                order 3
+    .footer_grafic, .wdaygraf, .wtime, .wtimegraf
+        margin 0
+    .footer
+        overflow hidden
+        width 100%
+        padding 15px 0 22px 15px
+        > p
+            width 100%
+            margin 30px 0 0
+            padding-right 15px
+        &_logo1
+            margin 0
+        &_social
+            margin 20px 0 -10px 0
+        &_contact
+            margin -140px 0 0 127px
+    .footer-list-1, .footer-list-2
+        display none
+
+@media screen and (max-width: 420px)
+    .footer
+        &_contact, &_number, &_href_other
+            margin 0 !important
+            text-align left
+        &_contact > li:nth-child(1)
+            margin-bottom 10px
+

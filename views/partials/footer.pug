@@ -1,18 +1,40 @@
 footer
    .footer(role='contentinfo')
+      .hamburger-menu
+         input#menu__toggle2(type='checkbox')
+         label.menu__btn(for='menu__toggle2' onclick="$('.footer .menu__box').toggleClass('menu-toggle')")
+            span
+      ul.menu__box
+         li
+            a.menu__item(href="/") ГЛАВНАЯ
+         li
+            a.menu__item(href="/rates.html") ТАРИФЫ
+         li
+            a.menu__item(href="/partners.html") ПАРТНЕРАМ
+         li
+            a.menu__item(href="/news.html") БЛОГ
+         li
+            a.menu__item(href="/contact.html") ПОДДЕРЖКА
+         li
+            a.menu__item(href="/investors.html") ОБМЕН
       .flex-sb.footerClass
          ul
             li
                a(href="/")
                   img.footer_logo1(src="../img/footer/logo.svg" alt="Smart Pays")
             li
-               p.footer_text__mod_col Copyright 2018 Smart-Pays.
+               p.footer_text__mod_col Copyright 2015 Smart-Pays.
             li.footer_social
                a.i-vk(href="https://vk.com/smartexchange")
                a.i-fb(href="")
                a.i-tw(href="https://twitter.com/Smart_pays")
                a.i-tg(href="#")
                a.i-rss(href="")
+         .cert-logos
+            .cert-logo
+               img(src="../img/visa.png" alt="")
+            .cert-logo.cert-logo2
+               img(src="../img/securecode.png" alt="")
          ul.footer-list-1
             li
                a.test-hover-green(href="/") Главная
@@ -31,7 +53,7 @@ footer
                a.test-hover-green(href="/partners.html") Партнерам
             li
                a.test-hover-green(href="/news.html") Блог
-        
+
          //.flex
             .comodologo
          ul.footer_grafic
@@ -39,7 +61,7 @@ footer
                p Рабочий график:
             li.wtimegraf
                p ПН-ПТ: #[span.wtimegraf-fat 09:00-22:00] #[span.wtimegraf-small по Киеву]
-               
+
             li.wdaygraf
                p СБ-ВС: свободный график
             li
@@ -48,13 +70,13 @@ footer
          ul.footer_contact
             li
                a.footer_number(href="tel:08003333333") СВЯЖИТЕСЬ С НАМИ
-            
+
             li
                a.footer_href_other(href="/contact.html") Написать в поддержку
             li
                .cert-logos
                   .cert-logo
-                     img(src="../img/visa.png" alt="")                   
+                     img(src="../img/visa.png" alt="")
                   .cert-logo.cert-logo2
                      img(src="../img/securecode.png" alt="")
       p

@@ -36,34 +36,40 @@ block content
                     input(type='radio' name='conf-pass' id='conf-pass2')
                     label.input-form(for="conf-pass2") Нет
                 li
-                    .security_help Уведомление на E-mail при авторизации:
+                    .security_help Двухфакторная авторизация :
                         .question-box.question-box-ex
                             .i-question
                             p.question_help Включите уведомление на E-mail при авторизации для повышения уровня безопасноти
-                    input(type='radio' name='conf-autoriz' id='conf-autoriz1')
-                    label.input-form(for="conf-autoriz1") Да
-                    input(type='radio' name='conf-autoriz' id='conf-autoriz2' checked='checked')
-                    label.input-form(for="conf-autoriz2") Нет
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz1' checked='checked')
+                    label.input-form(for="conf-autoriz1") Нет
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz2')
+                    label.input-form(for="conf-autoriz2") Email
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz3')
+                    label.input-form(for="conf-autoriz3") Telegram
+                    input(type='radio' name='conf-autoriz' id='conf-autoriz4' checked='checked')
+                    label.input-form(for="conf-autoriz4") SMS
+
                 li
-                    .security_help Авторизация по одноразовой ссылке:
+                    .security_help Уведомления:
                         .question-box.question-box-ex
                             .i-question
                             p.question_help Включите авторизацию по одноразовой ссылке для повышения уровня безопасноти
-                    input(type='radio' name='conf-singluse' id='conf-singluse1' checked='checked')
-                    label.input-form(for="conf-singluse1") Да
-                    input(type='radio' name='conf-singluse' id='conf-singluse2')
-                    label.input-form(for="conf-singluse2") Нет
+                    input(type='radio' name='conf-notification' id='conf-notification1' checked='checked')
+                    label.input-form(for="conf-notification1") Email
+                    input(type='radio' name='conf-notification' id='conf-notification2')
+                    label.input-form(for="conf-notification2") Telegram
+                    input(type='radio' name='conf-notification' id='conf-notification3' checked='checked')
+                    label.input-form(for="conf-notification3") SMS
             ul.white-list
-                li
+                li(style="margin-bottom: 20px;")
                     p Белый список IP:
                 li
-                    textarea(rows="10" cols="10" name="text" placeholder='Разрешенные IP-адреса(с новой строки):')
+                    textarea(rows="7" cols="10" name="text" placeholder='Разрешенные IP-адреса(с новой строки):')
                 li
                     p.lk-text
                         strong Внимание!&nbsp;&nbsp;
                         | Если вы не знаете для чего нужны вносить "Разрешенные IP-адреса", пожалуйста не пользуйтесь этой функцией. В ы можете потерять доступ в личный кабинет.
-                li
-                    input(type="submit" value="Сохранить").button.b-blue
+            input(type="submit" value="Сохранить").button.b-blue.security__save
         p.lk-text
             strong Внимание!&nbsp;
             | Если Вы не знаете для чего нужно вносить «Разрешенные IP-адреса», пожалуйста не пользуйтесь этой функцией. Вы можете потерять доступ в личный кабинет.

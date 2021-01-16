@@ -10,7 +10,7 @@ body
     font-size 20px
     letter-spacing 0.5px
     color: #0a263e;
-    font-family: WhitneyLight
+    font-family: Whitney
     font-weight: 400;
     &.lk-title
         padding 20px 0
@@ -26,7 +26,7 @@ h1.title
     margin: 0 0 28px;
     margin-top: 43px!important;
     margin-bottom: -17px!important;
-.contacts-title 
+.contacts-title
     margin: 45px 0 24px!important;
 .text-b-un
     color $blue
@@ -167,7 +167,7 @@ h1.title
             margin-left: -6px;
             margin-right: 6px;
 
-   
+
 .news-more2
     font-family WhitneySemiBold
     color $blue
@@ -347,9 +347,9 @@ input.input-form
     background-size contain
     background-repeat no-repeat
     &.skrill
-        background-image url("../img/logo/skrill.png")
+        background-image url("../img/systems/skrill.png")
     &.privat24
-        background-image url("../img/privat24.png")
+        background-image url("../img/systems/privat.png")
     &.okpay
         background-image url("../img/okpay.png")
 
@@ -658,7 +658,7 @@ input.input-form
     background: #f5f5f5;
     border-radius: 5px;
     color: #555;
-    display: none; 
+    display: none;
     position: absolute;
     left: -408px;
     bottom: -77px;
@@ -690,7 +690,7 @@ input.input-form
     left 0
     top 0
     height 100vh
-    width 100vw
+    width 100%
     z-index 105
     display none
     &_bg
@@ -722,11 +722,12 @@ input.input-form
     height: 50px;
     background: #fff0;
     border-radius: 5px;
-    color: #00abec99;
+    color: #09599c;
     font-size: 9px;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
+    transition all 0.3s ease
     &.fixed
         opacity 1
         visibility visible
@@ -735,7 +736,7 @@ input.input-form
         margin 11px 0 6px
         font-size 11px
     &:hover
-        color black
+        transform scale(1.4)
     @media (min-width 1380px)
         display block
 
@@ -761,34 +762,47 @@ input.input-form
                 &:before
                     display block
                     color red
-                   
+
                     content 'Я offline'
         .online
-            img
+        .offline
+            &:before
+                display block
                 position absolute
-                bottom 12px
-                width 22px
-                left calc(50% - 60px)
-                content url("../img/online.svg")
-                animation shine-online 6s ease-out infinite
-                padding: 3px
+                bottom 15px
+                width 19px
+                height 19px
+                left calc(50% - 90px)
             a
                 position absolute
                 bottom 14px
-                font-size 14px
+                font-size 18px
                 font-family WhitneySemiBold
                 left 50%
-                transform translateX(-50%)
+                transform translateX(-90%)
+        .online
+            &:before
+                content url("../img/online.svg")
+                animation shine-online 6s ease-out infinite
+            a
                 &:before
-                    display block
                     color #00ae00
                     content 'Я online'
-@keyframes shine-online 
-    
+        .offline
+            &:before
+                content url("../img/offline.svg")
+                animation shine-offline 6s ease-out infinite
+            a
+                &:before
+                    color: #c72526;
+                    content 'Я offline'
+
+@keyframes shine-online
+
     0%
         background #b1ed6238
         border-radius 106px
-    
+
     33%
         background #97d44759
         border-radius 106px
@@ -799,11 +813,11 @@ input.input-form
         background #b1ed6252
         border-radius 106px
 @keyframes shine-offline
-    
+
     0%
         background #ff000000
         border-radius 106px
-    
+
     33%
         background #ff00006b
         border-radius 106px
@@ -813,7 +827,7 @@ input.input-form
     100%
         background #ff000010
         border-radius 106px
-       
+
 .chfile-parent
     width: 100%;
     display: flex;
@@ -825,6 +839,8 @@ input.input-form
         margin-left: 27px!important
         margin-top: 7px!important
         font-family: Whitney
+        &:hover
+            color white!important
     .chfile-filename
         font-size: 11px;
         margin-left: 22px;
@@ -874,3 +890,11 @@ input.input-form
     font-weight: 700;
     &:hover
         background $blue
+
+@media screen and (max-width: 1200px)
+    .notification .flex-sb
+        width: 100%
+        padding 0 10px
+        p
+            padding 2px 0 0 10px
+            text-align center

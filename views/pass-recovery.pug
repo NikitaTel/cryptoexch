@@ -17,7 +17,7 @@ block vars
       domain: "smart-pays.com"
       }
 
-block content  
+block content
    .pass-rec-content#pass-rec-step1
       .title-text
          p ВОССТАНОВЛЕНИЕ ПАРОЛЯ
@@ -29,9 +29,8 @@ block content
                input(type="text" required placeholder="Email/Номер телефона")
             .button-send
                a.button.b-blue.border-r(onclick="checkFields('#pass-rec-step1 .inline.a')") Отправить
-               .little-text
-                  p Отправить повторно через #[span(id="sendtime-val") 10:45]
-      
+               .little-text.send-message-again-timer
+                  p Отправить повторно через #[span.send-message-again-timer__minutes 10] : #[span.send-message-again-timer__seconds 45]
          .big-text.b
             p Введите код из сообщения:
          .inline.b
@@ -42,7 +41,7 @@ block content
 
 
 
-               
+
    .pass-rec-content#pass-rec-step2(style="display: none")
       .title-text
          p ВОССТАНОВЛЕНИЕ ПАРОЛЯ
@@ -55,7 +54,7 @@ block content
             .input-mail
                input.input-form(id="pass" type="password" required)
                label.label-star-red(for="pass")
-                  p Пароль 
+                  p Пароль
                      span.red-star *
             .input-mail
                input.input-form(id="repass" type="password" required)
@@ -66,16 +65,16 @@ block content
                a.button.b-blue.border-r(onclick="$('.message').show()") Сохранить
          .message(style="display: none")
             .green-text
-               p  Ваш пароль успешно изменён: #[a(href="#" style="color:#00abec" onclick="$('#auth-aside').css('border', '2px solid #5f5f5f')") Авторизируйтесь на сайте.]
-
-         
-         
-               
+               p  Ваш пароль успешно изменён: #[a(href="#" style="color:#00abec; text-decoration: underline;" onclick="$('#auth-aside').css('border', '2px solid #5f5f5f')") Авторизируйтесь на сайте.]
+   script
+      include ../js/timers/pass-recovery-send-again-timer.js
 
 
 
 
-         
-      
-            
-            
+
+
+
+
+
+

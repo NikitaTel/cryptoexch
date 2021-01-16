@@ -74,6 +74,12 @@
                 p
                     margin 15px 0 15px
                 .title
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 1;
+                    font-family: Whitney;
                     padding 10px 0 5px
                     color $white
                 p
@@ -84,12 +90,14 @@
                         margin-left 5px
                         font-size 13px
 .contact-graph-text
-    font-size: 12.5px;
-    letter-spacing: 0.3px;
-    margin-top: 18px;
-    line-height: 1.9;
+    font-family: Whitney;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: (24/14);
 .footer_social
-        
+
     width: 105%!important
 .lk-contact_text_bot
     .footer_social
@@ -109,7 +117,7 @@
     margin-left 2.1rem
     .button-transparent
         background: transparent
-        border white 1px solid 
+        border white 1px solid
         border-radius 6px
         color white
         padding 8px 32px
@@ -119,8 +127,10 @@
         background rgba(255,255,255,0.54)
 
 .green-dotted-link
-    color #7fb858
-    font-size 13px
+    color: #98e052;
+    font-family: Whitney;
+    font-size: 12px;
+    font-weight: 500;
     transition 300ms
     border-bottom 2px dashed #7fb858
 .green-dotted-link:hover
@@ -146,8 +156,8 @@
         // width 100%
         margin 8px 33px
         display inline-block
-      
-        
+
+
         .accordion
             height 30px
             border-left 4px #00abec solid
@@ -185,7 +195,7 @@
 ::-webkit-scrollbar
     width 6px
 ::-webkit-scrollbar-track
-    box-shadow: inset 0 0 1px grey; 
+    box-shadow: inset 0 0 1px grey;
     border-radius: 10px;
 ::-webkit-scrollbar-thumb
     background: #00abec
@@ -196,8 +206,8 @@
     max-height: 380px
     overflow-y: auto
     height: fit-content
-   
-    
+
+
 .divider
     margin-left: 40px
     height 0.7px
@@ -307,13 +317,13 @@ input
     align-self: center
     border: 1.3px solid #0000001c
     .button-block
-        
+
         .share-letter
             transform: rotate(-90deg);
             color: #fff;
             margin-top: -2px;
             display: block;
-            
+
 
         .share-button
             line-height: 12px;
@@ -326,10 +336,10 @@ input
             text-align: center;
         .share-button:hover
             .share-letter
-            
+
                 color: #00c26b;
-            
-            
+
+
     .icons
         .share-ic
             margin-top: 2px
@@ -343,22 +353,22 @@ input
                 margin: auto;
                 background transparent
             .i-vk
-            
-            
-               
+
+
+
                 font-size: 9px
             .i-viber
                 font-size: 23px
             .i-fb
                 font-size: 15px;
                 margin-top: -4px!important;
-            
+
 .share-fixed
     position: fixed
     left:0%
     top: 24%
             //.i-tg
-             
+
 
 
 // .registration
@@ -374,7 +384,7 @@ input
 //                     padding 0
 //                 .input-form
 //                     text-align left
- 
+
 
 .lk-news
     .news_block1,.news_block2
@@ -639,8 +649,12 @@ input
     .t3v
         font-size: 13px;
         font-family: 'Whitney';
-    .i-question
-        color: #fff!important
+    .question-box
+        margin-left: 7px
+        border-color: grey
+        background-color: #a9b7c5;
+        .i-question
+            color: #fff!important
     &_title
         padding 0 0 8px
         margin -13px 0 0
@@ -702,13 +716,13 @@ input
 /* INVESTORS */
 .document-list
     color #0a263e
-    margin 0 0 37px
+    margin 0 0 19px
     li
         display flex
         align-items center
         padding: 1px 0 10px;
         margin-left: -7px;
-        
+
 
         .counter
             font-size: 28px;
@@ -797,24 +811,35 @@ input
     border-radius 5px
 
 .blockexchange-popup-absolute
-    position absolute
-    // display none
+    display flex
+    position relative
+    margin-top: -50px
     width 100%
-    height 100%
-    background rgba(52,69,97,0.50)
+    height 665px
+    background-image url(../img/blocked-exchanges-stub.png)
+    background-repeat no-repeat
+    background-size: contain;
+    background-position: center
     backdrop-filter blur(2px)
-    top 0
+    &:before
+        position absolute
+        width 100%
+        height 100%
+        background-color: #344561;
+        opacity 0.5
+        content ''
     .blockexchange-popup-content
-        width 580px
+        max-width 580px
+        width 100%
         height 335px
         background-color #fff
         background-image url(../img/blockexchange.png)
         background-repeat no-repeat
         background-position center
         margin auto
-        margin-top calc(20% - 177px)
         border-radius 5px
         padding-top 55px
+        z-index 2
 
         .sm-logo
             display flex
@@ -822,8 +847,8 @@ input
             margin-top -5px
             margin-bottom 29px
         .blockexchange-form
-            width: inherit 
-            height: inherit 
+            width: inherit
+            height: inherit
         .little-text
             font-size: 13px
             text-align center
@@ -844,10 +869,8 @@ input
             margin-left 7px
             margin-top 17px
             letter-spacing 0.2px
-        
+
 .action-block
-   
-    
     width: 100%
     height: 49px
     top: 0
@@ -860,21 +883,21 @@ input
         height 10px
         position: absolute
         left: 98.5%
-        
+
         font-size: 13px
         color: black
     .i-close:hover
         color:rgba(0,0,0,0)
 
     .text
-        font-size: 16px
+        width 1180px
+        font-size: 11px
         font-family: Whitney
-        text-align: center
+        font-weight: 500;
         color: #000
-        width: 100%
+        text-transform uppercase
         letter-spacing: -.4px
-        margin-top: -1px
-        padding-left: 12.5%
+        margin: -1px auto auto auto
     .action-span
         font-size: 22px
         color: #5be
@@ -883,7 +906,10 @@ input
         margin-right: 38px
     .link
         color: #66c0ee
+        font-family: "WhitneyMedium";
+        text-transform none
         text-decoration: underline
+        font-size 12px
         padding-left: 20px
         padding-top: 56px
     .link:hover
@@ -958,14 +984,14 @@ input
     border: 1px solid #dee2e7;
 .title-news
     margin 0 0 5px!important
-      
+
 .partner-links
     margin-top: 22px
     .partner-link
         margin-top: 5px
         .header-text
             font-size 16.5px
-            font-family: Whitney 
+            font-family: Whitney
         .input
             .input-form
                 background white!important
@@ -993,7 +1019,7 @@ input
     display: inline-flex
 .exchange-input_label
     span
-        margin-left: -6px
+        margin-left: 6px
 
 .user-h
     margin-left: 130px!important;
@@ -1007,100 +1033,102 @@ input
     border: 1px solid #fff!important
     margin-top: -10px!important
 
-.rates-new
-    margin-top: 27px
-    margin-left: -16px;
+.currency-changes-slider
+    width 1130px
     display flex
-    justify-content: center
-    margin-bottom: 6px;
-    .nextBtn, .prevBtn
+    margin auto
+    overflow hidden
+    &__container
+        width 1180px
+        margin 29px auto 40px auto
+        position relative
+        overflow hidden
+        display flex
+    &__wrapper
+        display flex
+    &__next-el, &__prev-el
         position absolute
         color #adb4c1!important
-        top 12%
-        margin-top: 7px;
-    .nextBtn:hover, .prevBtn:hover
+        top 50%
         cursor pointer
-    .nextBtn
-        margin-left: 3px
-        left: 80%;
-    .prevBtn
-        left: 19%;
-
+    &__prev-el
+        left: 0;
+        transform: rotate(180deg) translateY(50%);
+    &__next-el
+        right: 0;
+        transform: translateY(-50%);
     .i-next
         font-size: 18px
         color white
+    &__slide
+        .rate-new
+            display inline-grid
+            width 365px
+            height 110px
+            padding: 15px 7px 0px 32px
+            border 1px solid #dee2e7
+            border-radius: 5px
+            .inline
+                display inline-flex
 
-
-    .rate-new
-        display inline-grid
-        width 365px
-        height 110px
-        padding: 15px 7px 0px 32px
-        margin-left: 19px;
-        border 1px solid #dee2e7
-        border-radius: 5px
-        margin-bottom: 37px
-        .inline
-            display inline-flex
-            
-        .rate-logo
-            width: 50px;
-            height: 50px;
-            img 
+            .rate-logo
                 width: 50px;
                 height: 50px;
+                img
+                    width: 50px;
+                    height: 50px;
 
 
-        .big-text
-            font-size 16px
-            font-family: Whitney 
-        .big-text.i1
-            font-weight: 600;
-            margin-left: 28px;
-            margin-top: 7px;
-            letter-spacing: 0.7px;
-        .big-text.i2
-            margin-left: 35px;
-            font-size: 18px;
-            font-family: 'WhitneySemiBold';
-            margin-top: -25px;
+            .big-text
+                font-size 16px
+                font-family: Whitney
+            .big-text.i1
+                font-weight: 600;
+                margin-left: 28px;
+                margin-top: 7px;
+                letter-spacing: 0.7px;
+            .big-text.i2
+                margin-left: 35px;
+                font-size: 18px;
+                font-family: 'WhitneySemiBold';
+                margin-top: -25px;
 
-        .color-text
-            font-family: 'WhitneySemiBold';
-            font-size: 12px;
-        .color-text.i1
-            margin-top: 9px;
-            margin-left: 16px;
-            letter-spacing: .7px;
-        .color-text.i2
-            margin-left: 14px;
-            margin-top: -23px;
-        .red
-            color: #e51e2a
-        .green
-            color #71b82c
-        .graph
-            width 40px
-            height 25px
-        .graph
-            background-size: contain
-        .graph.i1
-            margin-left: 24px;
-            margin-top: 5px;
-        .graph.i2
-            margin-left: 26px;
-            margin-top: -31px
-        .graph-green
-            background url('../img/graph-green.png')
-        .graph-red
-            background: url('../img/graph-red.png')
-        .money-type-text
-            margin-top: -17px;
-            margin-left: 7px;
+            .color-text
+                font-family: 'WhitneySemiBold';
+                font-size: 12px;
+            .color-text.i1
+                margin-top: 9px;
+                margin-left: 16px;
+                letter-spacing: .7px;
+            .color-text.i2
+                margin-left: 14px;
+                margin-top: -23px;
+            .red
+                color: #e51e2a
+            .green
+                color #71b82c
+            .graph
+                width 40px
+                height 25px
+            .graph
+                background-size: contain
+            .graph.i1
+                margin-left: 24px;
+                margin-top: 5px;
+            .graph.i2
+                margin-left: 26px;
+                margin-top: -31px
+            .graph-green
+                background url('../img/graph-green.png')
+            .graph-red
+                background: url('../img/graph-red.png')
+            .money-type-text
+                margin-top: -17px;
+                margin-left: 7px;
 .navig.cont
     display: flex
     justify-content: flex-end
-    
+
 .fdb-logo
     width: 80px!important;
     height: 20px!important;
@@ -1119,7 +1147,7 @@ input
     letter-spacing: -0.6px!important
 .fbmain
     padding: 0px 0 33px!important
-    
+
     .lk-text
         margin: 15px auto!important
     .flex-sa
@@ -1128,7 +1156,7 @@ input
         margin: 37px 0!important
 .fbtitle
     margin: 46px 0px 23px!important
-.news-text 
+.news-text
     padding 0!important
     .a:hover
         color $green
@@ -1139,9 +1167,9 @@ input
         font-weight: 100!important;
     li
         padding: 6px 28px!important
-            
+
 .aside-news-text
-    
+
     font-size: 12.5px!important;
     line-height: 16px!important;
     font-family: 'Whitney'!important;
@@ -1158,7 +1186,7 @@ input
 .res-fsh
     // margin-top: -0.1px;
 .auto-ex, .manual-ex
-    width 65px 
+    width 65px
     height 61px
     display flex
     justify-content:  center
@@ -1220,7 +1248,7 @@ input
             margin-right: 17px!important
             text-align: center;
 .inline-text-course
-    
+
     display: inline-flex;
     justify-content: center;
     width: 93%;
@@ -1255,7 +1283,7 @@ input
 .ex-fat-bottomText
     font-weight: 600
     font-family: WhitneySemiBold!important
-    
+
 .ex2-tt1, .ex2-tt2
     font-size: 13px
 .ex2-tt1
@@ -1310,3 +1338,36 @@ input
     line-height: 16px;
     letter-spacing: .4px;
     padding: 0 0 15px;
+
+.news-more.mobile
+    display none
+@media screen and (max-width: 1200px)
+    a.less
+        width: 280px
+        padding 14px 0
+        display flex
+        justify-content center
+        align-items center
+        font-size 17px
+        color #fff
+        background #00abec
+        margin 40px auto 0
+        border-radius 5px
+    .news-more
+        display none
+    .blockexchange-popup-absolute
+        background-image url(../img/blocked-exchanges-mobile.png)
+        .blockexchange-popup-content
+            background-size 75% 75%
+            max-width 400px
+            height auto
+            width 90%;
+            padding-bottom 25px
+            .blockexchange-form
+                width 100%
+                .little-text p
+                    padding 0 10px
+                .big-text
+                    font-size 20px
+                .sm-logo img
+                    width 70%

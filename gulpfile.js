@@ -4,6 +4,9 @@ var
         pattern: '*'
     });
 
+var notify = require('gulp-notify');
+var stylus = require('gulp-stylus');
+
 // Compiling Pug in HTML
 gulp.task('views', function() {
     gulp.src('./views/*.pug')
@@ -35,11 +38,9 @@ gulp.task('views-dev', function() {
 gulp.task('css', function() {
     gulp.src('./styl/*.styl')
         .pipe($.newer('./public/css/'))
-        .pipe($.stylus({
-            use: $.nib()
-        }))
-        .pipe($.groupCssMediaQueries())
-        .pipe($.csso())
+        .pipe(stylus())
+        /*.pipe($.groupCssMediaQueries())
+        .pipe($.csso())*/
         .pipe(gulp.dest('./public/css/'))
         //.pipe($.livereload())
 });
@@ -229,6 +230,7 @@ gulp.task('iconfont', function() {
             fontName: fontName,
             prependUnicode: true,
             normalize: true,
+            fontHeight: 1001,
             formats: ['ttf','woff','woff2']
         }))
         .pipe(gulp.dest('./public/fonts/'))

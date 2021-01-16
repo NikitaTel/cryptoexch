@@ -48,8 +48,8 @@ block content
          p.lk-text
             strong Внимание!&nbsp;
             | В верификации может быть отказано по следующим причинам: предоставлены не все документы, документы не надлежащего качества.
-      h2.title.lk-title  ДЛЯ ПРОХОЖДЕНИЕ ВЕРИФИКАЦИИ ПРИКРЕПИТЕ СЛЕДУЮЩИЕ ДОКУМЕНТЫ:
-      ul.document-list
+      //h2.title.lk-title  ДЛЯ ПРОХОЖДЕНИЕ ВЕРИФИКАЦИИ ПРИКРЕПИТЕ СЛЕДУЮЩИЕ ДОКУМЕНТЫ:
+      //ul.document-list
          li
             .counter 1
             p ПАСПОРТ (ГЛАВНАЯ СТРАНИЦА ИЛИ ЛИЦЕВАЯ СТОРОНА)
@@ -65,11 +65,11 @@ block content
          li.list-mark-b Срок обработки заявки на верификацию до
             span 24 часов
 
-      h2.title ЗАПОЛНИТЕ ИНФОРМАЦИЮ О СЕБЕ И ПРИКРЕПИТЕ НЕОБХОДИМЫЕ ДОКУМЕНТЫ:
+      h2.title(style="margin-top:45px; font-size: 18px;") ЗАПОЛНИТЕ ИНФОРМАЦИЮ О СЕБЕ И ПРИКРЕПИТЕ НЕОБХОДИМЫЕ ДОКУМЕНТЫ:
       p.lk-text
          span.red-star *
          | Поля отмеченные звездочкой обязательны к заполнению.
-      .verification
+      form.verification
          ul.verification_data.flex-sb
             li
                input.input-form(id="verif-sename" required)
@@ -82,10 +82,64 @@ block content
                   p Имя
                      span.red-star *
             li
+               input.input-form(id="father-name" required)
+               label.label-star-red(for="father-name")
+                  p Отчество
+                     span.red-star *
+            li.dropdown-search
+               .dropdown-search__selected.form-group
+                  input.input-form(id="verif-document" required)
+                  label.label-star-red(for="verif-document")
+                     p Выберите документ
+                        span.red-star *
+                  .i-next
+               .dropdown-search__items
+                  .dropdown-search__item
+                     span Ростов
+                  .dropdown-search__item
+                     span Киев
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+
+            li
                input.input-form(id="verif-pasport" required)
                label.label-star-red(for="verif-pasport")
                   p Серия и номер паспорта
                      span.red-star *
+            li
+               input.input-form(id="verif-email" required)
+               label.label-star-red(for="verif-email")
+                  p E-mail
+                     span.red-star *
+            li.dropdown-search
+               .dropdown-search__selected.form-group
+                  input.input-form(id="verif-country" required)
+                  .tooltip
+                     p Не удалось найти такую страну
+                  label.label-star-red(for="verif-country")
+                     p Выберите страну
+                        span.red-star *
+                  .i-next
+               .dropdown-search__items
+                  .dropdown-search__item
+                     span Беларусь
+                  .dropdown-search__item
+                     span Россия
+                  .dropdown-search__item
+                     span Казахстан
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+
             li
                input.input-form(id="verif-adres" required)
                label.label-star-red(for="verif-adres")
@@ -96,66 +150,72 @@ block content
                label.label-star-red(for="verif-tele")
                   p Телефон
                      span.red-star *
-            li
-               input.input-form(id="verif-mail" required)
-               label.label-star-red(for="verif-mail")
-                  p E-mail
-                     span.red-star *
-         ul.verification_foto
-            li.flex-sb
-               .inline.chfile-parent
-                  .ver-text
-                     p 1. Паспорт (главная, лицевая сторона)
-                        span.red-star *
-                  .file-input
-                     .inline
-                        .chfile-dialog
-                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
-                           label.chfile-label.button.b-white.border-r( for="ver-sec") Выберите файл
-                        .chfile-filename
-                           p#chf1 файл не выбран
-                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
 
-            li.flex-sb
-               .inline.chfile-parent
-                  .ver-text
-                     p 2. Паспорт (вторая, обратная сторона)
-                        span.red-star *
-                  .file-input
-                     .inline
-                        .chfile-dialog
-                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
-                           label.chfile-label.button.b-white.border-r( for="ver-sec") Выберите файл
-                        .chfile-filename
-                           p#chf2 файл не выбран
-                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
-            li.flex-sb
-               .inline.chfile-parent
-                  .ver-text
-                     p 3. Документ подтверждающий адрес проживания
-                        span.red-star *
-                  .file-input
-                     .inline
-                        .chfile-dialog
-                           input.input-form.file(type="file" required onchange="filechoice('file1', 'chf1')" id="file1" accept="image/jpeg,image/png,image/gif")
-                           label.chfile-label.button.b-white.border-r.chfile-success( for="ver-sec") #[.i-vcheck(style="font-size: 18px;")]
-                        .chfile-filename
-                           p#chf3 12345.png
-                        .chfile-close
-                           a(href="")
-                              img(src="../img/chfile-close.svg")
-                     p.ver-file-formats-text (.GIF,.JPG,.JPEG,.JPE,.PNG,макс.4МБ)
+
+         ul.verification_foto
+            li.choose-file
+               .choose-file__file-numeration
+                  p 1. Паспорт
+                     span.red-star *
+                  p (главная, лицевая сторона)
+               .choose-file__body
+                  .choose-file__button
+                     label(for='verification-passport1') Выберите файл
+                     input(type='file' id='verification-passport1' name='verification-passport1')
+                  .choose-file__selected-files
+                     .selected-file
+                        span Файл не выбран
+                  .choose-file__supported-formats
+                     p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+            li.choose-file
+               .choose-file__file-numeration
+                  p 2. Паспорт
+                     span.red-star *
+                  p (вторая, обратная сторона)
+               .choose-file__body
+                  .choose-file__button
+                     label(for='verification-passport2') Выберите файл
+                     input(type='file' id='verification-passport2' name='verification-passport2')
+                  .choose-file__selected-files
+                     .selected-file
+                        span Файл не выбран
+                  .choose-file__supported-formats
+                     p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+            li.choose-file
+               .choose-file__file-numeration
+                  p 3. Документ, подтверждающий адрес проживания
+                     span.red-star *
+               .choose-file__body
+                  .choose-file__button
+                     label(for='verification-address') Выберите файл
+                     input(type='file' id='verification-address' name='verification-address')
+                  .choose-file__selected-files
+                     .selected-file
+                        span 12345.png
+                        span.i-close(onclick="event.target.parentNode.remove()")
+                  .choose-file__supported-formats
+                     p (.gif, .jpg, .jpeg, .jpe, .png, макс. 4 МБ)
+         .verification__attention
+            p
+               |#[span Внимание!] Документы должны быть четкими, цветными, полно размерными и в полном объёме. Допускаются сканированные документы и фото.
+
+         .verification__submit
+            label(for='lk-verification-submit') Отправить на обработку
+            input(type='submit' id='lk-verification-submit' name='lk-verification-submit')
+            p *Срок обработки заявки на верификацию до #[span 24 часов].
 
       h2.title.lk-title ВАШИ ЗАЯВКИ НА ВЕРИФИКАЦИЮ
-      table.lk-table
+      table.lk-table(style="table-layout: fixed;")
          tr
-            th
-               p ДАТА
-            td.long
+            th(style="text-align: left;")
+               p(style="padding-left:45px") ДАТА
             th
                p СТАТУС
+            th
+               p ПРИМЕЧАНИЯ
          tr
-            td
-               p 12.01.18, 12:30
-            td.long
+            td(style="text-align: left;")
+               p(style="padding-left:15px") 12.01.2016, 12:30
             td.request-ok
+            td
+               p Наример, причина отклонения

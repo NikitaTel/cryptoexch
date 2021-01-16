@@ -76,16 +76,32 @@ block content
                 .banner
                     input(type="radio" name="banner" id="banner-input1" checked)
                     .banner_container
-                        .banner-img.banner1
-                        input(type='checkbox' id='banner1' name='banner1')
-                        label(for='banner1')
-                            p
-                        span < a href='sdfgsdfgsdfg'>
-                        .banner-img.banner2
-                        input(type='checkbox' id='banner2' name='banner2')
-                        label(for='banner2')
-                            p
-                        span < a href='sdfgsdfgsdfg'>
+                        .partner-links
+                            .banner-img.banner1
+                            input(type='checkbox' id='banner1' name='banner1')
+                            label(for='banner1')
+                            .partner-link
+                                .inline
+                                    .input
+                                        input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                                    .button
+                                        label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                            div
+                                                span.icon-link-regular
+                                                span Скопировать
+                            .banner-img.banner2
+                            input(type='checkbox' id='banner2' name='banner2')
+                            label(for='banner2')
+                            .partner-link
+                                .inline
+                                    .input
+                                        input.input-form(type="text" value="smartpays.com/discounts1ocf" disabled)
+                                    .button
+                                        label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
+                                            div
+                                                span.icon-link-regular
+                                                span Скопировать
+
                     input(type="radio" name="banner" id="banner-input2" )
                     .banner_container 2
                     input(type="radio" name="banner" id="banner-input3" )
@@ -110,9 +126,9 @@ block content
                         label.banner_dots_dot(for='banner-input6' id='banner-label6')
                             span 240x400
             input(type="radio" name="advertising" id="advertising-input2" )
-            .advertising_container 
-                .partner-links 
-                    .partner-link 
+            .advertising_container
+                .partner-links
+                    .partner-link
                         .header-text
                             p Партнерская ссылка 1
                         .inline
@@ -121,8 +137,9 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
-                    .partner-link 
+                                        span.icon-link-regular
+                                        span Скопировать
+                    .partner-link
                         .header-text
                             p Партнерская ссылка 2
                         .inline
@@ -131,9 +148,10 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                        span.icon-link-regular
+                                        span Скопировать
 
-                    .partner-link 
+                    .partner-link
                         .header-text
                             p Партнерская ссылка 3
                         .inline
@@ -142,8 +160,9 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
-                    .partner-link 
+                                        span.icon-link-regular
+                                        span Скопировать
+                    .partner-link
                         .header-text
                             p Партнерская ссылка 4
                         .inline
@@ -152,71 +171,75 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                        span.icon-link-regular
+                                        span Скопировать
 
             input(type="radio" name="advertising" id="advertising-input3" )
-            .advertising_container 
+            .advertising_container
                 .inform
                     .inline
                         .form-scrollable
                             .text
-                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
                                     |ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
                                     |ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
-                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
                         .button
                             label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                 div
-                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                    span.icon-link-regular
+                                    span Скопировать
                 .inform
                     .inline
                         .form-scrollable
                             .text
-                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
-                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
                                     |ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
-                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                       
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+
                         .button
                             label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                 div
-                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                    span.icon-link-regular
+                                    span Скопировать
                 .inform
                     .inline
                         .form-scrollable
                             .text
-                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
-                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
                                     |ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus 
-                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat 
-                                    |ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                        
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    |elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                                    |velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat
+                                    |ad litora torquent per conubia nostra, per inceptos himenaeos.
+
                         .button
                             label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                 div
-                                    span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                    span.icon-link-regular
+                                    span Скопировать
 
             input(type="radio" name="advertising" id="advertising-input4" )
-            .advertising_container 
-                .partner-links 
-                    .partner-link 
+            .advertising_container
+                .partner-links
+                    .partner-link
                         .header-text
                             p Скопировать файл XML 1
                         .inline
@@ -225,8 +248,9 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
-                    .partner-link 
+                                        span.icon-link-regular
+                                        span Скопировать
+                    .partner-link
                         .header-text
                             p Скопировать файл XML 2
                         .inline
@@ -235,9 +259,10 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                        span.icon-link-regular
+                                        span Скопировать
 
-                    .partner-link 
+                    .partner-link
                         .header-text
                             p Скопировать файл XML 3
                         .inline
@@ -246,8 +271,9 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
-                    .partner-link 
+                                        span.icon-link-regular
+                                        span Скопировать
+                    .partner-link
                         .header-text
                             p Скопировать файл XML 4
                         .inline
@@ -256,7 +282,8 @@ block content
                             .button
                                 label.button.b-white.exchange-input_label.border-r(onclick="что-то с копированием")
                                     div
-                                        span #[span #[img.link(src="../img/link.png" alt="")]] Скопировать
+                                        span.icon-link-regular
+                                        span Скопировать
             .advertising_dots.flex-sb
                 label.advertising_dots_dot(for='advertising-input1' id='advertising-label1')
                     span Баннеры

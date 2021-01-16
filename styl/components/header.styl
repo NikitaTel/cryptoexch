@@ -1,3 +1,4 @@
+
 .lk-header
     background: url(../img/lk-header-bg.png) 50%/cover!important;
 .header
@@ -264,10 +265,12 @@
     padding-bottom: 10px;
 
     .i-doublenext
+        opacity 0
         display: flex
         margin: auto
         margin-top: 6px
         font-size: 13px
+        animation animateArrow 0.8s ease infinite alternate
     .i-doublenext:hover, .btnText:hover
         color #00abec
     .btnText
@@ -288,15 +291,13 @@
                     margin-left 0
     &_slider-box
         overflow hidden
-        width 750px
+        max-width 750px
         position relative
         &_wrapper
-            width 3000px
             flex-shrink 0
             transition all .5s
             .header-news
                 padding-bottom 25px
-                width 750px
                 p
                     font-size 18px
                     font-family WhitneyLight
@@ -355,7 +356,6 @@ input
     .header-logo2
         width: 165px
         margin-top: 24px
-
 .regBtn
     margin-left: 12px!important
     margin-top: -3px!important
@@ -365,138 +365,83 @@ input
     margin-top: -3px!important;
     padding: 7px 20px 9px 18px!important;
 
-.header-mob-nav
-    display: none
+.header-mobile
+    display none
+    padding-right 12px
 
-.menu-close
-    display: none
-    color:white
-
-@media screen and (min-width: 640px) and (max-width: 1024px)
-    .header-nav
-        margin: 0
-        display: none
-        top: 0
-        left: 0
-        position: fixed
-        z-index: 1
-        background-color: black
-        opacity: 0.8
-        width:100%
-        height:100%
-        flex-direction: column-reverse
-        align-items: flex-end
-        padding-right: 10px
-        padding-top: 20px
-        .nav-bar
-            display: flex
-            flex-direction column
-            margin-bottom auto
-        .nav-bar > *
-            margin-top: 40px
-        .lang-and-close
-            display inline-block
-            .close-menu
-                font-size 40px
-    .header-log
-        display none
-
-    .header_all_mid
-        position: fixed
-        justify-content  space-between!important
-        top:0
-        left: 0
-        background: url("../img/header_background.png") 50% / cover
-        z-index: 1000
-    .header-mob-nav
-        a[class*=i-]
-            font-size: 46px
-        display inline-flex
-        justify-content space-between
-        width 110px
-        margin-right 30px
-    .slide-dots
-        .i-dot
-            font-size: 11px
-
-    .header-logos
-        display flex
-        flex-direction row
-        justify-content space-between
-        align-items flex-end
-        margin: 0
-        width: 420px
-
-    .header_all_content
-        font-size: 47px;
-        letter-spacing: 1px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 100px
-        display flex
-        flex-direction column
-        justify-content center
-        align-items center
-
-        &_window
-            display flex
-            flex-direction column
-        &_slider-box
-            height: 500px
-            width: 520px
-            display flex
-            flex-direction column
-            justify-content center
-            align-items center
-            &_wrapper
-                position: relative
-                width: inherit
-                .header-news
-                    display:none
-                    opacity: 0
-                    transition opacity 1s linear 0s
-                a.i-next
-                a.i-back
-                    cursor pointer
-                    position absolute
-                    top 50%
-                    font-size 21px
-                a.i-back
-                    left 0
-                a.i-next
-                    right 0
-    .header_all
-        display flex
-        flex-direction column
-        justify-content center
-        align-items center
-
-
-    .change-button
-        left: auto
-        transform none
-        position: relative
-        margin-top: 85px
-        font-size: 24px;
-        letter-spacing: 1px;
-        line-height: 12px;
-        color: #00abec;
-        font-weight: bold;
-        text-align: center;
-        .i-doublenext
-             animation : arrow-animation 1s ease-in-out 2s infinite alternate
-
-
-@keyframes arrow-animation
-{
-    from {
-        opacity: 0
-    }
-    to {
-        opacity: 1
-        transform: translateY(10px)
+@keyframes animateArrow {
+    to{
+        color: #00abec
+        opacity 1
+        transform: translateY(10px) scale(2)
     }
 }
 
+@media screen and (max-width: 950px)
+    .header
+        background-position -293px
+
+@media screen and (max-width: 1200px)
+    .change-button
+        max-width 400px
+        width 100%
+        .btnText
+            color #00abec
+            font-size 15px
+    .header
+        overflow hidden
+    .header_all
+        width: 100%
+        padding 0 15px
+        &_mid
+            justify-content space-between !important
+        &_content
+            width 100%
+            align-items center
+            flex-direction column
+            padding 20px 15px 0
+            h1
+                text-align center
+            &_window
+                max-width 100%
+                &_dots
+                    justify-content center
+            &_slider-box_wrapper .header-news
+                display flex
+                flex-direction column
+                justify-content center
+                align-items center
+                p
+                    text-align center
+                .b-blue
+                    width 280px
+                    padding 20px 0
+                    display flex
+                    justify-content: center
+                    align-items center
+                    font-size: 16px;
+            &_slider-box
+                max-width 100%
+                width 100%
+                &_wrapper
+                    width 100%
+    .header-mobile
+        display flex
+    .header-nav
+        display none
+    .header-logos
+        display flex
+        margin 10px 0 100px 0
+        justify-content space-around
+        max-width 390px
+        width 100%
+        align-items center
+        .header-logo1, .header-logo2
+            width: 35%
+    .header-logo.big
+        display flex
+        width auto
+        img
+            width 80%
+            margin 0
 

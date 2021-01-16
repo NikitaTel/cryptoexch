@@ -97,7 +97,24 @@ input
         position relative
         transition transform .5s
         .slide2
+            .i-quotes-up
+                font 14px 'icon-font'
+                font-size 24px
+                text-rendering optimizeLegibility
+                speak none
+                color: white
+                opacity 0.4
+            &__open-quotes
+                position absolute
+                top 25px
+                left 50px
+            &__close-quotes
+                position absolute
+                transform rotate(180deg)
+                bottom 50px
+                right 50px
             width 580px
+            position relative
     .news-more
         position absolute
         bottom 30px
@@ -173,31 +190,14 @@ input
 .slides5
     width: 730px;
 .slides6
-    width 1180px
     margin: -7px auto;
-    height: 95px;
+    height: 70px;
     overflow hidden
-    padding 0 50px
+    margin-bottom: 5px;
     &_wrapper
-        width 2160px
         position relative
-        transition transform .5s
-    a
-        height: 95px;
-        width 270px
-        margin 0 40px
-        justify-content center
         align-items center
-        display block
-        background no-repeat 50%/contain
-        &.logos1
-            background-image url("../img/sertif_logos1.png")
-        &.logos2
-            background-image url("../img/sertif_logos2.png")
-        &.logos3
-            background-image url("../img/sertif_logos3.png")
-        &.logos4
-            background-image url("../img/sertif_logos4.png")
+        transition transform .5s
     .i-next, .i-back
         position absolute
         color rgba(0, 0, 0, 0.7)
@@ -579,22 +579,6 @@ input#banc:checked,input#banc2:checked,input#dinero:checked, input#dinero5:check
     flex-direction column
     position relative
     padding 15px 0 0
-    &:after, &:before
-        position absolute
-        font 14px 'icon-font'
-        font-size 28px
-        text-rendering optimizeLegibility
-        speak none
-    &:after
-        //@extend .i-quotes-up:before
-        top -10px
-        color #73a2c1
-    &:before
-        //@extend .i-quotes-up:before
-        transform rotate(180deg)
-        bottom 10px
-        right 0
-        color #69c7ec
     li
         &:first-child
             font-size 20px
@@ -627,14 +611,14 @@ input#banc:checked,input#banc2:checked,input#dinero:checked, input#dinero5:check
             margin-left 3px
             font-family WhitneySemiBold
 .messege
+    margin 15px 0 0 0
+    line-height (18/14)
+    text-align justify
     font-size 12px
-    line-height 18px
-    letter-spacing 0.4px
+    letter-spacing 0.35px
     color rgba(255, 255, 255, 0.6)
-    height 105px
+    height 65px
     overflow hidden
-    p
-        margin 16px 0
 
 /*SLIDER 3*/
 .change_give
@@ -648,7 +632,7 @@ input#banc:checked,input#banc2:checked,input#dinero:checked, input#dinero5:check
         align-items center
         background #f5f5f5
         border-bottom 1px solid rgba(205, 208, 211, 0.3)
-        a   
+        a
             display: block
         .less
             display: none
@@ -680,7 +664,7 @@ input#banc:checked,input#banc2:checked,input#dinero:checked, input#dinero5:check
             opacity 1!important
     &:hover
         .money_name_item
-           
+
             border 1px solid rgba(205, 208, 211, 0.7)
             &:hover
                 opacity 1
@@ -954,6 +938,8 @@ input#advertising-input4:checked ~ .advertising_dots #advertising-label4
     &_container
         order 2
         display none
+        .banner-img
+            margin 29px 0 14px 0
         label
             p
                 color $text-grey
@@ -1011,3 +997,133 @@ input#banner-input4:checked ~ .banner_dots #banner-label4,
 input#banner-input5:checked ~ .banner_dots #banner-label5,
 input#banner-input6:checked ~ .banner_dots #banner-label6
     color $blue
+
+.swiper-pagination
+    display flex
+    position static
+    &-bullet
+        width 16px
+        height 16px
+        background #fff
+        border 3px solid #000
+        &-active
+            background #fff
+            border 4px solid #676362
+            opacity 1
+
+.cert-mc
+    .swiper-button-next:after, .swiper-button-prev:after
+        font-size 19px
+        color: rgba(0,0,0,.7)
+
+
+.exchange
+    .swiper-button-next, .swiper-button-prev
+        background rgba(0,0,0,.35)
+        border-radius 100%
+        padding 30px
+        color #fff
+        opacity 0.7
+        &:after
+            font-size 20px
+    .swiper-button-next
+            right -30px
+            &:after
+                padding-right 18px
+    .swiper-button-prev
+            left -33px
+            &:after
+                padding-left 26px
+
+.certificates-slider__item img
+    max-width 76%
+
+@media screen and (max-width: 1200px)
+    .slides6
+        width 100%
+        padding-bottom 120px
+        .swiper-pagination
+            position absolute
+            &-bullet
+                background #333
+                border 4px solid #333
+                width 14px
+                height 14px
+                &-active
+                    background #314363
+                    border 4px solid #c1c6d0
+                    width 17px
+                    height 17px
+        .swiper-button-next, .swiper-button-prev
+            top 27%
+    .slides6_wrapper
+        width 100%
+        display flex
+        flex-direction row !important
+    .certificates-slider__item
+        width 100%
+    .main-content > div > .slides2
+        width 90%
+    .slides2
+        max-width 580px
+        width 100%
+        height 100%
+        &_wrapper
+            .slide2
+                &__close-quotes
+                    bottom 20px
+                    right 30px
+                &__open-quotes
+                    left 30px
+    .news-more.mobile
+        display flex
+        justify-content center
+        width 180px
+        margin 30px auto 50px
+        position static
+        transform none
+    .swiper-pagination
+        justify-content center
+    .messege
+        height auto
+        overflow auto
+    .slide2
+        min-height 290px
+        height 100%
+    .slides3
+        max-width 400px
+        width 100%
+        &:nth-child(n+3)
+            display none
+    .slide4:nth-child(1)
+        .money
+            justify-content normal
+            &_name
+                align-items center
+                padding-top 0
+                > span
+                    margin-right 10px
+    .slides5
+        max-width 400px
+        width 100%
+    .slide5
+        .money_name_item.changeBtn, .money_change
+            display none
+        .slides5:nth-child(3)
+            display none
+    .change_get
+        margin-top 40px
+    .money
+        &_name
+            flex-wrap wrap
+            flex-direction row
+            flex-shrink unset
+            flex-grow unset
+            padding-top 20px
+        & .price
+            justify-content flex-end
+            padding 5px 36px 10px 0
+        & .money_name_item
+            color #aaaaaa
+            font-size 12px
+            border 1px solid #aaaaaa

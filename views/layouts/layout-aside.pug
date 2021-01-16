@@ -16,7 +16,8 @@ html(lang="" + page.language)
          //- .i-close(onclick="$('#exchange_action').hide()")
          .text
             p #[span.action-span АКЦИЯ!]  В связи с тем ,что не работает сайт btc-e.com возникли задержки в обработке заявок. Заявки будут обработаны сразу как заработает сайт btc-e.com #[a.link Подробнее]
-
+      include  ../partials/socials-widget
+      +socials-widget()(style='top:275px;left: 0')
       main(role='main')
          block title
          .main.flex-sb
@@ -34,4 +35,3 @@ html(lang="" + page.language)
       //- Scripts
       script(type='text/javascript' src='./js/jquery-3.5.1.min.js')
       script(type='text/javascript' src='./js/script.js')
-      

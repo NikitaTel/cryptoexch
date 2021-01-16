@@ -245,20 +245,20 @@ input
     letter-spacing -0.5px
     padding-top 25px
     font-family Whitney
-.button
-  display inline-block
-  margin-top 65px
-  width 220px
-  font-size 12px
-  line-height 24px
-  padding 13px 20px
-  text-align center
-  font-family WhitneySemiBold
-  &.b-blue
-    color $white
-    background $blue
-    &:hover
-      background $green
+  .button
+    display inline-block
+    margin-top 65px
+    width 220px
+    font-size 12px
+    line-height 24px
+    padding 13px 20px
+    text-align center
+    font-family WhitneySemiBold
+    &.b-blue
+      color $white
+      background $blue
+      &:hover
+        background $green
 
 // .footer
 //   margin auto
@@ -335,3 +335,7 @@ input
 //   height 70px
 //   background url("../img/footer/comodo.png") 50% no-repeat / cover
 
+@media screen and (max-width: 1200px)
+  body
+    min-width auto
+    width: auto

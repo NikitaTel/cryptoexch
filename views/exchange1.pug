@@ -61,7 +61,7 @@ block content
          .exchange-triple_right.as_strech
             .flex.border_bot.flex-shrink
                .exchange-triple_right_text
-                  .auto-ex 
+                  .auto-ex
                   //- .manual-ex ruchnoi
                   .ex-mode-text
                      p АВТОМАТИЧЕСКИЙ #[br] ОБМЕН
@@ -70,153 +70,158 @@ block content
                   p Автоматический обмен проводится #[br] круглосуточно в течении 2 минут #[br] #[a(href="#").ex-read-reg Читать весь регламент]
       .inline-text-course
          .part1.inline
-            p.big Курс обмена: 
+            p.big Курс обмена:
             p.lit 1 USD = 66,0714 RUB
          .part2.inline
-            p.big Резерв: 
+            p.big Резерв:
             p.lit 1908567,47 RUB
             a.less(href="#") Мало?
 
-
-      input(type='checkbox' onclick="chan" id='exchange')
-      .flex-sb.doble-exchange
-         label.i-circlearrows.border(for='exchange')
-         div.doble-exchange_left
-            .change_give.text-margin
-               h2 ОТДАЕТЕ
-            ul.border-r.border
-               li
-                  input(type='radio' id='df_l2-switch1' name='df_left2' checked)
-                  input(type='radio' id='df_l2-switch2' name='df_left2')
-                  input(type='radio' id='df_l2-switch3' name='df_left2')
-                  input(type='radio' id='df_r2-switch1' name='df_right2' checked)
-                  input(type='radio' id='df_r2-switch2' name='df_right2')
-                  input(type='radio' id='df_r2-switch3' name='df_right2')
-                  .doble-form
-                     .help-message#helpMsgLeft
-                        p Выберите валюту
-                     .doble-form_left(id='df_left2')
-                        label.doble-form_label(for='df_l2-switch1' id='df_l2-label1' onclick='menuToggle6()')
-                           .flex.flex-grow
-                              .test.okpay
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                        label.doble-form_label(for='df_l2-switch2' id='df_l2-label2' onclick='menuToggle6()')
-                           .flex.flex-grow
-                              .test.privat24
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                        label.doble-form_label(for='df_l2-switch3' id='df_l2-label3' onclick='menuToggle6()')
-                           .flex.flex-grow
-                              .test.skrill
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                     .doble-form_right(id='df_right2')
-                        label.doble-form_label(for='df_r2-switch1' id='df_r2-label1' onclick='menuToggle7()')
-                           .flex
-                              p USD
-                        label.doble-form_label(for='df_r2-switch2' id='df_r2-label2' onclick='menuToggle7()')
-                           .flex
-                              p EUR
-                        label.doble-form_label(for='df_r2-switch3' id='df_r2-label3' onclick='menuToggle7()')
-                           .flex
-                              p RUB
-               li
-                  input.input-form( type='text' id="pd-loginghost" )
-                  label.label-star-red(for="pd-loginghost")
-                     p Имя
-               .lk-text min:
-                  span 5
-                  |USD; max:
-                  span 100
-                  |USD
-               li
-                  input.input-form( type='text' id="pd-login7" required)
-                  label.label-star-red(for="pd-login7")
+      section.exchanging-forms
+         .exchanging-forms__swap-sys.swap-sys
+            button.i-circlearrows.swap-sys__btn(onclick="swapSystemFields()")
+            .swap-sys__tooltip.tooltip
+               p Обратный обмен
+         section.exchanging-forms__wrapper#pay-form
+            .exchanging-forms__form-title Отдаете
+            .exchanging-forms__exchanging-form.exchanging-form
+               .exchanging-form__payment-info.payment-info
+                  .exchanging-form__help-message
+                     p This is sparta
+                  .payment-info__system-select.system-select.custom-select
+                     select(name='system-give')
+                        option(value='okpay' selected)
+                        option(value='skrill')
+                        option(value='privat24')
+                     .custom-select__selected
+                        .system-select__item
+                           .test.okpay
+                           span OkPay
+                        .i-next
+                     .custom-select__items
+                        .system-select__item.same-as-selected
+                           .test.okpay
+                           span OkPay
+                        .system-select__item
+                           .test.skrill
+                           span Skrill
+                        .system-select__item
+                           .test.privat24
+                           span Privat24
+                  .payment-info__valute-select.valute-select.custom-select
+                     select(name='valute-give')
+                        option(value='usd' selected)
+                        option(value='rub')
+                        option(value='uah')
+                     .custom-select__selected
+                        .valute-select__item
+                           span USD
+                     .custom-select__items
+                        .valute-select__item.same-as-selected
+                           span USD
+                        .valute-select__item
+                           span RUB
+                        .valute-select__item
+                           span UAH
+               .exchanging-form__min-max-value
+                  p min: #[b 5] #[span USD]; max: #[b 100] #[span USD]
+               .exchanging-form__value.form-group
+                  input(id="exchange-give-value" type="number" name="exchange-give-value")
+                  label.exchanging-form__field-label(for="exchange-give-value")
                      p Сумма
                         span.red-star *
-               .lk-text
-                  span 102
-                  | USD с учетом комисии OKpay
-               li
-                  input.input-form(type='text' id="pd-login8" required)
-                  label.label-star-red(for="pd-login8")
+               .exchanging-form__final-value
+                  p #[b 102] #[span USD] с учетом комисии OKPay
+               .exchanging-form__account.form-group
+                  input(type="number" id="exchange-account-give" name="exchange-account-give")
+                  .exchanging-form__tooltip.tooltip
+                     p Номер счета состоит из 16ти цифр
+                  label.exchanging-form__field-label(for="exchange-account-give")
                      p Со счета
                         span.red-star *
-               .user-license.flex-shrink
-                  input(type="checkbox" id="license-agree4" name="license-agree2")
-                  label.flex(for='license-agree4')
+               .exchanging-form__verify-account
+                  input(type="checkbox" id="verify-account" name="verify-account")
+                  label(for='verify-account')
                      .agree-ok
                         p.i-check
                      p Мой счет верифицирован
-         div.doble-exchange_right
-            .change_get.text-margin
-               h2 ПОЛУЧАЕТЕ
-            ul.border-r.border
-               li
-                  input(type='radio' id='df_l3-switch1' name='df_left3' checked)
-                  input(type='radio' id='df_l3-switch2' name='df_left3')
-                  input(type='radio' id='df_l3-switch3' name='df_left3')
-                  input(type='radio' id='df_r3-switch1' name='df_right3' checked)
-                  input(type='radio' id='df_r3-switch2' name='df_right3')
-                  input(type='radio' id='df_r3-switch3' name='df_right3')
-                  .doble-form
-                     .help-message#helpMsgRight
-                        p Выберите валюту
-                     .doble-form_left(id='df_left3')
-                    
-                        label.doble-form_label(for='df_l3-switch1' id='df_l3-label1' onclick='menuToggle8()')
-                           .flex.flex-grow
-                              .test.okpay
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                        label.doble-form_label(for='df_l3-switch2' id='df_l3-label2' onclick='menuToggle8()')
-                           .flex.flex-grow
-                              .test.privat24
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                        label.doble-form_label(for='df_l3-switch3' id='df_l3-label3' onclick='menuToggle8()')
-                           .flex.flex-grow
-                              .test.skrill
-                              p.flex-grow.text-left OKPay
-                              .i-next
-                     .doble-form_right(id='df_right3')
-                        label.doble-form_label(for='df_r3-switch1' id='df_r3-label1' onclick='menuToggle9()')
-                           .flex
-                              p USD
-                        label.doble-form_label(for='df_r3-switch2' id='df_r3-label2' onclick='menuToggle9()')
-                           .flex
-                              p EUR
-                        label.doble-form_label(for='df_r3-switch3' id='df_r3-label3' onclick='menuToggle9()')
-                           .flex
-                              p RUB
-               li
-                  input.input-form( type='text' id="pd-loginghost2")
-                  label.label-star-red(for="pd-loginghost")
-                     p Имя
-               .lk-text min:
-                  span 5
-                  | USD; max:
-                  span 100
-                  | USD
-               li
-                  input.input-form( type='text' id="pd-login9" required)
-                  label.label-star-red(for="pd-login9")
+               .exchanging-form__verification.ef-verify
+                  .ef-verify__calendar.form-group
+                     input(type="text" id="verify-date" name="verify-date")
+                     label.exchanging-form__field-label(for="verify-date")
+                        p Выберите дату
+                     .i-next
+                  .ef-verify__test.form-group
+                     input(type="text" id="test1" name="test1")
+                     label.exchanging-form__field-label(for="test1")
+                        p Тратата
+                  .ef-verify__test.form-group
+                     input(type="text" id="test2" name="test2")
+                     label.exchanging-form__field-label(for="test2")
+                        p Тратата
+         section.exchanging-forms__wrapper#receive-form
+            .exchanging-forms__form-title Получаете
+            .exchanging-forms__exchanging-form.exchanging-form
+               .exchanging-form__payment-info.payment-info
+                  .exchanging-form__help-message
+                     p This is sparta
+                  .payment-info__system-select.system-select.custom-select
+                     select(name='system-receive')
+                        option(value='okpay' selected)
+                        option(value='skrill')
+                        option(value='privat24')
+                     .custom-select__selected
+                        .system-select__item
+                           .test.okpay
+                           span OkPay
+                        .i-next
+                     .custom-select__items
+                        .system-select__item.same-as-selected
+                           .test.okpay
+                           span OkPay
+                        .system-select__item
+                           .test.skrill
+                           span Skrill
+                        .system-select__item
+                           .test.privat24
+                           span Privat24
+                  .payment-info__valute-select.valute-select.custom-select
+                     select(name='valute-receive')
+                        option(value='usd' selected)
+                        option(value='rub')
+                        option(value='uah')
+                     .custom-select__selected
+                        .valute-select__item
+                           span USD
+                     .custom-select__items
+                        .valute-select__item.same-as-selected
+                           span USD
+                        .valute-select__item
+                           span RUB
+                        .valute-select__item
+                           span UAH
+               .exchanging-form__min-max-value
+                  p min: #[b 5] #[span USD]; max: #[b 100] #[span USD]
+               .exchanging-form__value.form-group
+                  input(id="exchange-receive-value" type="number" name="exchange-receive-value")
+                  label.exchanging-form__field-label(for="exchange-receive-value")
                      p Сумма
                         span.red-star *
-               .lk-text
-                  span 102
-                  | USD с учетом комисии OKpay
-               li
-                  input.input-form(type='text' id="pd-login10" required)
-                  label.label-star-red(for="pd-login10")
-                     p Со счета
+               .exchanging-form__final-value
+                  p #[b 102] #[span USD] с учетом комисии OKPay
+               .exchanging-form__account.form-group
+                  input(type="number" id="exchange-account-receive" name="exchange-account-receive")
+                  .exchanging-form__tooltip.tooltip
+                     p Номер счета состоит из 16ти цифр
+                  label.exchanging-form__field-label(for="exchange-account-receive")
+                     p На счет
                         span.red-star *
-      p.exchange-cashback-text За этот перевод получите #[b 30грн] кэшбэка.
-         
-      h2.title.uppercase.text-margin Личные данные
+
+
+      p.exchange-cashback-text #[span(onclick="$('#registr').prop('checked', true)") Зарегистрируйтесь], чтобы получить #[b 30 ГРН КЭШБЕКА] на Ваш счёт.
+      h2.title.uppercase.text-margin(style="margin-top:30px;") Личные данные
       .exchange-personal.flex-sb.border-r.border
-         ul
+         ul(style="flex: 0 1 50%")
             li
                input.input-form(id="pd-login2" required)
                label.label-star-red(for="pd-login2")
@@ -227,7 +232,7 @@ block content
                label.label-star-red(for="pd-login3")
                   p Фамилия
                      span.red-star *
-         ul
+         ul(style="flex: 0 1 50%")
             li
                input.input-form(id="pd-login4" required)
                label.label-star-red(for="pd-login4")
@@ -237,7 +242,54 @@ block content
                input.input-form(id="pd-login5" required)
                label.label-star-red(for="pd-login5")
                   p E-mail
-                     span.red-star *
+         .exchange-personal__select-address.ep-address
+            .ep-address__country.dropdown-search
+               .dropdown-search__selected.form-group
+                  input(type='text' id="personal-country" name="personal-country")
+                  label(for="personal-country")
+                     p Выберите свою страну
+                  .i-next
+               .dropdown-search__items
+                  .dropdown-search__item
+                     .logo-russia
+                     span Украина
+                  .dropdown-search__item
+                     .logo-russia
+                     span Россия
+                  .dropdown-search__item
+                     .logo-ukraine
+                     span Украина
+                  .dropdown-search__item
+                     .logo-russia
+                     span Украина
+                  .dropdown-search__item
+                     .logo-russia
+                     span Украина
+                  .dropdown-search__item
+                     .logo-russia
+                     span Украина
+            .ep-address__town.dropdown-search
+               .dropdown-search__selected.form-group
+                  input(type='text' id="personal-town" name="personal-town")
+                  .tooltip
+                     p Не удалось найти такой город или страну
+                  label(for="personal-town")
+                     p Выберите свой город
+                  .i-next
+               .dropdown-search__items
+                  .dropdown-search__item
+                     span Ростов
+                  .dropdown-search__item
+                     span Киев
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+                  .dropdown-search__item
+                     span Украина
+
       .flex-sb.exchange-agree.text-margin
          .user-license.flex-shrink
             input(type="checkbox" id="license-agree2" name="license-agree2")
@@ -252,6 +304,11 @@ block content
                   p.i-check
                p Я согласен с условиями и правилами сервиса
          input.button.b-blue.border-r(type='submit' onclick="checkFields('.lk_main')" value='Обменять')
+
+   link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css")
+   script(src="https://cdn.jsdelivr.net/npm/flatpickr")
+   script
+      include ../js/datePickers/exchange-from.js
 
 
 block aside
@@ -277,3 +334,5 @@ block aside
    //-          a.text-hover-green This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit
    //-    li
    //-       a.news-more2("/news.html") Все новости
+
+

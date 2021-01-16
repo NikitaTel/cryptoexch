@@ -30,7 +30,7 @@ block content
             li
                 ul
                     li
-                        p.i-list
+                        p.ic-pers-data-data
                         p Ваши данные
                     li
                         input.input-form(id="pd-login" type="text" onchange="checkFields('.personal_data')" required)
@@ -54,7 +54,7 @@ block content
             li
                 ul
                     li
-                        p.i-email
+                        p.ic-pers-data-contacts
                         p Контакты
                     li
                         input.input-form( required type="email" onchange="checkFields('.personal_data')" placeholder="E-mail")
@@ -69,7 +69,7 @@ block content
             li
                 ul
                     li
-                        p.i-protection
+                        p.ic-pers-data-password
                         p Сменить пароль
                     li
                         input.input-form( placeholder="Новый пароль")
@@ -77,7 +77,7 @@ block content
                         input.input-form( placeholder="Новый пароль повторно")
                     li.flex-grow
                         p Используйте только сложные пароли длинной более более 12 символов
-                        p Сгенерировать надежный пароль можно
+                        p(style="margin-top: 20px;") Сгенерировать надежный пароль можно
                             a.text-b-un тут
                     li
                         input(type="submit" value="Сохранить" onclick="checkFields('.personal_data')").button.b-blue

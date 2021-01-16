@@ -1,0 +1,67 @@
+.last-exchanges-widget
+  font-family Whitney
+  letter-spacing: 0.35px;
+  color #fff
+  display inline-block
+  position relative
+  height 195px
+  &__container
+    position fixed
+    z-index 1000
+  &__title
+    padding 0 0 10px 10px
+  &__close
+    position: absolute;
+    font-size 12px
+    top 1px
+    right: 15px
+    cursor: pointer;
+    &:hover
+      color #00abec
+  &__wrapper
+    display: flex
+    align-items center
+    flex-direction column
+  &__exchange
+    background rgba(0,0,0, 0.2)
+    border-radius 5px
+    margin-bottom 3px
+.widget-exchange
+  font-size: 13px;
+  font-weight: 500;
+  &__body
+    display flex
+    align-items center
+    overflow hidden
+    padding 8px 8px 5px 12px
+  &__country
+    width 22px
+    height 22px
+    flex 0 0 auto
+  &__arrow
+    font-size 12px
+    margin 0 8px
+  &__date
+    margin-left 8px
+  &__divider
+    width 1px
+    background-color: #f5f5f5;
+    margin -8px 5px -5px 5px
+    align-self stretch
+  &__gave
+    display flex
+    align-items center
+  &__value
+    font-family WhitneySemiBold
+  &__payment-system
+    background-size contain !important
+    width 25px
+    height 25px
+    margin-left:9px
+  &__received
+    display flex
+    align-items center
+
+@media screen and (max-width: 1200px)
+  .last-exchanges-widget__container
+    display none
